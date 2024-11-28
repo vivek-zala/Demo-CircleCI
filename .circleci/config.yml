@@ -1,49 +1,60 @@
-version: 2
-jobs:
-  build:
-    docker:
-      - image: circleci/node:lts
-    environment:
-      # Variables used in build steps
-      # from https://developer.salesforce.com/tools/sfdxcli
-      - DX_CLI_URL: https://developer.salesforce.com/media/salesforce-cli/sfdx/channels/stable/sfdx-linux-x64.tar.xz
-      - TESTLEVEL: RunLocalTests
-      - DEPLOYDIR: src
-    steps:
-      - checkout
-      - run:
-          name: "Create SFDX Folder"
-          command: |
-            # Create sfdx directory
-            mkdir ~/sfdx
-      - run:
-          name: Download CLI
-          command: |
-            # Download cli
-            # By default, the script installs the current version of Salesforce CLI. To install the release candidate, set the DX_CLI_URL_CUSTOM local variable to the appropriate URL
-            wget -qO- ${DX_CLI_URL_CUSTOM-$DX_CLI_URL} | tar xJ -C ~/sfdx --strip-components 1
-      - run:
-          name: Install CLI
-          command: |
-            # Install the cli
-            export PATH=~/sfdx/bin:$PATH
-            echo "export PATH=~/sfdx/bin:$PATH" >> $BASH_ENV
-            sfdx
-      - run:
-          name: Decrypt server key
-          command: |
-            #Decrypt server key
-            openssl enc -nosalt -aes-256-cbc -d -in assets/server.key.enc -out assets/server.key -base64 -K $DECRYPTION_KEY -iv $DECRYPTION_IV
-      - run:
-          name: Authorize Target Deployment Org
-          command: |
-            #Authorize target org
-            sfdx auth:jwt:grant --instanceurl $ENDPOINT  --clientid $CONSUMER_KEY --jwtkeyfile assets/server.key --username $USER_NAME --setalias UAT
-      - run:
-          name: Deploy to Target Deployment Org
-          command: |
-            #Deploy to target deployment org and run unit tests. 
-            sfdx force:mdapi:deploy --wait 10 --deploydir $DEPLOYDIR --targetusername UAT --testlevel $TESTLEVEL
+version: 2.1
 
-            #Example shows how to run a check only deploy.
-            #sfdx force:mdapi:deploy --checkonly --wait 10 --deploydir $DEPLOYDIR --targetusername UAT --testlevel $TESTLEVEL
+executors:
+  salesforce-executor:
+    docker:
+      - image: circleci/python:3.8 # Use a base image with Python, since sfdx CLI installation might need it
+    working_directory: ~/repo
+
+jobs:
+  setup:
+    executor: salesforce-executor
+    steps:
+      - checkout # Checks out your repository code
+      - run:
+          name: Install Salesforce CLI
+          command: |
+            curl -sL https://developer.salesforce.com/media/salesforce-cli/sfdx-linux-x64.tar.xz | tar xJ
+            sudo ./sfdx/install
+            export PATH=$PATH:~/sfdx/bin  # Add Salesforce CLI to the PATH
+      - run:
+          name: Authenticate to Salesforce Org
+          command: |
+            echo "$SF_USERNAME" | sfdx auth:web:login --setdefaultusername --clientid $SF_CLIENT_ID --clientsecret $SF_CLIENT_SECRET
+            # Use environment variables for login credentials
+      - run:
+          name: Verify Salesforce CLI Installation
+          command: sfdx --version
+
+  run-apex-tests:
+    executor: salesforce-executor
+    steps:
+      - checkout # Checks out your repository code
+      - run:
+          name: Install Salesforce CLI (if not already installed in 'setup' job)
+          command: |
+            curl -sL https://developer.salesforce.com/media/salesforce-cli/sfdx-linux-x64.tar.xz | tar xJ
+            sudo ./sfdx/install
+            export PATH=$PATH:~/sfdx/bin
+      - run:
+          name: Run Apex Tests
+          command: |
+            sfdx force:apex:test:run --resultformat=human --wait=10 --codecoverage  # Run the Apex tests and wait for up to 10 minutes
+      - run:
+          name: Save Apex Test Results
+          command: |
+            sfdx force:apex:test:report --resultformat=human > test_results.txt
+            cat test_results.txt
+            # Optionally you can upload this as an artifact for CircleCI visibility:
+            # store_artifacts:
+            #   path: test_results.txt
+            #   destination: test_results
+
+workflows:
+  version: 2
+  test:
+    jobs:
+      - setup
+      - run-apex-tests:
+          requires:
+            - setup
