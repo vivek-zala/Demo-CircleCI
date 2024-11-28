@@ -1,11 +1,63 @@
+version: 2.1
+
+orbs:
+  # CircleCI Salesforce CLI orb for easier management of Salesforce operations
+  sfdx: circleci/sfdx@1.2.0
+  node: circleci/node@5
+
+executors:
+  sfdx-executor:
+    docker:
+      - image: cimg/python:3.10 # Use a Docker image with Python support
+    working_directory: ~/project
+    environment:
+      SFDX_AUTOUPDATE_DISABLE: true # Disable auto-updating of Salesforce CLI during CI
+
 jobs:
-  test-node:
-    executor: node/default
+  # Job to install Salesforce dependencies and authenticate
+  install:
+    executor: sfdx-executor
     steps:
       - checkout
-      - node/install-packages:
-          cache-path: ~/project/node_modules
-          override-ci-command: npm install --legacy-peer-deps
       - run:
-          name: Run tests
-          command: npm test --passWithNoTests
+          name: Install Salesforce CLI
+          command: |
+            curl -sL https://developer.salesforce.com/media/salesforce-cli/sfdx-linux-amd64.tar.xz | tar xJ
+            ./install
+      - run:
+          name: Authenticate with Salesforce Org
+          command: |
+            echo $SFDX_AUTH_URL | sfdx auth:sfdxurl:store -f -
+            sfdx force:org:list
+
+  # Job to run Apex tests
+  run-tests:
+    executor: sfdx-executor
+    steps:
+      - checkout
+      - sfdx/install-dependencies # Ensure dependencies are installed
+      - run:
+          name: Run Apex Tests
+          command: sfdx force:apex:test:run --resultformat human --wait 10 --codecoverage
+
+  # Job to deploy metadata to Salesforce Org
+  deploy:
+    executor: sfdx-executor
+    steps:
+      - checkout
+      - sfdx/install-dependencies
+      - run:
+          name: Deploy Metadata to Salesforce Org
+          command: sfdx force:source:deploy -p force-app -u $SFDX_USERNAME --checkonly
+
+workflows:
+  version: 2
+  build-and-test:
+    jobs:
+      - install
+      - run-tests:
+          requires:
+            - install
+      - deploy:
+          requires:
+            - run-tests
