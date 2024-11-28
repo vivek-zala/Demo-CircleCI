@@ -37,4 +37,4 @@ jobs:
               echo "SF_AUTH_URL environment variable is not set!"
               exit 1
             fi
-            echo $SF_AUTH_URL | sfdx auth:sfdxurl:store -f -a DevOrg  # Store authentication in DevOrg alias
+            echo $SF_AUTH_URL | sfdx auth:sfdxurl:store -f -a demoOrg # Store authentication in DevOrg alias
