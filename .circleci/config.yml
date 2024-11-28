@@ -1,0 +1,11 @@
+jobs:
+  test-node:
+    executor: node/default
+    steps:
+      - checkout
+      - node/install-packages:
+          cache-path: ~/project/node_modules
+          override-ci-command: npm install --legacy-peer-deps
+      - run:
+          name: Run tests
+          command: npm test --passWithNoTests
