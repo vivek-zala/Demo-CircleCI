@@ -29,3 +29,12 @@ jobs:
             export PATH=~/sfdx/bin:$PATH
             echo "export PATH=~/sfdx/bin:$PATH" >> $BASH_ENV
             sfdx
+      - run:
+          name: "Authenticate to Salesforce"
+          command: |
+            # Authenticate to Salesforce using the SF_AUTH_URL (from environment variable)
+            if [ -z "$SF_AUTH_URL" ]; then
+              echo "SF_AUTH_URL environment variable is not set!"
+              exit 1
+            fi
+            echo $SF_AUTH_URL | sfdx auth:sfdxurl:store -f - -a DevOrg  # Store authentication in DevOrg alias
