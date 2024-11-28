@@ -22,22 +22,28 @@ jobs:
     steps:
       - checkout # Checkout the project code
       - run:
-          name: Install Salesforce CLI
+          name: Install Salesforce CLI via npm
           command: |
-            curl https://developer.salesforce.com/media/salesforce-cli/sfdx-linux-x64.tar.xz -o sfdx-linux-x64.tar.xz
-            if [ ! -f sfdx-linux-x64.tar.xz ]; then
-              echo "Download failed or file not found!"
-              exit 1
-            fi
-            file sfdx-linux-x64.tar.xz
-            tar xvf sfdx-linux-x64.tar.xz
-            ./sfdx/install
-            ./sfdx/bin/sfdx update
+            # Install Salesforce CLI globally using npm
+            npm install --global sfdx-cli
 
       - run:
           name: Authenticate to Salesforce
           command: |
+            # Authenticate to Salesforce using the SF_AUTH_URL environment variable
             echo $SF_AUTH_URL | sfdx auth:sfdxurl:store -f - -a DevOrg
+
+      - run:
+          name: Check Salesforce CLI version
+          command: |
+            # Verify that Salesforce CLI is installed correctly
+            sfdx --version
+
+      - run:
+          name: Update Salesforce CLI
+          command: |
+            # Update Salesforce CLI if needed
+            sfdx update
 
   test:
     executor: node-executor
