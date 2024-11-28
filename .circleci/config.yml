@@ -34,16 +34,6 @@ jobs:
           command: |
             echo $SF_AUTH_URL | sfdx auth:sfdxurl:store -f - -a DevOrg
 
-  deploy_metadata:
-    docker:
-      - image: circleci/python:3.9
-    steps:
-      - checkout # Checkout the project code
-      - run:
-          name: Deploy Salesforce metadata
-          command: |
-            ./sfdx/bin/sfdx force:source:deploy -p force-app -u DevOrg -w 10
-
   test:
     executor: node-executor
     steps:
@@ -55,14 +45,11 @@ jobs:
 
 workflows:
   version: 2
-  build_and_deploy:
+  setup_and_test:
     jobs:
       - install_dependencies
       - sfdx_auth
-      - deploy_metadata:
+      - test:
           requires:
             - install_dependencies
             - sfdx_auth
-      - test:
-          requires:
-            - deploy_metadata
