@@ -25,6 +25,11 @@ jobs:
           name: Install Salesforce CLI
           command: |
             curl https://developer.salesforce.com/media/salesforce-cli/sfdx-linux-x64.tar.xz -o sfdx-linux-x64.tar.xz
+            if [ ! -f sfdx-linux-x64.tar.xz ]; then
+              echo "Download failed or file not found!"
+              exit 1
+            fi
+            file sfdx-linux-x64.tar.xz
             tar xvf sfdx-linux-x64.tar.xz
             ./sfdx/install
             ./sfdx/bin/sfdx update
