@@ -1,66 +1,41 @@
-version: 2.1
-
-executors:
-  node-executor:
-    docker:
-      - image: circleci/node:16 # Using Node.js Docker image (adjust version if needed)
-    working_directory: ~/repo
-
+version: 2
 jobs:
-  install_dependencies:
-    executor: node-executor
-    steps:
-      - checkout # Checkout the project code
-      - run:
-          name: Install Node.js dependencies
-          command: |
-            npm install
-
-  sfdx_auth:
+  build:
     docker:
-      - image: cimg/python:3.9 # Using Python for Salesforce CLI
+      - image: circleci/node:lts
+    environment:
+      # Variables used in build steps
+      # from https://developer.salesforce.com/tools/sfdxcli
+      - DX_CLI_URL: https://developer.salesforce.com/media/salesforce-cli/sfdx/channels/stable/sfdx-linux-x64.tar.xz
+      - TESTLEVEL: RunLocalTests
+      - DEPLOYDIR: src
     steps:
-      - checkout # Checkout the project code
+      - checkout
       - run:
-          name: Install Salesforce CLI via npm
+          name: "Create SFDX Folder"
           command: |
-            # Install Salesforce CLI globally using npm
-            npm install --global sfdx-cli
-
+            # Create sfdx directory
+            mkdir ~/sfdx
       - run:
-          name: Authenticate to Salesforce
+          name: Download CLI
           command: |
-            # Authenticate to Salesforce using the SF_AUTH_URL environment variable
-            echo $SF_AUTH_URL | sfdx auth:sfdxurl:store -f - -a DevOrg
-
+            # Download cli
+            # By default, the script installs the current version of Salesforce CLI. To install the release candidate, set the DX_CLI_URL_CUSTOM local variable to the appropriate URL
+            wget -qO- ${DX_CLI_URL_CUSTOM-$DX_CLI_URL} | tar xJ -C ~/sfdx --strip-components 1
       - run:
-          name: Check Salesforce CLI version
+          name: Install CLI
           command: |
-            # Verify that Salesforce CLI is installed correctly
-            sfdx --version
-
+            # Install the cli
+            export PATH=~/sfdx/bin:$PATH
+            echo "export PATH=~/sfdx/bin:$PATH" >> $BASH_ENV
+            sfdx
       - run:
-          name: Update Salesforce CLI
+          name: Decrypt server key
           command: |
-            # Update Salesforce CLI if needed
-            sfdx update
-
-  test:
-    executor: node-executor
-    steps:
-      - checkout # Checkout the project code
+            #Decrypt server key
+            openssl enc -nosalt -aes-256-cbc -d -in assets/server.key.enc -out assets/server.key -base64 -K $DECRYPTION_KEY -iv $DECRYPTION_IV
       - run:
-          name: Run Jest tests
+          name: Authorize Target Deployment Org
           command: |
-            npm test
-
-workflows:
-  version: 2
-  setup_and_test:
-    jobs:
-      - install_dependencies
-      - sfdx_auth
-      - test:
-          requires:
-            - install_dependencies
-            - sfdx_auth
+            #Authorize target org
+            sfdx auth:jwt:grant --instanceurl $ENDPOINT  --clientid $CONSUMER_KEY --jwtkeyfile assets/server.key --username $USER_NAME --setalias UAT
