@@ -29,13 +29,3 @@ jobs:
             export PATH=~/sfdx/bin:$PATH
             echo "export PATH=~/sfdx/bin:$PATH" >> $BASH_ENV
             sfdx
-      - run:
-          name: Decrypt server key
-          command: |
-            #Decrypt server key
-            openssl enc -nosalt -aes-256-cbc -d -in assets/server.key.enc -out assets/server.key -base64 -K $DECRYPTION_KEY -iv $DECRYPTION_IV
-      - run:
-          name: Authorize Target Deployment Org
-          command: |
-            #Authorize target org
-            sfdx auth:jwt:grant --instanceurl $ENDPOINT  --clientid $CONSUMER_KEY --jwtkeyfile assets/server.key --username $USER_NAME --setalias UAT
