@@ -1,60 +1,68 @@
 version: 2.1
 
 executors:
-  salesforce-executor:
+  node-executor:
     docker:
-      - image: circleci/python:3.8 # Use a base image with Python, since sfdx CLI installation might need it
+      - image: circleci/node:16 # Using Node.js Docker image (adjust version if needed)
     working_directory: ~/repo
 
 jobs:
-  setup:
-    executor: salesforce-executor
+  install_dependencies:
+    executor: node-executor
     steps:
-      - checkout # Checks out your repository code
+      - checkout # Checkout the project code
+      - run:
+          name: Install Node.js dependencies
+          command: |
+            npm install
+
+  sfdx_auth:
+    docker:
+      - image: circleci/python:3.9 # Using Python for Salesforce CLI
+    steps:
+      - checkout # Checkout the project code
       - run:
           name: Install Salesforce CLI
           command: |
-            curl -sL https://developer.salesforce.com/media/salesforce-cli/sfdx-linux-x64.tar.xz | tar xJ
-            sudo ./sfdx/install
-            export PATH=$PATH:~/sfdx/bin  # Add Salesforce CLI to the PATH
-      - run:
-          name: Authenticate to Salesforce Org
-          command: |
-            echo "$SF_USERNAME" | sfdx auth:web:login --setdefaultusername --clientid $SF_CLIENT_ID --clientsecret $SF_CLIENT_SECRET
-            # Use environment variables for login credentials
-      - run:
-          name: Verify Salesforce CLI Installation
-          command: sfdx --version
+            curl https://developer.salesforce.com/media/salesforce-cli/sfdx-linux-x64.tar.xz -o sfdx-linux-x64.tar.xz
+            tar xvf sfdx-linux-x64.tar.xz
+            ./sfdx/install
+            ./sfdx/bin/sfdx update
 
-  run-apex-tests:
-    executor: salesforce-executor
+      - run:
+          name: Authenticate to Salesforce
+          command: |
+            echo $SF_AUTH_URL | sfdx auth:sfdxurl:store -f - -a DevOrg
+
+  deploy_metadata:
+    docker:
+      - image: circleci/python:3.9
     steps:
-      - checkout # Checks out your repository code
+      - checkout # Checkout the project code
       - run:
-          name: Install Salesforce CLI (if not already installed in 'setup' job)
+          name: Deploy Salesforce metadata
           command: |
-            curl -sL https://developer.salesforce.com/media/salesforce-cli/sfdx-linux-x64.tar.xz | tar xJ
-            sudo ./sfdx/install
-            export PATH=$PATH:~/sfdx/bin
+            ./sfdx/bin/sfdx force:source:deploy -p force-app -u DevOrg -w 10
+
+  test:
+    executor: node-executor
+    steps:
+      - checkout # Checkout the project code
       - run:
-          name: Run Apex Tests
+          name: Run Jest tests
           command: |
-            sfdx force:apex:test:run --resultformat=human --wait=10 --codecoverage  # Run the Apex tests and wait for up to 10 minutes
-      - run:
-          name: Save Apex Test Results
-          command: |
-            sfdx force:apex:test:report --resultformat=human > test_results.txt
-            cat test_results.txt
-            # Optionally you can upload this as an artifact for CircleCI visibility:
-            # store_artifacts:
-            #   path: test_results.txt
-            #   destination: test_results
+            npm test
 
 workflows:
   version: 2
-  test:
+  build_and_deploy:
     jobs:
-      - setup
-      - run-apex-tests:
+      - install_dependencies
+      - sfdx_auth
+      - deploy_metadata:
           requires:
-            - setup
+            - install_dependencies
+            - sfdx_auth
+      - test:
+          requires:
+            - deploy_metadata
