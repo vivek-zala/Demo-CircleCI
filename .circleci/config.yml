@@ -1,14 +1,9 @@
 version: 2.1
 
-orbs:
-  # CircleCI Salesforce CLI orb for easier management of Salesforce operations
-  sfdx: circleci/sfdx@1.2.0
-  node: circleci/node@5
-
 executors:
   sfdx-executor:
     docker:
-      - image: cimg/python:3.10 # Use a Docker image with Python support
+      - image: cimg/python:3.10 # Docker image with Python support (required by Salesforce CLI)
     working_directory: ~/project
     environment:
       SFDX_AUTOUPDATE_DISABLE: true # Disable auto-updating of Salesforce CLI during CI
@@ -35,20 +30,20 @@ jobs:
     executor: sfdx-executor
     steps:
       - checkout
-      - sfdx/install-dependencies # Ensure dependencies are installed
       - run:
           name: Run Apex Tests
-          command: sfdx force:apex:test:run --resultformat human --wait 10 --codecoverage
+          command: |
+            sfdx force:apex:test:run --resultformat human --wait 10 --codecoverage
 
   # Job to deploy metadata to Salesforce Org
   deploy:
     executor: sfdx-executor
     steps:
       - checkout
-      - sfdx/install-dependencies
       - run:
           name: Deploy Metadata to Salesforce Org
-          command: sfdx force:source:deploy -p force-app -u $SFDX_USERNAME --checkonly
+          command: |
+            sfdx force:source:deploy -p force-app -u $SFDX_USERNAME --checkonly
 
 workflows:
   version: 2
