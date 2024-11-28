@@ -1,59 +1,49 @@
-version: 2.1
-
-executors:
-  sfdx-executor:
-    docker:
-      - image: cimg/python:3.10 # Docker image with Python support (required by Salesforce CLI)
-    working_directory: ~/project
-    environment:
-      SFDX_AUTOUPDATE_DISABLE: true # Disable auto-updating of Salesforce CLI during CI
-
+version: 2
 jobs:
-  # Job to install Salesforce dependencies and authenticate
-  install:
-    executor: sfdx-executor
+  build:
+    docker:
+      - image: circleci/node:lts
+    environment:
+      # Variables used in build steps
+      # from https://developer.salesforce.com/tools/sfdxcli
+      - DX_CLI_URL: https://developer.salesforce.com/media/salesforce-cli/sfdx/channels/stable/sfdx-linux-x64.tar.xz
+      - TESTLEVEL: RunLocalTests
+      - DEPLOYDIR: src
     steps:
       - checkout
       - run:
-          name: Install Salesforce CLI
+          name: "Create SFDX Folder"
           command: |
-            curl -sL https://developer.salesforce.com/media/salesforce-cli/sfdx-linux-amd64.tar.xz | tar -tf
-            cd sfdx-cli  # Change to the directory after extraction
-            ./install   # Run the install script
+            # Create sfdx directory
+            mkdir ~/sfdx
       - run:
-          name: Authenticate with Salesforce Org
+          name: Download CLI
           command: |
-            echo $SFDX_AUTH_URL | sfdx auth:sfdxurl:store -f -
-            sfdx force:org:list
-
-  # Job to run Apex tests
-  run-tests:
-    executor: sfdx-executor
-    steps:
-      - checkout
+            # Download cli
+            # By default, the script installs the current version of Salesforce CLI. To install the release candidate, set the DX_CLI_URL_CUSTOM local variable to the appropriate URL
+            wget -qO- ${DX_CLI_URL_CUSTOM-$DX_CLI_URL} | tar xJ -C ~/sfdx --strip-components 1
       - run:
-          name: Run Apex Tests
+          name: Install CLI
           command: |
-            sfdx force:apex:test:run --resultformat human --wait 10 --codecoverage
-
-  # Job to deploy metadata to Salesforce Org
-  deploy:
-    executor: sfdx-executor
-    steps:
-      - checkout
+            # Install the cli
+            export PATH=~/sfdx/bin:$PATH
+            echo "export PATH=~/sfdx/bin:$PATH" >> $BASH_ENV
+            sfdx
       - run:
-          name: Deploy Metadata to Salesforce Org
+          name: Decrypt server key
           command: |
-            sfdx force:source:deploy -p force-app -u $SFDX_USERNAME --checkonly
+            #Decrypt server key
+            openssl enc -nosalt -aes-256-cbc -d -in assets/server.key.enc -out assets/server.key -base64 -K $DECRYPTION_KEY -iv $DECRYPTION_IV
+      - run:
+          name: Authorize Target Deployment Org
+          command: |
+            #Authorize target org
+            sfdx auth:jwt:grant --instanceurl $ENDPOINT  --clientid $CONSUMER_KEY --jwtkeyfile assets/server.key --username $USER_NAME --setalias UAT
+      - run:
+          name: Deploy to Target Deployment Org
+          command: |
+            #Deploy to target deployment org and run unit tests. 
+            sfdx force:mdapi:deploy --wait 10 --deploydir $DEPLOYDIR --targetusername UAT --testlevel $TESTLEVEL
 
-workflows:
-  version: 2
-  build-and-test:
-    jobs:
-      - install
-      - run-tests:
-          requires:
-            - install
-      - deploy:
-          requires:
-            - run-tests
+            #Example shows how to run a check only deploy.
+            #sfdx force:mdapi:deploy --checkonly --wait 10 --deploydir $DEPLOYDIR --targetusername UAT --testlevel $TESTLEVEL
