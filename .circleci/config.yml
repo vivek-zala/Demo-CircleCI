@@ -17,7 +17,7 @@ jobs:
       - run:
           name: Install Salesforce CLI
           command: |
-            curl -sL https://developer.salesforce.com/media/salesforce-cli/sfdx-linux-amd64.tar.xz | tar xJ
+            curl -sL https://developer.salesforce.com/media/salesforce-cli/sfdx-linux-amd64.tar.xz | tar -tf
             cd sfdx-cli  # Change to the directory after extraction
             ./install   # Run the install script
       - run:
