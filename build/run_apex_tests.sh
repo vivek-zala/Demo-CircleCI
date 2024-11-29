@@ -4,7 +4,7 @@
 
 # Create a scratch org
 echo "Creating the Scratch Org..."
-sfdx force:org:create -f config/project-scratch-def.json -a ${CIRCLE_BRANCH} -s
+sf org create scratch -f config/project-scratch-def.json -a ${CIRCLE_BRANCH} -s
 
 sfdx force:source:push -u ${CIRCLE_BRANCH}
 
