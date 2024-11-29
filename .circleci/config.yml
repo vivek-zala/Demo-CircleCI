@@ -1,40 +1,53 @@
 version: 2
+
+general:
+# Uncomment the following to specify only a specific branch
+#   branches:
+#     only:
+#       - dev # specific branch
+#       - /dev-.*/ # or regexes
+
 jobs:
   build:
-    docker:
-      - image: circleci/node:lts
+    machine: true
+    working_directory: ~/ci_app
     environment:
-      # Variables used in build steps
-      # from https://developer.salesforce.com/tools/sfdxcli
-      - DX_CLI_URL: https://developer.salesforce.com/media/salesforce-cli/sfdx/channels/stable/sfdx-linux-x64.tar.xz
-      - TESTLEVEL: RunLocalTests
-      - DEPLOYDIR: src
+      # from https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_install_cli_standalone.htm
+      # and https://developer.salesforce.com/media/salesforce-cli/manifest.json
+      - DX_CLI_URL: https://developer.salesforce.com/media/salesforce-cli/sfdx-linux-amd64.tar.xz
     steps:
       - checkout
       - run:
-          name: "Create SFDX Folder"
-          command: |
-            # Create sfdx directory
-            mkdir ~/sfdx
-      - run:
           name: Download CLI
           command: |
-            # Download cli
-            # By default, the script installs the current version of Salesforce CLI. To install the release candidate, set the DX_CLI_URL_CUSTOM local variable to the appropriate URL
-            wget -qO- ${DX_CLI_URL_CUSTOM-$DX_CLI_URL} | tar xJ -C ~/sfdx --strip-components 1
+            mkdir sfdx
+            wget -qO- $DX_CLI_URL | tar xJ -C sfdx --strip-components 1
       - run:
           name: Install CLI
           command: |
-            # Install the cli
-            export PATH=~/sfdx/bin:$PATH
-            echo "export PATH=~/sfdx/bin:$PATH" >> $BASH_ENV
+            ./sfdx/install
             sfdx
+            mkdir tmp
       - run:
-          name: "Authenticate to Salesforce"
+          name: Authorize Target Deployment Org
           command: |
-            # Authenticate to Salesforce using the SF_AUTH_URL (from environment variable)
-            if [ -z "$SF_AUTH_URL" ]; then
-              echo "SF_AUTH_URL environment variable is not set!"
-              exit 1
-            fi
-              echo $SF_AUTH_URL | sfdx auth:sfdxurl:store -f --DevOrg # Store authentication in DevOrg alias
+            #Authorize target org
+            sfdx auth:jwt:grant --instanceurl $ENDPOINT  --clientid $CONSUMER_KEY --jwtkeyfile assets/server.key --username $USER_NAME
+      - run:
+          name: Run Apex Tests
+          command: |
+            mkdir -p ~/junit
+            sfdx force:apex:test:run -c -d ~/junit -r junit --wait 5
+      - store_test_results:
+          path: ~/junit
+      - run:
+          name: Delete Useless Scratch Org
+          command: |
+            sfdx force:org:delete -u circle_build_$CIRCLE_BUILD_NUM -p
+
+### Uncomment the following if performing deployments
+#deployment:
+#  override:
+#    - sfdx force:source:convert -r force-app -d testDeploy
+#    - . cleanupDeploy.sh
+#    - sfdx force:mdapi:deploy -d testDeploy/ -u deploy -w 2
