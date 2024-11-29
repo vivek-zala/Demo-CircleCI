@@ -37,3 +37,14 @@ jobs:
           command: . build/run_apex_tests.sh
       - store_test_results:
           path: test-results
+workflows:
+  version: 2
+  validate:
+    jobs:
+      - run-tests
+      # - code-review:
+      #     requires:
+      #       - run-tests
+      # - deploy-code:
+      #     requires:
+      #       - code-review
