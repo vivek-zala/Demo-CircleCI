@@ -8,4 +8,9 @@ public with sharing class Demo {
     System.debug('Hello from CircleCI');
     return a * b;
   }
+
+  public static Integer demoSub(Integer a, Integer b) {
+    System.debug('Hello from CircleCI');
+    return a - b;
+  }
 }
