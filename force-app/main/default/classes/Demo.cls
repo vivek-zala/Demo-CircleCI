@@ -1,7 +1,6 @@
 public with sharing class Demo {
+  public static Integer demoSum(Integer a, Integer b) {
     System.debug('Hello from CircleCI');
-    public static Integer demoSum(Integer a,Integer b){
-        return a+b;
-    }
-    
+    return a + b;
+  }
 }
