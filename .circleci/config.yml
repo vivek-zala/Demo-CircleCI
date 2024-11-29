@@ -1,35 +1,21 @@
-version: 2
+version: 2.1
 jobs:
   run-tests:
-  build:
     docker:
-      - image: circleci/node:lts
-    environment:
-      # Variables used in build steps
-      # from https://developer.salesforce.com/tools/sfdxcli
-      - DX_CLI_URL: https://developer.salesforce.com/media/salesforce-cli/sfdx/channels/stable/sfdx-linux-x64.tar.xz
-      - TESTLEVEL: RunLocalTests
-      - DEPLOYDIR: src
+      - image: circleci/node:latest
     steps:
       - checkout
+      - restore_cache:
+          keys:
+            - dependency-cache-{{ checksum "package.json" }}
+            - dependency-cache-
       - run:
-          name: "Create SFDX Folder"
-          command: |
-            # Create sfdx directory
-            mkdir ~/sfdx
-      - run:
-          name: Download CLI
-          command: |
-            # Download cli
-            # By default, the script installs the current version of Salesforce CLI. To install the release candidate, set the DX_CLI_URL_CUSTOM local variable to the appropriate URL
-            wget -qO- ${DX_CLI_URL_CUSTOM-$DX_CLI_URL} | tar xJ -C ~/sfdx --strip-components 1
-      - run:
-          name: Install CLI
-          command: |
-            # Install the cli
-            export PATH=~/sfdx/bin:$PATH
-            echo "export PATH=~/sfdx/bin:$PATH" >> $BASH_ENV
-            sfdx
+          name: Install Dependencies
+          command: . build/install_dependencies.sh
+      - save_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths:
+            - node_modules
       - run:
           name: Login to Org
           command: . build/login_to_sandbox.sh
@@ -38,14 +24,33 @@ jobs:
           command: . build/run_apex_tests.sh
       - store_test_results:
           path: test-results
+  code-review:
+    docker:
+      - image: circleci/node:latest
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - dependency-cache-{{ checksum "package.json" }}
+            - dependency-cache-
+      - run:
+          name: Install Dependencies
+          command: . build/install_dependencies.sh
+      - save_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths:
+            - node_modules
+      - run:
+          name: SFDX Scanner Analysis
+          command: . build/run_sfdx_scanner.sh
+      - store_artifacts:
+          path: sfdxScannerAnalysis.csv
+
 workflows:
   version: 2
   validate:
     jobs:
       - run-tests
-      # - code-review:
-      #     requires:
-      #       - run-tests
-      # - deploy-code:
-      #     requires:
-      #       - code-review
+      - code-review:
+          requires:
+            - run-tests
