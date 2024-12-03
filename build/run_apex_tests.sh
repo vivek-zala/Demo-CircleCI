@@ -6,9 +6,9 @@
 echo "Creating the Scratch Org..."
 sfdx org create scratch -f config/project-scratch-def.json -a ${CIRCLE_BRANCH}
 # sf org generate password --target-org <username-or-alias> # Change user name
- sfdx force:user:password:generate --target-org MyScratchOrg
- sfdx force:org:display --target-org MyScratchOrg
- sfdx force:user:display -target-org MyScratchOrg
+ sfdx force:user:password:generate --target-org ${CIRCLE_BRANCH}
+ sfdx force:org:display --target-org ${CIRCLE_BRANCH}
+ sfdx force:user:display -target-org ${CIRCLE_BRANCH}
  
 
 sfdx force:package:install -p 04t360000011zP6AAI --target-org ${CIRCLE_BRANCH} -w 5 --security-type AllUsers
