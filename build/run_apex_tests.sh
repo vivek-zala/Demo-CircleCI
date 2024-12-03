@@ -11,7 +11,7 @@ sfdx org create scratch -f config/project-scratch-def.json -a ${CIRCLE_BRANCH}
 #  sfdx force:user:display -target-org ${CIRCLE_BRANCH}
  
 
-sfdx force:package:install -p 04t360000011zP6AAI --target-org ${CIRCLE_BRANCH} -w 5 --security-type AllUsers
+sfdx force:package:install -p 04t3o000001QbwP --target-org ${CIRCLE_BRANCH} -w 5 --security-type AllUsers
  
 sfdx force:source:push -u ${CIRCLE_BRANCH}
 
