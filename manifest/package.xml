@@ -32,5 +32,14 @@
         <members>*</members>
         <name>StaticResource</name>
     </types>
+    <types>
+        <members>Account.Electronic_Payment__c</members>
+        <members>Account.Electronic_Auto_ACH_Debit__c</members>
+        <members>Account.Is_Taxable__c</members>
+        <members>Account.Owner_Company__c</members>
+        <members>Account.Payment_and_Accounting_Notes__c</members>
+        <members>Account.Tax_Schedule__c</members>
+        <name>CustomField</name>
+    </types>
     <version>62.0</version>
 </Package>
