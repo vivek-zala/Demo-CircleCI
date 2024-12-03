@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>AssignBtn</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssignBtn</shortDescription>
+        <value>Assign</value>
+    </labels>
+    <labels>
+        <fullName>AssignSuccessSummary</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssignSuccessSummary</shortDescription>
+        <value>The opportunities you selected and their attached open activities have successfully been reassigned.</value>
+    </labels>
+    <labels>
+        <fullName>AssignSuccessTitle</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssignSuccessTitle</shortDescription>
+        <value>Reassignment successfully completed!</value>
+    </labels>
+    <labels>
+        <fullName>AssignToBtn</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssignToBtn</shortDescription>
+        <value>Assign to:</value>
+    </labels>
+    <labels>
+        <fullName>AssigningBtn</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssigningBtn</shortDescription>
+        <value>In progress ...</value>
+    </labels>
+    <labels>
+        <fullName>CloseDateCriteriaLabel</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>CloseDateCriteriaLabel</shortDescription>
+        <value>Closed Date</value>
+    </labels>
+    <labels>
+        <fullName>CriteriaSearchSection</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>CriteriaSearchSection</shortDescription>
+        <value>Search with a search criteria</value>
+    </labels>
+    <labels>
+        <fullName>DisplayViewLabel</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DisplayViewLabel</shortDescription>
+        <value>Display:</value>
+    </labels>
+    <labels>
+        <fullName>HeaderText</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HeaderText</shortDescription>
+        <value>Mass reassign opportunities</value>
+    </labels>
+    <labels>
+        <fullName>NewViewLinkLabel</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NewViewLinkLabel</shortDescription>
+        <value>Create new view</value>
+    </labels>
+    <labels>
+        <fullName>NoResultSummary</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NoResultSummary</shortDescription>
+        <value>Please modify your search criteria</value>
+    </labels>
+    <labels>
+        <fullName>NoResultTitle</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NoResultTitle</shortDescription>
+        <value>No results</value>
+    </labels>
+    <labels>
+        <fullName>NoViewSelection</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NoViewSelection</shortDescription>
+        <value>- None -</value>
+    </labels>
+    <labels>
+        <fullName>Quote_Payment_Terms</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Quote Payment Terms</shortDescription>
+        <value>The payment for projects valued at or below $149,999.99 are as follows unless otherwise indicated in the Proposal to which these conditions are attached: NET 30 days from date of shipment (subject to credit approval). Prices are firm for acceptance within 30 days. Except where banned by law, credit card orders will be subject to a 3% processing.&lt;br/&gt;&lt;br/&gt;
+The performance milestones for payment for projects valued at or above $150,000 are as follows unless otherwise indicated in the Proposal to which these conditions are attached:&lt;br/&gt;(i) &amp;nbsp Upon Issuance of Submittals: 20% of the Contract Price (Net 30 Days).&lt;br/&gt;(ii)&amp;nbsp Upon Release for Production: 30% of the Contract Price (Net 30 Days).&lt;br/&gt;(iii) Upon Readiness for Shipment: 50% of the Contract Price (Net 30 Days).</value>
+    </labels>
+    <labels>
+        <fullName>ResultBlockTitle</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ResultBlockTitle</shortDescription>
+        <value>Results</value>
+    </labels>
+    <labels>
+        <fullName>SearchBlockTitle</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SearchBlockTitle</shortDescription>
+        <value>Search opportunities</value>
+    </labels>
+    <labels>
+        <fullName>SearchBtn</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SearchBtn</shortDescription>
+        <value>Search</value>
+    </labels>
+    <labels>
+        <fullName>SearchingBtn</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SearchingBtn</shortDescription>
+        <value>Searching ...</value>
+    </labels>
+    <labels>
+        <fullName>TooManyRowsError</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>TooManyRowsError</shortDescription>
+        <value>The total number of open activities on the opportunities you selected is greater than the system can handle. Please reduce the number of opportunities to reassign</value>
+    </labels>
+    <labels>
+        <fullName>TooManyRowsSummary</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>TooManyRowsSummary</shortDescription>
+        <value>The view you selected returned more than 1000 rows. Only the 1000 first ones will be displayed</value>
+    </labels>
+    <labels>
+        <fullName>TooManyRowsTitle</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>TooManyRowsTitle</shortDescription>
+        <value>Too many rows returned</value>
+    </labels>
+    <labels>
+        <fullName>TotalFooterLabel</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>TotalFooterLabel</shortDescription>
+        <value>Number</value>
+    </labels>
+    <labels>
+        <fullName>ViewSearchSection</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ViewSearchSection</shortDescription>
+        <value>Search with a view</value>
+    </labels>
+</CustomLabels>
