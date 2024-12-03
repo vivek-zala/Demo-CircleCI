@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <label>Type</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Breakfast/Lunch</fullName>
+                <default>false</default>
+                <label>Breakfast/Lunch</label>
+            </value>
+            <value>
+                <fullName>Lunch and Learn</fullName>
+                <default>false</default>
+                <label>Lunch and Learn</label>
+            </value>
+            <value>
+                <fullName>Mini Event</fullName>
+                <default>false</default>
+                <label>Mini Event</label>
+            </value>
+            <value>
+                <fullName>Big Event</fullName>
+                <default>false</default>
+                <label>Big Event</label>
+            </value>
+            <value>
+                <fullName>End-User Visit</fullName>
+                <default>false</default>
+                <label>Customer Visit</label>
+            </value>
+            <value>
+                <fullName>New Contact meeting Q1 2018</fullName>
+                <default>false</default>
+                <label>New Relationship Q1 2018</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

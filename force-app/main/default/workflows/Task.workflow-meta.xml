@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Email_Sent_to_Task_Creator_when_Task_Completed</fullName>
+        <description>Email Sent to Task Creator when Task Completed</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>All_Email_Template/Task_Completed_to_Creator</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_An_Email_Temp_To_Approver_Regarding_Task_Detail</fullName>
+        <description>Send An Email Temp To Approver Regarding Task Detail</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Approval_Process_Email_Template/SR_Task_Email_Template_For_Approval_Process</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_an_email_to_Assigned_Person</fullName>
+        <description>Send an email to Assigned Person</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>All_Email_Template/Task_Assigned</template>
+    </alerts>
+    <rules>
+        <fullName>Send An Email When Task Is From Submit Request Approval Process</fullName>
+        <actions>
+            <name>Send_An_Email_Temp_To_Approver_Regarding_Task_Detail</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Task.Subject</field>
+            <operation>equals</operation>
+            <value>Approver task</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Task.Approval_SR__c</field>
+            <operation>notEqual</operation>
+            <value>NULL</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Task.OwnerId</field>
+            <operation>equals</operation>
+            <value>Joe Gerlemann</value>
+        </criteriaItems>
+        <description>Send the task Email for Approver when user Submit the Request.</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Sent an Email When Task Assigned</fullName>
+        <actions>
+            <name>Send_an_email_to_Assigned_Person</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <formula>AND(OR(ISNEW(), ISCHANGED(OwnerId)), OwnerId != $User.Id , Subject != &apos;Approver task&apos;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Sent an Email to Task Creator when Completed</fullName>
+        <actions>
+            <name>Email_Sent_to_Task_Creator_when_Task_Completed</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <formula>AND(OwnerId !=  $User.Id,  ISPICKVAL( Status , &apos;Completed&apos;))</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

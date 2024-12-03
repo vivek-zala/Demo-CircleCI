@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_visist</fullName>
+    <columns>CREATEDBY_USER</columns>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Date__c</field>
+        <operation>greaterThan</operation>
+        <value>9/24/2017</value>
+    </filters>
+    <label>All visits</label>
+</ListView>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Engineered_Products_2024</fullName>
+    <columns>NAME</columns>
+    <columns>Year__c</columns>
+    <columns>Sales_Rep__c</columns>
+    <columns>Resell_Sales_Goal__c</columns>
+    <columns>Margin_Goal__c</columns>
+    <columns>Direct_Sales_Goal__c</columns>
+    <columns>Revenue_Goal__c</columns>
+    <columns>BRSalesMarginPercentage__c</columns>
+    <columns>Master_Report__c</columns>
+    <columns>Direct_Sales_Percentage__c</columns>
+    <columns>Sales_Margin_Percentage__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Year__c</field>
+        <operation>equals</operation>
+        <value>2024</value>
+    </filters>
+    <filters>
+        <field>CREATEDBY_USER</field>
+        <operation>equals</operation>
+        <value>Matt Miceli</value>
+    </filters>
+    <label>Engineered Products 2024</label>
+    <sharedTo>
+        <group>Engineered_Products</group>
+    </sharedTo>
+</ListView>

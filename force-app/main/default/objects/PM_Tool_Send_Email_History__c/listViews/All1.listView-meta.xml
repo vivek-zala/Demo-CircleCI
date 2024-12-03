@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All1</fullName>
+    <columns>NAME</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>Error_Message__c</columns>
+    <columns>Is_Success__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Cc_Email__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>greaterThan</operation>
+        <value>2/1/2023 12:00 AM</value>
+    </filters>
+    <label>All</label>
+</ListView>

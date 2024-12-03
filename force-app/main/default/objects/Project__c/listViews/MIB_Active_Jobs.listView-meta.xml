@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MIB_Active_Jobs</fullName>
+    <columns>OpportunityNumber__c</columns>
+    <columns>NAME</columns>
+    <columns>ProjectShipDate__c</columns>
+    <columns>Notes_Details__c</columns>
+    <columns>Project_Stage__c</columns>
+    <columns>TotalRevenue__c</columns>
+    <columns>Billings__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Opportunity_Record_Type__c</field>
+        <operation>equals</operation>
+        <value>General Contracting</value>
+    </filters>
+    <filters>
+        <field>ProjectManager__c</field>
+        <operation>equals</operation>
+        <value>Gail Guemmer,Tera Thorn</value>
+    </filters>
+    <filters>
+        <field>Project_Stage__c</field>
+        <operation>contains</operation>
+        <value>Open,Released all equipment,Partially shipped</value>
+    </filters>
+    <label>MIB Active Jobs</label>
+    <sharedTo>
+        <role>Builders_Tier_1</role>
+    </sharedTo>
+</ListView>

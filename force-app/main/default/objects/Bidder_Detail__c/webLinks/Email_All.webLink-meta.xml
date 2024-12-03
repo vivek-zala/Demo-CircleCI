@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_All</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Email All</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/apex.js&quot;)}
+
+var email = sforce.apex.execute(&quot;EmailAllBidders&quot;,&quot;SendEmail&quot;,{oppId:&quot;{!Opportunity.Id}&quot;});
+window.location.href = &quot;mailto:?bcc=&quot; + email + &quot;&amp;subject=&quot; + &apos;{!Opportunity.Name}&apos;;</url>
+</WebLink>

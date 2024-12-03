@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <label>Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Opportunity Folder</fullName>
+                <default>false</default>
+                <label>Opportunity Folder</label>
+            </value>
+            <value>
+                <fullName>Quote File</fullName>
+                <default>false</default>
+                <label>Quote File</label>
+            </value>
+            <value>
+                <fullName>Scope File</fullName>
+                <default>false</default>
+                <label>Scope File</label>
+            </value>
+            <value>
+                <fullName>Submittal File</fullName>
+                <default>false</default>
+                <label>Submittal File</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

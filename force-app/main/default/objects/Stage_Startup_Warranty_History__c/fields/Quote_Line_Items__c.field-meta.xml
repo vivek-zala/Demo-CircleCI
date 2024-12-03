@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quote_Line_Items__c</fullName>
+    <label>Quote Line Items</label>
+    <referenceTo>Product_Select__c</referenceTo>
+    <relationshipLabel>Stage Startup Warranty Histories</relationshipLabel>
+    <relationshipName>Stage_Startup_Warranty_Histories</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

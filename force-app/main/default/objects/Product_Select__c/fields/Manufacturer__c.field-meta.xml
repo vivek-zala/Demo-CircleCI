@@ -1,0 +1,1049 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Manufacturer__c</fullName>
+    <label>Manufacturer</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Ace Heaters</fullName>
+                <default>false</default>
+                <label>Ace Heaters</label>
+            </value>
+            <value>
+                <fullName>Advanced Cooling Technologies (ACT)</fullName>
+                <default>false</default>
+                <label>Advanced Cooling Technologies (ACT)</label>
+            </value>
+            <value>
+                <fullName>Advanced Thermal Hydronics (ATH)</fullName>
+                <default>false</default>
+                <label>Advanced Thermal Hydronics (ATH)</label>
+            </value>
+            <value>
+                <fullName>Aldrich</fullName>
+                <default>false</default>
+                <label>Aldrich</label>
+            </value>
+            <value>
+                <fullName>Alfa Laval</fullName>
+                <default>false</default>
+                <label>Alfa Laval</label>
+            </value>
+            <value>
+                <fullName>Alliance Air Products</fullName>
+                <default>false</default>
+                <label>Alliance Air Products</label>
+            </value>
+            <value>
+                <fullName>Amazon</fullName>
+                <default>false</default>
+                <label>Amazon</label>
+            </value>
+            <value>
+                <fullName>Ameco</fullName>
+                <default>false</default>
+                <label>Ameco</label>
+            </value>
+            <value>
+                <fullName>American Granby</fullName>
+                <default>false</default>
+                <label>American Granby</label>
+            </value>
+            <value>
+                <fullName>American Wheatley</fullName>
+                <default>false</default>
+                <label>American Wheatley</label>
+            </value>
+            <value>
+                <fullName>Amitrol</fullName>
+                <default>false</default>
+                <label>Amitrol</label>
+            </value>
+            <value>
+                <fullName>Applied Industrial Technologies</fullName>
+                <default>false</default>
+                <label>Applied Industrial Technologies</label>
+            </value>
+            <value>
+                <fullName>Aquanomix</fullName>
+                <default>false</default>
+                <label>Aquanomix</label>
+            </value>
+            <value>
+                <fullName>Pumps - Armstrong</fullName>
+                <default>false</default>
+                <label>Armstrong</label>
+            </value>
+            <value>
+                <fullName>Armstrong Humidifiers</fullName>
+                <default>false</default>
+                <label>Armstrong Humidifiers</label>
+            </value>
+            <value>
+                <fullName>ASC Pumping Equipment</fullName>
+                <default>false</default>
+                <label>ASC Pumping Equipment</label>
+            </value>
+            <value>
+                <fullName>AtmosAir</fullName>
+                <default>false</default>
+                <label>AtmosAir</label>
+            </value>
+            <value>
+                <fullName>AU/Hydro Pump</fullName>
+                <default>false</default>
+                <label>AU/Hydro Pump</label>
+            </value>
+            <value>
+                <fullName>Aurora (Pentair)</fullName>
+                <default>false</default>
+                <label>Aurora (Pentair)</label>
+            </value>
+            <value>
+                <fullName>Avalara</fullName>
+                <default>false</default>
+                <label>Avalara</label>
+            </value>
+            <value>
+                <fullName>Baltimore Aircoil</fullName>
+                <default>false</default>
+                <label>Baltimore Aircoil</label>
+            </value>
+            <value>
+                <fullName>Bearings Inc.</fullName>
+                <default>false</default>
+                <label>Bearings Inc.</label>
+            </value>
+            <value>
+                <fullName>Bessamaire</fullName>
+                <default>false</default>
+                <label>Bessamaire</label>
+            </value>
+            <value>
+                <fullName>Boilers &amp; Heaters - Other</fullName>
+                <default>false</default>
+                <label>Boilers &amp; Heaters - Other</label>
+            </value>
+            <value>
+                <fullName>Bosch</fullName>
+                <default>false</default>
+                <label>Bosch</label>
+            </value>
+            <value>
+                <fullName>Bryant Refractory</fullName>
+                <default>false</default>
+                <label>Bryant Refractory</label>
+            </value>
+            <value>
+                <fullName>Bryant Refractory Co</fullName>
+                <default>false</default>
+                <label>Bryant Refractory Co</label>
+            </value>
+            <value>
+                <fullName>Caleffi North America</fullName>
+                <default>false</default>
+                <label>Caleffi North America</label>
+            </value>
+            <value>
+                <fullName>Caleffi North America Inc.</fullName>
+                <default>false</default>
+                <label>Caleffi North America Inc.</label>
+            </value>
+            <value>
+                <fullName>Boilers &amp; Heaters - Camus Hydronics</fullName>
+                <default>false</default>
+                <label>Camus Hydronics</label>
+            </value>
+            <value>
+                <fullName>Canariis</fullName>
+                <default>false</default>
+                <label>Canariis</label>
+            </value>
+            <value>
+                <fullName>Canariis Corporation</fullName>
+                <default>false</default>
+                <label>Canariis Corporation</label>
+            </value>
+            <value>
+                <fullName>Cash Acme</fullName>
+                <default>false</default>
+                <label>Cash Acme</label>
+            </value>
+            <value>
+                <fullName>Cleaver-Brooks</fullName>
+                <default>false</default>
+                <label>Cleaver-Brooks</label>
+            </value>
+            <value>
+                <fullName>ClimaCOOL</fullName>
+                <default>false</default>
+                <label>ClimaCOOL</label>
+            </value>
+            <value>
+                <fullName>ClimateCraft</fullName>
+                <default>false</default>
+                <label>ClimateCraft</label>
+            </value>
+            <value>
+                <fullName>Heat Pumps - ClimateMaster</fullName>
+                <default>false</default>
+                <label>ClimateMaster</label>
+            </value>
+            <value>
+                <fullName>Columbia Boiler Company</fullName>
+                <default>false</default>
+                <label>Columbia Boiler Company</label>
+            </value>
+            <value>
+                <fullName>Conbraco Industries</fullName>
+                <default>false</default>
+                <label>Conbraco Industries</label>
+            </value>
+            <value>
+                <fullName>Conbraco Industries Inc.</fullName>
+                <default>false</default>
+                <label>Conbraco Industries Inc.</label>
+            </value>
+            <value>
+                <fullName>Conery</fullName>
+                <default>false</default>
+                <label>Conery</label>
+            </value>
+            <value>
+                <fullName>Control Devices Llc</fullName>
+                <default>false</default>
+                <label>Control Devices Llc</label>
+            </value>
+            <value>
+                <fullName>Cooney Coil</fullName>
+                <default>false</default>
+                <label>Cooney Coil</label>
+            </value>
+            <value>
+                <fullName>Crane</fullName>
+                <default>false</default>
+                <label>Crane</label>
+            </value>
+            <value>
+                <fullName>Crane Chempharma Energy Corp</fullName>
+                <default>false</default>
+                <label>Crane Chempharma Energy Corp</label>
+            </value>
+            <value>
+                <fullName>Dagwell Dixie Inc.</fullName>
+                <default>false</default>
+                <label>Dagwell Dixie Inc.</label>
+            </value>
+            <value>
+                <fullName>VFD - Danfoss</fullName>
+                <default>false</default>
+                <label>Danfoss</label>
+            </value>
+            <value>
+                <fullName>Delta Lightning Arrestors</fullName>
+                <default>false</default>
+                <label>Delta Lightning Arrestors</label>
+            </value>
+            <value>
+                <fullName>Delta T</fullName>
+                <default>false</default>
+                <label>Delta T</label>
+            </value>
+            <value>
+                <fullName>Dehumidifier - Desert Aire</fullName>
+                <default>false</default>
+                <label>Desert Aire</label>
+            </value>
+            <value>
+                <fullName>Duncan Equipment</fullName>
+                <default>false</default>
+                <label>Duncan Equipment</label>
+            </value>
+            <value>
+                <fullName>Dungs Combustion Controls</fullName>
+                <default>false</default>
+                <label>Dungs Combustion Controls</label>
+            </value>
+            <value>
+                <fullName>Dunham Bush</fullName>
+                <default>false</default>
+                <label>Dunham Bush</label>
+            </value>
+            <value>
+                <fullName>Duravent</fullName>
+                <default>false</default>
+                <label>Duravent</label>
+            </value>
+            <value>
+                <fullName>Dwyer Instruments</fullName>
+                <default>false</default>
+                <label>Dwyer Instruments</label>
+            </value>
+            <value>
+                <fullName>Dwyer Instruments Inc.</fullName>
+                <default>false</default>
+                <label>Dwyer Instruments Inc.</label>
+            </value>
+            <value>
+                <fullName>EEI Group</fullName>
+                <default>false</default>
+                <label>EEI Group</label>
+            </value>
+            <value>
+                <fullName>Eggelhof</fullName>
+                <default>false</default>
+                <label>Eggelhof</label>
+            </value>
+            <value>
+                <fullName>Enervex</fullName>
+                <default>false</default>
+                <label>Enervex</label>
+            </value>
+            <value>
+                <fullName>Engineered Products</fullName>
+                <default>false</default>
+                <label>Engineered Products</label>
+            </value>
+            <value>
+                <fullName>Enviro-tec</fullName>
+                <default>false</default>
+                <label>Enviro-tec</label>
+            </value>
+            <value>
+                <fullName>Everlasting Valve Co.</fullName>
+                <default>false</default>
+                <label>Everlasting Valve Co.</label>
+            </value>
+            <value>
+                <fullName>Fabtek</fullName>
+                <default>false</default>
+                <label>Fabtek</label>
+            </value>
+            <value>
+                <fullName>Federal Corporation</fullName>
+                <default>false</default>
+                <label>Federal Corporation</label>
+            </value>
+            <value>
+                <fullName>Fedex Freight</fullName>
+                <default>false</default>
+                <label>Fedex Freight</label>
+            </value>
+            <value>
+                <fullName>Ferguson Enterprises Inc. #215</fullName>
+                <default>false</default>
+                <label>Ferguson Enterprises Inc. #215</label>
+            </value>
+            <value>
+                <fullName>Fire Brick Engineers</fullName>
+                <default>false</default>
+                <label>Fire Brick Engineers</label>
+            </value>
+            <value>
+                <fullName>Flomatic</fullName>
+                <default>false</default>
+                <label>Flomatic</label>
+            </value>
+            <value>
+                <fullName>Flow Design</fullName>
+                <default>false</default>
+                <label>Flow Design</label>
+            </value>
+            <value>
+                <fullName>Flow-Tech</fullName>
+                <default>false</default>
+                <label>Flow-Tech</label>
+            </value>
+            <value>
+                <fullName>Franklin Electric Co</fullName>
+                <default>false</default>
+                <label>Franklin Electric Co</label>
+            </value>
+            <value>
+                <fullName>Fraser-Johnston</fullName>
+                <default>false</default>
+                <label>Fraser-Johnston</label>
+            </value>
+            <value>
+                <fullName>Fuji Electric</fullName>
+                <default>false</default>
+                <label>Fuji Electric</label>
+            </value>
+            <value>
+                <fullName>GE</fullName>
+                <default>false</default>
+                <label>GE</label>
+            </value>
+            <value>
+                <fullName>Ge Consumer &amp; Industrial</fullName>
+                <default>false</default>
+                <label>Ge Consumer &amp; Industrial</label>
+            </value>
+            <value>
+                <fullName>Ge Motors</fullName>
+                <default>false</default>
+                <label>Ge Motors</label>
+            </value>
+            <value>
+                <fullName>General Treatment Products</fullName>
+                <default>false</default>
+                <label>General Treatment Products</label>
+            </value>
+            <value>
+                <fullName>Griswold</fullName>
+                <default>false</default>
+                <label>General Water Systems</label>
+            </value>
+            <value>
+                <fullName>GM</fullName>
+                <default>false</default>
+                <label>GM</label>
+            </value>
+            <value>
+                <fullName>Goodway Technologies Corp</fullName>
+                <default>false</default>
+                <label>Goodway Technologies Corp</label>
+            </value>
+            <value>
+                <fullName>Grundfoss</fullName>
+                <default>false</default>
+                <label>Grundfos</label>
+            </value>
+            <value>
+                <fullName>Halmar</fullName>
+                <default>false</default>
+                <label>Halmar</label>
+            </value>
+            <value>
+                <fullName>Halmar Corporation</fullName>
+                <default>false</default>
+                <label>Halmar Corporation</label>
+            </value>
+            <value>
+                <fullName>Hays Fluid Controls</fullName>
+                <default>false</default>
+                <label>Hays Fluid Controls</label>
+            </value>
+            <value>
+                <fullName>Heat Pumps - Other</fullName>
+                <default>false</default>
+                <label>Heat Pumps - Other</label>
+            </value>
+            <value>
+                <fullName>Heatrex</fullName>
+                <default>false</default>
+                <label>Heatrex</label>
+            </value>
+            <value>
+                <fullName>Heatsource</fullName>
+                <default>false</default>
+                <label>Heatsource</label>
+            </value>
+            <value>
+                <fullName>Hitachi</fullName>
+                <default>false</default>
+                <label>Hitachi</label>
+            </value>
+            <value>
+                <fullName>Hydro-Lectric Equipment</fullName>
+                <default>false</default>
+                <label>Hydro-Lectric Equipment</label>
+            </value>
+            <value>
+                <fullName>Hydronic Components</fullName>
+                <default>false</default>
+                <label>Hydronic Components</label>
+            </value>
+            <value>
+                <fullName>Ice Western</fullName>
+                <default>false</default>
+                <label>Ice Western</label>
+            </value>
+            <value>
+                <fullName>IEC</fullName>
+                <default>false</default>
+                <label>IEC</label>
+            </value>
+            <value>
+                <fullName>Industrial Motor Service</fullName>
+                <default>false</default>
+                <label>Industrial Motor Service</label>
+            </value>
+            <value>
+                <fullName>J.L. Wingert</fullName>
+                <default>false</default>
+                <label>J.L. Wingert</label>
+            </value>
+            <value>
+                <fullName>Jetson</fullName>
+                <default>false</default>
+                <label>Jetson</label>
+            </value>
+            <value>
+                <fullName>JJM Alkaline</fullName>
+                <default>false</default>
+                <label>JJM Alkaline</label>
+            </value>
+            <value>
+                <fullName>Jjm Alkaline Technologies (Formerly Jjm Boiler Boiler Works Inc.)</fullName>
+                <default>false</default>
+                <label>Jjm Alkaline Technologies (Formerly Jjm Boiler Boiler Works Inc.)</label>
+            </value>
+            <value>
+                <fullName>John Crane</fullName>
+                <default>false</default>
+                <label>John Crane</label>
+            </value>
+            <value>
+                <fullName>Johnson Controls</fullName>
+                <default>false</default>
+                <label>Johnson Controls</label>
+            </value>
+            <value>
+                <fullName>Kelvion</fullName>
+                <default>false</default>
+                <label>Kelvion</label>
+            </value>
+            <value>
+                <fullName>Kinetics Noise Control</fullName>
+                <default>false</default>
+                <label>Kinetics Noise Control</label>
+            </value>
+            <value>
+                <fullName>Lennox</fullName>
+                <default>false</default>
+                <label>Lennox</label>
+            </value>
+            <value>
+                <fullName>Linesets Inc.</fullName>
+                <default>false</default>
+                <label>Linesets Inc.</label>
+            </value>
+            <value>
+                <fullName>Lochinvar</fullName>
+                <default>false</default>
+                <label>Lochinvar</label>
+            </value>
+            <value>
+                <fullName>Lochinvar Corp (School)</fullName>
+                <default>false</default>
+                <label>Lochinvar Corp (School)</label>
+            </value>
+            <value>
+                <fullName>Cooling Towers - Marley/SPX</fullName>
+                <default>false</default>
+                <label>Marley/SPX</label>
+            </value>
+            <value>
+                <fullName>Master Pumps &amp; Power</fullName>
+                <default>false</default>
+                <label>Master Pumps &amp; Power</label>
+            </value>
+            <value>
+                <fullName>Max-Air Technology</fullName>
+                <default>false</default>
+                <label>Max-Air Technology</label>
+            </value>
+            <value>
+                <fullName>Metal-Fab</fullName>
+                <default>false</default>
+                <label>Metal-Fab</label>
+            </value>
+            <value>
+                <fullName>Midwest Machinery</fullName>
+                <default>false</default>
+                <label>Midwest Machinery</label>
+            </value>
+            <value>
+                <fullName>Mid-West Plumbing Products</fullName>
+                <default>false</default>
+                <label>Mid-West Plumbing Products</label>
+            </value>
+            <value>
+                <fullName>Miljoco</fullName>
+                <default>false</default>
+                <label>Miljoco</label>
+            </value>
+            <value>
+                <fullName>Miller-Picking</fullName>
+                <default>false</default>
+                <label>Miller-Picking</label>
+            </value>
+            <value>
+                <fullName>Milton Industries</fullName>
+                <default>false</default>
+                <label>Milton Industries</label>
+            </value>
+            <value>
+                <fullName>Moffitt</fullName>
+                <default>false</default>
+                <label>Moffitt</label>
+            </value>
+            <value>
+                <fullName>Mueller</fullName>
+                <default>false</default>
+                <label>Mueller</label>
+            </value>
+            <value>
+                <fullName>National Wholesale</fullName>
+                <default>false</default>
+                <label>National Wholesale</label>
+            </value>
+            <value>
+                <fullName>Neuco</fullName>
+                <default>false</default>
+                <label>Neuco</label>
+            </value>
+            <value>
+                <fullName>Nexus</fullName>
+                <default>false</default>
+                <label>Nexus</label>
+            </value>
+            <value>
+                <fullName>Non Represented Brand</fullName>
+                <default>false</default>
+                <label>Non Represented Brand</label>
+            </value>
+            <value>
+                <fullName>North American Safety Valve</fullName>
+                <default>false</default>
+                <label>North American Safety Valve</label>
+            </value>
+            <value>
+                <fullName>Nutech</fullName>
+                <default>false</default>
+                <label>Nutech</label>
+            </value>
+            <value>
+                <fullName>O. G. Supply, Llc</fullName>
+                <default>false</default>
+                <label>O. G. Supply, Llc</label>
+            </value>
+            <value>
+                <fullName>Oconnor Company</fullName>
+                <default>false</default>
+                <label>Oconnor Company</label>
+            </value>
+            <value>
+                <fullName>Otterbine Barebo</fullName>
+                <default>false</default>
+                <label>Otterbine Barebo</label>
+            </value>
+            <value>
+                <fullName>Pace</fullName>
+                <default>false</default>
+                <label>Pace</label>
+            </value>
+            <value>
+                <fullName>Parker Boiler</fullName>
+                <default>false</default>
+                <label>Parker Boiler</label>
+            </value>
+            <value>
+                <fullName>Patterson</fullName>
+                <default>false</default>
+                <label>Patterson</label>
+            </value>
+            <value>
+                <fullName>PE&amp;E</fullName>
+                <default>false</default>
+                <label>PE&amp;E</label>
+            </value>
+            <value>
+                <fullName>Pentair Flow Technologies</fullName>
+                <default>false</default>
+                <label>Pentair Flow Technologies</label>
+            </value>
+            <value>
+                <fullName>PEP</fullName>
+                <default>false</default>
+                <label>PEP</label>
+            </value>
+            <value>
+                <fullName>Pepco</fullName>
+                <default>false</default>
+                <label>Pepco</label>
+            </value>
+            <value>
+                <fullName>Permatron</fullName>
+                <default>false</default>
+                <label>Permatron</label>
+            </value>
+            <value>
+                <fullName>Pietro Fiorentini</fullName>
+                <default>false</default>
+                <label>Pietro Fiorentini</label>
+            </value>
+            <value>
+                <fullName>Plasma-Air</fullName>
+                <default>false</default>
+                <label>Plasma-Air</label>
+            </value>
+            <value>
+                <fullName>Polaris</fullName>
+                <default>false</default>
+                <label>Polaris</label>
+            </value>
+            <value>
+                <fullName>Power Equip &amp; Engineering</fullName>
+                <default>false</default>
+                <label>Power Equip &amp; Engineering</label>
+            </value>
+            <value>
+                <fullName>Power Equipment Company</fullName>
+                <default>false</default>
+                <label>Power Equipment Company</label>
+            </value>
+            <value>
+                <fullName>Power Flame</fullName>
+                <default>false</default>
+                <label>Power Flame</label>
+            </value>
+            <value>
+                <fullName>Power Flame Inc.</fullName>
+                <default>false</default>
+                <label>Power Flame Inc.</label>
+            </value>
+            <value>
+                <fullName>Precision Coils</fullName>
+                <default>false</default>
+                <label>Precision Coils</label>
+            </value>
+            <value>
+                <fullName>Pumps &amp; Accessories - Other</fullName>
+                <default>false</default>
+                <label>Pumps &amp; Accessories - Other</label>
+            </value>
+            <value>
+                <fullName>Puroflux</fullName>
+                <default>false</default>
+                <label>Puroflux</label>
+            </value>
+            <value>
+                <fullName>Quantch</fullName>
+                <default>false</default>
+                <label>Quantech</label>
+            </value>
+            <value>
+                <fullName>Quantumflo</fullName>
+                <default>false</default>
+                <label>Quantumflo</label>
+            </value>
+            <value>
+                <fullName>Quest</fullName>
+                <default>false</default>
+                <label>Quest</label>
+            </value>
+            <value>
+                <fullName>Reco Commercial</fullName>
+                <default>false</default>
+                <label>Reco Commercial</label>
+            </value>
+            <value>
+                <fullName>Recold</fullName>
+                <default>false</default>
+                <label>Recold</label>
+            </value>
+            <value>
+                <fullName>Red-White Valve Corporation</fullName>
+                <default>false</default>
+                <label>Red-White Valve Corporation</label>
+            </value>
+            <value>
+                <fullName>Reftekk</fullName>
+                <default>false</default>
+                <label>Reftekk</label>
+            </value>
+            <value>
+                <fullName>Riex Co.</fullName>
+                <default>false</default>
+                <label>Riex Co.</label>
+            </value>
+            <value>
+                <fullName>Samsung HVAC</fullName>
+                <default>false</default>
+                <label>Samsung HVAC</label>
+            </value>
+            <value>
+                <fullName>Seasons-4</fullName>
+                <default>false</default>
+                <label>Seasons-4</label>
+            </value>
+            <value>
+                <fullName>See Aceheaters</fullName>
+                <default>false</default>
+                <label>See Aceheaters</label>
+            </value>
+            <value>
+                <fullName>Seresco</fullName>
+                <default>false</default>
+                <label>Seresco</label>
+            </value>
+            <value>
+                <fullName>SE Rhombus</fullName>
+                <default>false</default>
+                <label>SE Rhombus</label>
+            </value>
+            <value>
+                <fullName>Shipco</fullName>
+                <default>false</default>
+                <label>Shipco</label>
+            </value>
+            <value>
+                <fullName>Shippensburg Pump Co.</fullName>
+                <default>false</default>
+                <label>Shippensburg Pump Co.</label>
+            </value>
+            <value>
+                <fullName>SJ Electro Systems</fullName>
+                <default>false</default>
+                <label>SJ Electro Systems</label>
+            </value>
+            <value>
+                <fullName>Sj Electro Systems Inc.</fullName>
+                <default>false</default>
+                <label>Sj Electro Systems Inc.</label>
+            </value>
+            <value>
+                <fullName>SJE Rhombus</fullName>
+                <default>false</default>
+                <label>SJE Rhombus</label>
+            </value>
+            <value>
+                <fullName>Smardt</fullName>
+                <default>false</default>
+                <label>Smardt</label>
+            </value>
+            <value>
+                <fullName>Spark</fullName>
+                <default>false</default>
+                <label>Spark</label>
+            </value>
+            <value>
+                <fullName>Spirotherm</fullName>
+                <default>false</default>
+                <label>Spirotherm</label>
+            </value>
+            <value>
+                <fullName>SPX Flow</fullName>
+                <default>false</default>
+                <label>SPX Flow</label>
+            </value>
+            <value>
+                <fullName>Stancor</fullName>
+                <default>false</default>
+                <label>Stancor</label>
+            </value>
+            <value>
+                <fullName>Steele Plastics</fullName>
+                <default>false</default>
+                <label>Steele Plastics</label>
+            </value>
+            <value>
+                <fullName>Sterling</fullName>
+                <default>false</default>
+                <label>Sterling</label>
+            </value>
+            <value>
+                <fullName>Stuart C. Irby Co</fullName>
+                <default>false</default>
+                <label>Stuart C. Irby Co</label>
+            </value>
+            <value>
+                <fullName>Sure Flow equipment</fullName>
+                <default>false</default>
+                <label>Sure Flow equipment</label>
+            </value>
+            <value>
+                <fullName>Taco</fullName>
+                <default>false</default>
+                <label>Taco</label>
+            </value>
+            <value>
+                <fullName>Tel-Tru Manufacturing</fullName>
+                <default>false</default>
+                <label>Tel-Tru Manufacturing</label>
+            </value>
+            <value>
+                <fullName>Tel-Tru Manufacturing Co</fullName>
+                <default>false</default>
+                <label>Tel-Tru Manufacturing Co</label>
+            </value>
+            <value>
+                <fullName>TempMaster</fullName>
+                <default>false</default>
+                <label>TempMaster</label>
+            </value>
+            <value>
+                <fullName>Thrush</fullName>
+                <default>false</default>
+                <label>Thrush</label>
+            </value>
+            <value>
+                <fullName>Titan Flow Control</fullName>
+                <default>false</default>
+                <label>Titan Flow Control</label>
+            </value>
+            <value>
+                <fullName>Tjernlund Products</fullName>
+                <default>false</default>
+                <label>Tjernlund Products</label>
+            </value>
+            <value>
+                <fullName>Topp Industries</fullName>
+                <default>false</default>
+                <label>Topp Industries</label>
+            </value>
+            <value>
+                <fullName>Total Pump &amp; Supply</fullName>
+                <default>false</default>
+                <label>Total Pump &amp; Supply</label>
+            </value>
+            <value>
+                <fullName>Tranter</fullName>
+                <default>false</default>
+                <label>Tranter</label>
+            </value>
+            <value>
+                <fullName>Tulco Oils</fullName>
+                <default>false</default>
+                <label>Tulco Oils</label>
+            </value>
+            <value>
+                <fullName>Twin City Hose</fullName>
+                <default>false</default>
+                <label>Twin City Hose</label>
+            </value>
+            <value>
+                <fullName>U.S. Filter</fullName>
+                <default>false</default>
+                <label>U.S. Filter</label>
+            </value>
+            <value>
+                <fullName>United Brass Works</fullName>
+                <default>false</default>
+                <label>United Brass Works</label>
+            </value>
+            <value>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+                <label>Unknown</label>
+            </value>
+            <value>
+                <fullName>Unlaub</fullName>
+                <default>false</default>
+                <label>Unlaub</label>
+            </value>
+            <value>
+                <fullName>UnlaubÂ</fullName>
+                <default>false</default>
+                <label>UnlaubÂ</label>
+            </value>
+            <value>
+                <fullName>VAW</fullName>
+                <default>false</default>
+                <label>VAW</label>
+            </value>
+            <value>
+                <fullName>Vent-Rite</fullName>
+                <default>false</default>
+                <label>Vent-Rite</label>
+            </value>
+            <value>
+                <fullName>VFD - Other</fullName>
+                <default>false</default>
+                <label>VFD - Other</label>
+            </value>
+            <value>
+                <fullName>Vicar Industries</fullName>
+                <default>false</default>
+                <label>Vicar Industries</label>
+            </value>
+            <value>
+                <fullName>VMC</fullName>
+                <default>false</default>
+                <label>VMC</label>
+            </value>
+            <value>
+                <fullName>VTS</fullName>
+                <default>false</default>
+                <label>VTS</label>
+            </value>
+            <value>
+                <fullName>Vulcan</fullName>
+                <default>false</default>
+                <label>Vulcan</label>
+            </value>
+            <value>
+                <fullName>Watson-McDaniel</fullName>
+                <default>false</default>
+                <label>Watson-McDaniel</label>
+            </value>
+            <value>
+                <fullName>Watts Water Technologies</fullName>
+                <default>false</default>
+                <label>Watts Water Technologies</label>
+            </value>
+            <value>
+                <fullName>Weil McClain</fullName>
+                <default>false</default>
+                <label>Weil McClain</label>
+            </value>
+            <value>
+                <fullName>Weil Mclain</fullName>
+                <default>false</default>
+                <label>Weil Mclain</label>
+            </value>
+            <value>
+                <fullName>Wessels</fullName>
+                <default>false</default>
+                <label>Wessels</label>
+            </value>
+            <value>
+                <fullName>Westermann</fullName>
+                <default>false</default>
+                <label>Westermann</label>
+            </value>
+            <value>
+                <fullName>Whelan</fullName>
+                <default>false</default>
+                <label>Whalen</label>
+            </value>
+            <value>
+                <fullName>Wilkins Regulator/Zurn</fullName>
+                <default>false</default>
+                <label>Wilkins Regulator/Zurn</label>
+            </value>
+            <value>
+                <fullName>Williams</fullName>
+                <default>false</default>
+                <label>Williams</label>
+            </value>
+            <value>
+                <fullName>Wilo</fullName>
+                <default>false</default>
+                <label>Wilo</label>
+            </value>
+            <value>
+                <fullName>Winters Instruments</fullName>
+                <default>false</default>
+                <label>Winters Instruments</label>
+            </value>
+            <value>
+                <fullName>Xylem</fullName>
+                <default>false</default>
+                <label>Xylem</label>
+            </value>
+            <value>
+                <fullName>York</fullName>
+                <default>false</default>
+                <label>York</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

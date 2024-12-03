@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Expenses</fullName>
+    <columns>Log_A_Call__c</columns>
+    <columns>NAME</columns>
+    <columns>Expense_Type__c</columns>
+    <columns>Description_Or_Notes_Related_To_Expense__c</columns>
+    <columns>Expense_Amount__c</columns>
+    <columns>Expense_Date__c</columns>
+    <columns>Submit_Request__c</columns>
+    <columns>Vendor_Or_Venue__c</columns>
+    <columns>Total_Cost__c</columns>
+    <columns>Project__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>greaterThan</operation>
+        <value>1/1/2023 12:00 AM</value>
+    </filters>
+    <label>Expenses</label>
+</ListView>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sale_Type__c</fullName>
+    <label>Sale Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>B/R</fullName>
+                <default>false</default>
+                <label>B/R</label>
+            </value>
+            <value>
+                <fullName>D/S</fullName>
+                <default>false</default>
+                <label>D/S</label>
+            </value>
+            <value>
+                <fullName>C/R</fullName>
+                <default>false</default>
+                <label>C/R</label>
+            </value>
+            <value>
+                <fullName>P/T</fullName>
+                <default>false</default>
+                <label>P/T</label>
+            </value>
+            <value>
+                <fullName>LAB</fullName>
+                <default>false</default>
+                <label>LAB</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

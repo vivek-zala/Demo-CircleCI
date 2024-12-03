@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_of_Call__c</fullName>
+    <label>Type of Call</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Client Office Visit</fullName>
+                <default>false</default>
+                <label>Client Office Visit</label>
+            </value>
+            <value>
+                <fullName>End User Visit</fullName>
+                <default>false</default>
+                <label>End User Visit</label>
+            </value>
+            <value>
+                <fullName>Entertain (Hpy Hr, Glf, Gms)</fullName>
+                <default>false</default>
+                <label>Entertain (Hpy Hr, Glf, Gms)</label>
+            </value>
+            <value>
+                <fullName>Expense Only</fullName>
+                <default>false</default>
+                <label>Expense Only</label>
+            </value>
+            <value>
+                <fullName>Factory Visit (Travel)</fullName>
+                <default>false</default>
+                <label>Factory Visit (Travel)</label>
+            </value>
+            <value>
+                <fullName>Industry Event (Ashrae etc.)</fullName>
+                <default>false</default>
+                <label>Industry Event (Ashrae etc.)</label>
+            </value>
+            <value>
+                <fullName>Meal</fullName>
+                <default>false</default>
+                <label>Meal</label>
+            </value>
+            <value>
+                <fullName>Site Visit (Project Related)</fullName>
+                <default>false</default>
+                <label>Site Visit (Project Related)</label>
+            </value>
+            <value>
+                <fullName>Training (L-N-L, Seminar)</fullName>
+                <default>false</default>
+                <label>Training (L-N-L, Seminar)</label>
+            </value>
+            <value>
+                <fullName>Factory Visit (Local)</fullName>
+                <default>false</default>
+                <label>Factory Visit (Local)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Owner__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISBLANK(Bid_Contact__c), Mechanical_Contractor__r.Owner.FirstName + &quot; &quot; + Mechanical_Contractor__r.Owner.LastName, Bid_Contact__r.Account.Owner.FirstName + &quot; &quot; +Bid_Contact__r.Account.Owner.LastName)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Account Owner</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

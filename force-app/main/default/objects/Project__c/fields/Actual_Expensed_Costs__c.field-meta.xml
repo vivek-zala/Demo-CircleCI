@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Actual_Expensed_Costs__c</fullName>
+    <formula>(Total_Labour_JE_Debit__c - Total_Labour_JE_Credit__c)+(Total_Other_JE_Debit__c-Total_Other_JE_Credit__c)+ Opportunity__r.Inventory_Cost_total__c +  Opportunity__r.PO_Total__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Actual Expensed Costs</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Coffee_s_For_Closers</fullName>
+    <columns>CREATEDBY_USER</columns>
+    <columns>Date__c</columns>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Type__c</field>
+        <operation>equals</operation>
+        <value>Breakfast/Lunch,Mini Event,Lunch and Learn</value>
+    </filters>
+    <filters>
+        <field>Date__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>9/25/2017</value>
+    </filters>
+    <label>Coffee&apos;s For Closers</label>
+</ListView>

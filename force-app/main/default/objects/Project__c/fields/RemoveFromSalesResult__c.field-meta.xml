@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RemoveFromSalesResult__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Checked data will be not consider for salesResult calculation</description>
+    <label>Remove From SalesResult</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

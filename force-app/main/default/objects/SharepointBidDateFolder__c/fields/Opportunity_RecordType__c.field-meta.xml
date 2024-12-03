@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_RecordType__c</fullName>
+    <label>Opportunity RecordType</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Equipment</fullName>
+                <default>false</default>
+                <label>Equipment</label>
+            </value>
+            <value>
+                <fullName>Parts</fullName>
+                <default>false</default>
+                <label>Parts</label>
+            </value>
+            <value>
+                <fullName>General Contracting</fullName>
+                <default>false</default>
+                <label>General Contracting</label>
+            </value>
+            <value>
+                <fullName>MaRRS</fullName>
+                <default>false</default>
+                <label>MaRRS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

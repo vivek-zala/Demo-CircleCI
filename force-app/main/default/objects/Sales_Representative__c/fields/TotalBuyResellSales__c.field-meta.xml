@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TotalBuyResellSales__c</fullName>
+    <description>The above formula is calculated from project Financials tab --&gt; Margin
+And we&apos;re using this formula field in Sales Result dashboard for--&gt; Total Buy Resell Sales
+&amp; Total Buy Resell Sales is calculated in Opportunity field TotalBuyResellSales__c &amp; only (* )multiply by split is done hear.</description>
+    <formula>IF( ISNULL( Opportunity__r.TotalBuyResellSales__c ) , 0 , Opportunity__r.TotalBuyResellSales__c ) *  IF( ISNULL( Commision__c ) , 0 , Commision__c )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Buy Resell Sales</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

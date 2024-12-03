@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Active_Projects_STL</fullName>
+    <columns>OWNER.ALIAS</columns>
+    <columns>NAME</columns>
+    <columns>PO_Number__c</columns>
+    <columns>Project_Stage__c</columns>
+    <columns>ProjectShipDate__c</columns>
+    <columns>Active_Financial_Quote__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>LAST_ACTIVITY</columns>
+    <columns>Opportunity__c</columns>
+    <columns>Project_Status__c</columns>
+    <columns>Project_Number__c</columns>
+    <columns>Return_to_Accounting__c</columns>
+    <columns>Invoice_Date__c</columns>
+    <columns>Opportunity_Record_Type__c</columns>
+    <columns>Ledger__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ProjectShipDate__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>Project_Stage__c</field>
+        <operation>equals</operation>
+        <value>Partially paid,All paid</value>
+    </filters>
+    <label>Active Projects STL</label>
+    <sharedTo>
+        <role>Saint_Louis</role>
+    </sharedTo>
+</ListView>

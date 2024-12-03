@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Rep_Rule</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( NOT(ISBLANK( Sales_Rep__c )) , NOT(ISPICKVAL( Master_Report__c , &quot;&quot;)) )</errorConditionFormula>
+    <errorMessage>You cannot enter both values ​​for the Master and Sales Rep fields. For User Select Sales Rep &amp; For Office Location Select Master</errorMessage>
+</ValidationRule>

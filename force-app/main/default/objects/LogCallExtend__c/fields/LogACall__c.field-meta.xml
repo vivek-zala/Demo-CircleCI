@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LogACall__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Log A Call</label>
+    <referenceTo>LogACall__c</referenceTo>
+    <relationshipLabel>LogCallExtends</relationshipLabel>
+    <relationshipName>LogCallExtends</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

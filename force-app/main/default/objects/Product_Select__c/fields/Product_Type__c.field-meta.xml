@@ -1,0 +1,2574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Type__c</fullName>
+    <label>Product Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Manufacturer__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Accessories (hose kits, etc)</fullName>
+                <default>false</default>
+                <label>Accessories (hose kits, etc)</label>
+            </value>
+            <value>
+                <fullName>Actuators</fullName>
+                <default>false</default>
+                <label>Actuators</label>
+            </value>
+            <value>
+                <fullName>Adapters</fullName>
+                <default>false</default>
+                <label>Adapters</label>
+            </value>
+            <value>
+                <fullName>Air Eliminators</fullName>
+                <default>false</default>
+                <label>Air Eliminators</label>
+            </value>
+            <value>
+                <fullName>Air Handler</fullName>
+                <default>false</default>
+                <label>Air Handler</label>
+            </value>
+            <value>
+                <fullName>Air Vent</fullName>
+                <default>false</default>
+                <label>Air Vent</label>
+            </value>
+            <value>
+                <fullName>Assembly</fullName>
+                <default>false</default>
+                <label>Assembly</label>
+            </value>
+            <value>
+                <fullName>AtmosAir</fullName>
+                <default>false</default>
+                <label>AtmosAir</label>
+            </value>
+            <value>
+                <fullName>Bag Filter</fullName>
+                <default>false</default>
+                <label>Bag Filter</label>
+            </value>
+            <value>
+                <fullName>Balance Valve</fullName>
+                <default>false</default>
+                <label>Balance Valve</label>
+            </value>
+            <value>
+                <fullName>Bands</fullName>
+                <default>false</default>
+                <label>Bands</label>
+            </value>
+            <value>
+                <fullName>Baseboard</fullName>
+                <default>false</default>
+                <label>Baseboard</label>
+            </value>
+            <value>
+                <fullName>Bearings</fullName>
+                <default>false</default>
+                <label>Bearings</label>
+            </value>
+            <value>
+                <fullName>Belt Drive Units</fullName>
+                <default>false</default>
+                <label>Belt Drive Units</label>
+            </value>
+            <value>
+                <fullName>BiPolar Ionizer</fullName>
+                <default>false</default>
+                <label>BiPolar Ionizer</label>
+            </value>
+            <value>
+                <fullName>Blades</fullName>
+                <default>false</default>
+                <label>Blades</label>
+            </value>
+            <value>
+                <fullName>Blower Coil Unit</fullName>
+                <default>false</default>
+                <label>Blower Coil Unit</label>
+            </value>
+            <value>
+                <fullName>Boiler - Condensing</fullName>
+                <default>false</default>
+                <label>Boiler - Condensing</label>
+            </value>
+            <value>
+                <fullName>Boiler - Condensing - Other</fullName>
+                <default>false</default>
+                <label>Boiler - Condensing - Other</label>
+            </value>
+            <value>
+                <fullName>Boiler - NON Condensing</fullName>
+                <default>false</default>
+                <label>Boiler - NON Condensing</label>
+            </value>
+            <value>
+                <fullName>Brazed Plate Heat Exchanger</fullName>
+                <default>false</default>
+                <label>Brazed Plate Heat Exchanger</label>
+            </value>
+            <value>
+                <fullName>Budgeting</fullName>
+                <default>false</default>
+                <label>Budgeting</label>
+            </value>
+            <value>
+                <fullName>Buffer Tank</fullName>
+                <default>false</default>
+                <label>Buffer Tank</label>
+            </value>
+            <value>
+                <fullName>Burners</fullName>
+                <default>false</default>
+                <label>Burners</label>
+            </value>
+            <value>
+                <fullName>Bushings</fullName>
+                <default>false</default>
+                <label>Bushings</label>
+            </value>
+            <value>
+                <fullName>Cabinet Heater Unit</fullName>
+                <default>false</default>
+                <label>Cabinet Heater Unit</label>
+            </value>
+            <value>
+                <fullName>Cabinet Unit Heaters</fullName>
+                <default>false</default>
+                <label>Cabinet Unit Heaters</label>
+            </value>
+            <value>
+                <fullName>Caps</fullName>
+                <default>false</default>
+                <label>Caps</label>
+            </value>
+            <value>
+                <fullName>Centrifugal Separator</fullName>
+                <default>false</default>
+                <label>Centrifugal Separator</label>
+            </value>
+            <value>
+                <fullName>Chassis Water Source Heat Pump</fullName>
+                <default>false</default>
+                <label>Chassis Water Source Heat Pump</label>
+            </value>
+            <value>
+                <fullName>Chillers - Air Cooled</fullName>
+                <default>false</default>
+                <label>Chillers - Air Cooled</label>
+            </value>
+            <value>
+                <fullName>Chillers - Water Cooled</fullName>
+                <default>false</default>
+                <label>Chillers - Water Cooled</label>
+            </value>
+            <value>
+                <fullName>Collars</fullName>
+                <default>false</default>
+                <label>Collars</label>
+            </value>
+            <value>
+                <fullName>Commission</fullName>
+                <default>false</default>
+                <label>Commission</label>
+            </value>
+            <value>
+                <fullName>Compressors</fullName>
+                <default>false</default>
+                <label>Compressors</label>
+            </value>
+            <value>
+                <fullName>Boiler - Condensing - Advantus</fullName>
+                <default>false</default>
+                <label>Condensing Boiler - Fire Tube</label>
+            </value>
+            <value>
+                <fullName>Boiler - Condensing - Dynaflame</fullName>
+                <default>false</default>
+                <label>Condensing Boiler - Water Tube</label>
+            </value>
+            <value>
+                <fullName>Connectors</fullName>
+                <default>false</default>
+                <label>Connectors</label>
+            </value>
+            <value>
+                <fullName>Controller</fullName>
+                <default>false</default>
+                <label>Controller</label>
+            </value>
+            <value>
+                <fullName>Controls</fullName>
+                <default>false</default>
+                <label>Controls</label>
+            </value>
+            <value>
+                <fullName>Controls (t-stats, etc)</fullName>
+                <default>false</default>
+                <label>Controls (t-stats, etc)</label>
+            </value>
+            <value>
+                <fullName>Copper Accessories</fullName>
+                <default>false</default>
+                <label>Copper Accessories</label>
+            </value>
+            <value>
+                <fullName>Copper_pipe</fullName>
+                <default>false</default>
+                <label>Copper Pipe</label>
+            </value>
+            <value>
+                <fullName>Copper Silver Ionizer</fullName>
+                <default>false</default>
+                <label>Copper Silver Ionizer</label>
+            </value>
+            <value>
+                <fullName>Copper Tube</fullName>
+                <default>false</default>
+                <label>Copper Tube</label>
+            </value>
+            <value>
+                <fullName>Couplers</fullName>
+                <default>false</default>
+                <label>Couplers</label>
+            </value>
+            <value>
+                <fullName>CRAC Unit</fullName>
+                <default>false</default>
+                <label>CRAC Unit</label>
+            </value>
+            <value>
+                <fullName>Creative Service</fullName>
+                <default>false</default>
+                <label>Creative Service</label>
+            </value>
+            <value>
+                <fullName>Dampers</fullName>
+                <default>false</default>
+                <label>Dampers</label>
+            </value>
+            <value>
+                <fullName>Daylighting Ventilation</fullName>
+                <default>false</default>
+                <label>Daylighting Ventilation</label>
+            </value>
+            <value>
+                <fullName>Dehumidification System</fullName>
+                <default>false</default>
+                <label>Dehumidification System</label>
+            </value>
+            <value>
+                <fullName>Dehumidifier - Dedicated Outdoor Air System</fullName>
+                <default>false</default>
+                <label>Dehumidifier - Dedicated Outdoor Air System</label>
+            </value>
+            <value>
+                <fullName>Dehumidifier - Dehumidification System</fullName>
+                <default>false</default>
+                <label>Dehumidifier - Dehumidification System</label>
+            </value>
+            <value>
+                <fullName>Dehumidifier - GrowAire</fullName>
+                <default>false</default>
+                <label>Dehumidifier - GrowAire</label>
+            </value>
+            <value>
+                <fullName>Dehumidifier - Indoor Pool System</fullName>
+                <default>false</default>
+                <label>Dehumidifier - Indoor Pool System</label>
+            </value>
+            <value>
+                <fullName>Dehumidifier - Other</fullName>
+                <default>false</default>
+                <label>Dehumidifier - Other</label>
+            </value>
+            <value>
+                <fullName>Dehumidifier - Parts</fullName>
+                <default>false</default>
+                <label>Dehumidifier - Parts</label>
+            </value>
+            <value>
+                <fullName>Dehumidifier - Portable System</fullName>
+                <default>false</default>
+                <label>Dehumidifier - Portable System</label>
+            </value>
+            <value>
+                <fullName>Displays</fullName>
+                <default>false</default>
+                <label>Displays</label>
+            </value>
+            <value>
+                <fullName>DOAS</fullName>
+                <default>false</default>
+                <label>DOAS</label>
+            </value>
+            <value>
+                <fullName>Driveshaft</fullName>
+                <default>false</default>
+                <label>Driveshaft</label>
+            </value>
+            <value>
+                <fullName>Electrode</fullName>
+                <default>false</default>
+                <label>Electrode</label>
+            </value>
+            <value>
+                <fullName>EP-VFD Stock</fullName>
+                <default>false</default>
+                <label>EP-VFD Stock</label>
+            </value>
+            <value>
+                <fullName>Evaporative Cooler</fullName>
+                <default>false</default>
+                <label>Evaporative Cooler</label>
+            </value>
+            <value>
+                <fullName>Expansion Tank</fullName>
+                <default>false</default>
+                <label>Expansion Tank</label>
+            </value>
+            <value>
+                <fullName>Extensions</fullName>
+                <default>false</default>
+                <label>Extensions</label>
+            </value>
+            <value>
+                <fullName>Fan Coils</fullName>
+                <default>false</default>
+                <label>Fan Coils</label>
+            </value>
+            <value>
+                <fullName>Fan Kits</fullName>
+                <default>false</default>
+                <label>Fan Kits</label>
+            </value>
+            <value>
+                <fullName>Fans</fullName>
+                <default>false</default>
+                <label>Fans</label>
+            </value>
+            <value>
+                <fullName>Filter</fullName>
+                <default>false</default>
+                <label>Filter</label>
+            </value>
+            <value>
+                <fullName>Filter Skid</fullName>
+                <default>false</default>
+                <label>Filter Skid</label>
+            </value>
+            <value>
+                <fullName>Fittings</fullName>
+                <default>false</default>
+                <label>Fittings</label>
+            </value>
+            <value>
+                <fullName>Flame Rods</fullName>
+                <default>false</default>
+                <label>Flame Rods</label>
+            </value>
+            <value>
+                <fullName>Flanges</fullName>
+                <default>false</default>
+                <label>Flanges</label>
+            </value>
+            <value>
+                <fullName>Floats</fullName>
+                <default>false</default>
+                <label>Floats</label>
+            </value>
+            <value>
+                <fullName>Flow-Tech</fullName>
+                <default>false</default>
+                <label>Flow-Tech</label>
+            </value>
+            <value>
+                <fullName>Fluidcooler - Marley</fullName>
+                <default>false</default>
+                <label>Fluidcooler - Marley</label>
+            </value>
+            <value>
+                <fullName>Fluidcooler - Other</fullName>
+                <default>false</default>
+                <label>Fluidcooler - Other</label>
+            </value>
+            <value>
+                <fullName>Fluidcooler - Recold</fullName>
+                <default>false</default>
+                <label>Fluidcooler - Recold</label>
+            </value>
+            <value>
+                <fullName>Gas Fired Unit Heater</fullName>
+                <default>false</default>
+                <label>Gas Fired Unit Heater</label>
+            </value>
+            <value>
+                <fullName>Gaskets</fullName>
+                <default>false</default>
+                <label>Gaskets</label>
+            </value>
+            <value>
+                <fullName>Gauges</fullName>
+                <default>false</default>
+                <label>Gauges</label>
+            </value>
+            <value>
+                <fullName>Gears</fullName>
+                <default>false</default>
+                <label>Gears</label>
+            </value>
+            <value>
+                <fullName>Glycol Make-Up Package</fullName>
+                <default>false</default>
+                <label>Glycol Make-Up Package</label>
+            </value>
+            <value>
+                <fullName>Grease</fullName>
+                <default>false</default>
+                <label>Grease</label>
+            </value>
+            <value>
+                <fullName>GrowAire</fullName>
+                <default>false</default>
+                <label>GrowAire</label>
+            </value>
+            <value>
+                <fullName>Heat Exchanger / P&amp;F</fullName>
+                <default>false</default>
+                <label>Heat Exchanger / P&amp;F</label>
+            </value>
+            <value>
+                <fullName>Heat Exchanger / S&amp;T</fullName>
+                <default>false</default>
+                <label>Heat Exchanger / S&amp;T</label>
+            </value>
+            <value>
+                <fullName>Heating Element</fullName>
+                <default>false</default>
+                <label>Heating Element</label>
+            </value>
+            <value>
+                <fullName>Heat Pump - H2O/H20</fullName>
+                <default>false</default>
+                <label>Heat Pump - H2O/H20</label>
+            </value>
+            <value>
+                <fullName>Heat Pump - Roof Tope</fullName>
+                <default>false</default>
+                <label>Heat Pump - Roof Top</label>
+            </value>
+            <value>
+                <fullName>Heat Pump - Standard</fullName>
+                <default>false</default>
+                <label>Heat Pump - Standard</label>
+            </value>
+            <value>
+                <fullName>Heat Pump - Vertical Stack</fullName>
+                <default>false</default>
+                <label>Heat Pump - Vertical Stack</label>
+            </value>
+            <value>
+                <fullName>Horizontal Units</fullName>
+                <default>false</default>
+                <label>Horizontal Units</label>
+            </value>
+            <value>
+                <fullName>Hose Kit</fullName>
+                <default>false</default>
+                <label>Hose Kit</label>
+            </value>
+            <value>
+                <fullName>Humidifier</fullName>
+                <default>false</default>
+                <label>Humidifier</label>
+            </value>
+            <value>
+                <fullName>Ice Storage</fullName>
+                <default>false</default>
+                <label>Ice Storage</label>
+            </value>
+            <value>
+                <fullName>Ice Western</fullName>
+                <default>false</default>
+                <label>Ice Western</label>
+            </value>
+            <value>
+                <fullName>Igniters</fullName>
+                <default>false</default>
+                <label>Igniters</label>
+            </value>
+            <value>
+                <fullName>Impellers</fullName>
+                <default>false</default>
+                <label>Impellers</label>
+            </value>
+            <value>
+                <fullName>Inserts</fullName>
+                <default>false</default>
+                <label>Inserts</label>
+            </value>
+            <value>
+                <fullName>Integraclean System</fullName>
+                <default>false</default>
+                <label>Integraclean System</label>
+            </value>
+            <value>
+                <fullName>Ion Generator</fullName>
+                <default>false</default>
+                <label>Ion Generator</label>
+            </value>
+            <value>
+                <fullName>Ionizers</fullName>
+                <default>false</default>
+                <label>Ionizers</label>
+            </value>
+            <value>
+                <fullName>Kits</fullName>
+                <default>false</default>
+                <label>Kits</label>
+            </value>
+            <value>
+                <fullName>Louvers</fullName>
+                <default>false</default>
+                <label>Louvers</label>
+            </value>
+            <value>
+                <fullName>Manual Balancing Valve</fullName>
+                <default>false</default>
+                <label>Manual Balancing Valve</label>
+            </value>
+            <value>
+                <fullName>Metal</fullName>
+                <default>false</default>
+                <label>Metal</label>
+            </value>
+            <value>
+                <fullName>Mini-Split</fullName>
+                <default>false</default>
+                <label>Mini-Split</label>
+            </value>
+            <value>
+                <fullName>Misc. Product Type</fullName>
+                <default>false</default>
+                <label>Misc. Product Type</label>
+            </value>
+            <value>
+                <fullName>Motors</fullName>
+                <default>false</default>
+                <label>Motors</label>
+            </value>
+            <value>
+                <fullName>Mounts</fullName>
+                <default>false</default>
+                <label>Mounts</label>
+            </value>
+            <value>
+                <fullName>Multi-Zone</fullName>
+                <default>false</default>
+                <label>Multi-Zone</label>
+            </value>
+            <value>
+                <fullName>Boiler - NONcondensing - MicoFlame</fullName>
+                <default>false</default>
+                <label>Non Condensing Boiler - Copper Fin Tube</label>
+            </value>
+            <value>
+                <fullName>Boiler - NONcondensing - Other</fullName>
+                <default>false</default>
+                <label>Non Condensing Boiler - Copper Fin Tube Other</label>
+            </value>
+            <value>
+                <fullName>Boiler - NONcondensing - Dynaflame</fullName>
+                <default>false</default>
+                <label>Non Condensing Boiler - Water Tube</label>
+            </value>
+            <value>
+                <fullName>Nozzles</fullName>
+                <default>false</default>
+                <label>Nozzles</label>
+            </value>
+            <value>
+                <fullName>Oil</fullName>
+                <default>false</default>
+                <label>Oil</label>
+            </value>
+            <value>
+                <fullName>O-rings</fullName>
+                <default>false</default>
+                <label>O-rings</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Packaged Booster</fullName>
+                <default>false</default>
+                <label>Packaged Booster</label>
+            </value>
+            <value>
+                <fullName>Packaged HVAC System</fullName>
+                <default>false</default>
+                <label>Packaged HVAC System</label>
+            </value>
+            <value>
+                <fullName>Paint</fullName>
+                <default>false</default>
+                <label>Paint</label>
+            </value>
+            <value>
+                <fullName>Parts</fullName>
+                <default>false</default>
+                <label>Parts</label>
+            </value>
+            <value>
+                <fullName>Parts for Non-Marley</fullName>
+                <default>false</default>
+                <label>Parts for Non-Marley</label>
+            </value>
+            <value>
+                <fullName>Piping Package - EQ</fullName>
+                <default>false</default>
+                <label>Piping Package - EQ</label>
+            </value>
+            <value>
+                <fullName>Piping Package - TU</fullName>
+                <default>false</default>
+                <label>Piping Package - TU</label>
+            </value>
+            <value>
+                <fullName>Pot Feeder</fullName>
+                <default>false</default>
+                <label>Pot Feeder</label>
+            </value>
+            <value>
+                <fullName>Probes</fullName>
+                <default>false</default>
+                <label>Probes</label>
+            </value>
+            <value>
+                <fullName>Pump - Base Mount. E.S.</fullName>
+                <default>false</default>
+                <label>Pump - Base Mount. E.S.</label>
+            </value>
+            <value>
+                <fullName>Pump - Constans Circ</fullName>
+                <default>false</default>
+                <label>Pump - Constant Circ</label>
+            </value>
+            <value>
+                <fullName>Pump - HSC</fullName>
+                <default>false</default>
+                <label>Pump - HSC</label>
+            </value>
+            <value>
+                <fullName>Pump - IVS</fullName>
+                <default>false</default>
+                <label>Pump - IVS</label>
+            </value>
+            <value>
+                <fullName>Pump - Variable Circ</fullName>
+                <default>false</default>
+                <label>Pump - Variable Circ</label>
+            </value>
+            <value>
+                <fullName>Pump - VIL</fullName>
+                <default>false</default>
+                <label>Pump - VIL</label>
+            </value>
+            <value>
+                <fullName>Radiant Panels</fullName>
+                <default>false</default>
+                <label>Radiant Panels</label>
+            </value>
+            <value>
+                <fullName>Regulator</fullName>
+                <default>false</default>
+                <label>Regulator</label>
+            </value>
+            <value>
+                <fullName>Relays</fullName>
+                <default>false</default>
+                <label>Relays</label>
+            </value>
+            <value>
+                <fullName>Rings</fullName>
+                <default>false</default>
+                <label>Rings</label>
+            </value>
+            <value>
+                <fullName>Rooftop Unit</fullName>
+                <default>false</default>
+                <label>Rooftop Unit</label>
+            </value>
+            <value>
+                <fullName>Sand Filter</fullName>
+                <default>false</default>
+                <label>Sand Filter</label>
+            </value>
+            <value>
+                <fullName>Screen Filters</fullName>
+                <default>false</default>
+                <label>Screen Filters</label>
+            </value>
+            <value>
+                <fullName>Screws, Nuts, and Bolts</fullName>
+                <default>false</default>
+                <label>Screws, Nuts, and Bolts</label>
+            </value>
+            <value>
+                <fullName>Sealer</fullName>
+                <default>false</default>
+                <label>Sealer</label>
+            </value>
+            <value>
+                <fullName>Seals</fullName>
+                <default>false</default>
+                <label>Seals</label>
+            </value>
+            <value>
+                <fullName>Sections</fullName>
+                <default>false</default>
+                <label>Sections</label>
+            </value>
+            <value>
+                <fullName>Sensors</fullName>
+                <default>false</default>
+                <label>Sensors</label>
+            </value>
+            <value>
+                <fullName>Air Separator</fullName>
+                <default>false</default>
+                <label>Separator</label>
+            </value>
+            <value>
+                <fullName>Shafts ​</fullName>
+                <default>false</default>
+                <label>Shafts</label>
+            </value>
+            <value>
+                <fullName>Shafts?</fullName>
+                <default>false</default>
+                <label>Shafts?</label>
+            </value>
+            <value>
+                <fullName>Sheaves</fullName>
+                <default>false</default>
+                <label>Sheaves</label>
+            </value>
+            <value>
+                <fullName>Shims</fullName>
+                <default>false</default>
+                <label>Shims</label>
+            </value>
+            <value>
+                <fullName>Side Stream Filter</fullName>
+                <default>false</default>
+                <label>Side Stream Filter</label>
+            </value>
+            <value>
+                <fullName>Sleeves</fullName>
+                <default>false</default>
+                <label>Sleeves</label>
+            </value>
+            <value>
+                <fullName>Slingers</fullName>
+                <default>false</default>
+                <label>Slingers</label>
+            </value>
+            <value>
+                <fullName>Smoke Ventilator</fullName>
+                <default>false</default>
+                <label>Smoke Ventilator</label>
+            </value>
+            <value>
+                <fullName>Spacers</fullName>
+                <default>false</default>
+                <label>Spacers</label>
+            </value>
+            <value>
+                <fullName>Split System</fullName>
+                <default>false</default>
+                <label>Split System</label>
+            </value>
+            <value>
+                <fullName>Split System Unit</fullName>
+                <default>false</default>
+                <label>Split System Unit</label>
+            </value>
+            <value>
+                <fullName>Storage Tank</fullName>
+                <default>false</default>
+                <label>Storage Tank</label>
+            </value>
+            <value>
+                <fullName>Strainers</fullName>
+                <default>false</default>
+                <label>Strainers</label>
+            </value>
+            <value>
+                <fullName>Sweeper Jets</fullName>
+                <default>false</default>
+                <label>Sweeper Jets</label>
+            </value>
+            <value>
+                <fullName>Switches</fullName>
+                <default>false</default>
+                <label>Switches</label>
+            </value>
+            <value>
+                <fullName>Tanks</fullName>
+                <default>false</default>
+                <label>Tanks</label>
+            </value>
+            <value>
+                <fullName>Tax</fullName>
+                <default>false</default>
+                <label>Tax</label>
+            </value>
+            <value>
+                <fullName>TDV / Suction Guide</fullName>
+                <default>false</default>
+                <label>TDV / Suction Guide</label>
+            </value>
+            <value>
+                <fullName>Technical Service</fullName>
+                <default>false</default>
+                <label>Technical Service</label>
+            </value>
+            <value>
+                <fullName>Tees</fullName>
+                <default>false</default>
+                <label>Tees</label>
+            </value>
+            <value>
+                <fullName>Thermal Recovery Unit</fullName>
+                <default>false</default>
+                <label>Thermal Recovery Unit</label>
+            </value>
+            <value>
+                <fullName>Thermometers</fullName>
+                <default>false</default>
+                <label>Thermometers</label>
+            </value>
+            <value>
+                <fullName>Tools</fullName>
+                <default>false</default>
+                <label>Tools</label>
+            </value>
+            <value>
+                <fullName>Tower - Aquatower</fullName>
+                <default>false</default>
+                <label>Tower - Aquatower</label>
+            </value>
+            <value>
+                <fullName>Tower - AV</fullName>
+                <default>false</default>
+                <label>Tower - AV</label>
+            </value>
+            <value>
+                <fullName>Tower - Industrial Class</fullName>
+                <default>false</default>
+                <label>Tower - Industrial Class</label>
+            </value>
+            <value>
+                <fullName>Tower - MD</fullName>
+                <default>false</default>
+                <label>Tower - MD</label>
+            </value>
+            <value>
+                <fullName>Tower - NC</fullName>
+                <default>false</default>
+                <label>Tower - NC</label>
+            </value>
+            <value>
+                <fullName>Tower - Other</fullName>
+                <default>false</default>
+                <label>Tower - Other</label>
+            </value>
+            <value>
+                <fullName>Tower - Recold</fullName>
+                <default>false</default>
+                <label>Tower - Recold</label>
+            </value>
+            <value>
+                <fullName>Transformers</fullName>
+                <default>false</default>
+                <label>Transformers</label>
+            </value>
+            <value>
+                <fullName>Transitions</fullName>
+                <default>false</default>
+                <label>Transitions</label>
+            </value>
+            <value>
+                <fullName>Unit Heaters</fullName>
+                <default>false</default>
+                <label>Unit Heaters</label>
+            </value>
+            <value>
+                <fullName>Valves</fullName>
+                <default>false</default>
+                <label>Valves</label>
+            </value>
+            <value>
+                <fullName>Ventilators</fullName>
+                <default>false</default>
+                <label>Ventilators</label>
+            </value>
+            <value>
+                <fullName>Venting</fullName>
+                <default>false</default>
+                <label>Venting</label>
+            </value>
+            <value>
+                <fullName>Vertical Stack Units</fullName>
+                <default>false</default>
+                <label>Vertical Stack Units</label>
+            </value>
+            <value>
+                <fullName>VFD - Midwest Stock</fullName>
+                <default>false</default>
+                <label>VFD - Midwest Stock</label>
+            </value>
+            <value>
+                <fullName>VFD - NonStock</fullName>
+                <default>false</default>
+                <label>VFD - NonStock</label>
+            </value>
+            <value>
+                <fullName>VRF</fullName>
+                <default>false</default>
+                <label>VRF</label>
+            </value>
+            <value>
+                <fullName>Water Chemistry Management</fullName>
+                <default>false</default>
+                <label>Water Chemistry Management</label>
+            </value>
+            <value>
+                <fullName>Water Heater - Condensing</fullName>
+                <default>false</default>
+                <label>Water Heater - Condensing</label>
+            </value>
+            <value>
+                <fullName>Water Heater - Condensing - Other</fullName>
+                <default>false</default>
+                <label>Water Heater - Condensing - Other</label>
+            </value>
+            <value>
+                <fullName>Water Heater - NONCondensing</fullName>
+                <default>false</default>
+                <label>Water Heater - NON Condensing</label>
+            </value>
+            <value>
+                <fullName>Water Reclaim System</fullName>
+                <default>false</default>
+                <label>Water Reclaim System</label>
+            </value>
+            <value>
+                <fullName>Water Source Heat Pump</fullName>
+                <default>false</default>
+                <label>Water Source Heat Pump</label>
+            </value>
+            <value>
+                <fullName>Water Treatment</fullName>
+                <default>false</default>
+                <label>Water Treatment</label>
+            </value>
+            <value>
+                <fullName>Wind Turbine Ventilators</fullName>
+                <default>false</default>
+                <label>Wind Turbine Ventilators</label>
+            </value>
+            <value>
+                <fullName>Y-Strainer</fullName>
+                <default>false</default>
+                <label>Y-Strainer</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Johnson Controls</controllingFieldValue>
+            <controllingFieldValue>Enviro-tec</controllingFieldValue>
+            <controllingFieldValue>Dunham Bush</controllingFieldValue>
+            <controllingFieldValue>VTS</controllingFieldValue>
+            <controllingFieldValue>Miller-Picking</controllingFieldValue>
+            <controllingFieldValue>ClimateCraft</controllingFieldValue>
+            <controllingFieldValue>Pace</controllingFieldValue>
+            <controllingFieldValue>Alliance Air Products</controllingFieldValue>
+            <controllingFieldValue>Ice Western</controllingFieldValue>
+            <controllingFieldValue>York</controllingFieldValue>
+            <valueName>Air Handler</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Johnson Controls</controllingFieldValue>
+            <controllingFieldValue>Dunham Bush</controllingFieldValue>
+            <controllingFieldValue>Quantch</controllingFieldValue>
+            <controllingFieldValue>Smardt</controllingFieldValue>
+            <controllingFieldValue>ClimaCOOL</controllingFieldValue>
+            <controllingFieldValue>Jetson</controllingFieldValue>
+            <controllingFieldValue>York</controllingFieldValue>
+            <valueName>Chillers - Air Cooled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Johnson Controls</controllingFieldValue>
+            <controllingFieldValue>Dunham Bush</controllingFieldValue>
+            <controllingFieldValue>Quantch</controllingFieldValue>
+            <controllingFieldValue>Smardt</controllingFieldValue>
+            <controllingFieldValue>ClimaCOOL</controllingFieldValue>
+            <controllingFieldValue>Jetson</controllingFieldValue>
+            <controllingFieldValue>York</controllingFieldValue>
+            <valueName>Chillers - Water Cooled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Johnson Controls</controllingFieldValue>
+            <controllingFieldValue>Pumps &amp; Accessories - Other</controllingFieldValue>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>VFD - Danfoss</controllingFieldValue>
+            <controllingFieldValue>VFD - Other</controllingFieldValue>
+            <controllingFieldValue>Dehumidifier - Desert Aire</controllingFieldValue>
+            <controllingFieldValue>Williams</controllingFieldValue>
+            <controllingFieldValue>Wessels</controllingFieldValue>
+            <controllingFieldValue>Permatron</controllingFieldValue>
+            <controllingFieldValue>Boilers &amp; Heaters - Other</controllingFieldValue>
+            <controllingFieldValue>Heat Pumps - Other</controllingFieldValue>
+            <controllingFieldValue>Hays Fluid Controls</controllingFieldValue>
+            <controllingFieldValue>Enviro-tec</controllingFieldValue>
+            <controllingFieldValue>PEP</controllingFieldValue>
+            <controllingFieldValue>Seresco</controllingFieldValue>
+            <controllingFieldValue>Armstrong Humidifiers</controllingFieldValue>
+            <controllingFieldValue>VTS</controllingFieldValue>
+            <controllingFieldValue>Moffitt</controllingFieldValue>
+            <controllingFieldValue>Vulcan</controllingFieldValue>
+            <controllingFieldValue>Griswold</controllingFieldValue>
+            <controllingFieldValue>Polaris</controllingFieldValue>
+            <controllingFieldValue>Quantch</controllingFieldValue>
+            <controllingFieldValue>Miller-Picking</controllingFieldValue>
+            <controllingFieldValue>Mueller</controllingFieldValue>
+            <controllingFieldValue>Wilo</controllingFieldValue>
+            <controllingFieldValue>Whelan</controllingFieldValue>
+            <controllingFieldValue>Plasma-Air</controllingFieldValue>
+            <controllingFieldValue>SPX Flow</controllingFieldValue>
+            <controllingFieldValue>VAW</controllingFieldValue>
+            <controllingFieldValue>Patterson</controllingFieldValue>
+            <controllingFieldValue>Smardt</controllingFieldValue>
+            <controllingFieldValue>Fraser-Johnston</controllingFieldValue>
+            <controllingFieldValue>IEC</controllingFieldValue>
+            <controllingFieldValue>ClimateCraft</controllingFieldValue>
+            <controllingFieldValue>Nutech</controllingFieldValue>
+            <controllingFieldValue>ClimaCOOL</controllingFieldValue>
+            <controllingFieldValue>Hitachi</controllingFieldValue>
+            <controllingFieldValue>Seasons-4</controllingFieldValue>
+            <controllingFieldValue>Sterling</controllingFieldValue>
+            <controllingFieldValue>Lennox</controllingFieldValue>
+            <controllingFieldValue>Precision Coils</controllingFieldValue>
+            <controllingFieldValue>Advanced Cooling Technologies (ACT)</controllingFieldValue>
+            <controllingFieldValue>Aquanomix</controllingFieldValue>
+            <controllingFieldValue>Pace</controllingFieldValue>
+            <controllingFieldValue>Bosch</controllingFieldValue>
+            <controllingFieldValue>Recold</controllingFieldValue>
+            <controllingFieldValue>AtmosAir</controllingFieldValue>
+            <controllingFieldValue>Cooney Coil</controllingFieldValue>
+            <controllingFieldValue>Advanced Thermal Hydronics (ATH)</controllingFieldValue>
+            <controllingFieldValue>Kelvion</controllingFieldValue>
+            <controllingFieldValue>Jetson</controllingFieldValue>
+            <controllingFieldValue>Quest</controllingFieldValue>
+            <controllingFieldValue>Alliance Air Products</controllingFieldValue>
+            <controllingFieldValue>Ice Western</controllingFieldValue>
+            <controllingFieldValue>Tranter</controllingFieldValue>
+            <controllingFieldValue>Duravent</controllingFieldValue>
+            <controllingFieldValue>Cleaver-Brooks</controllingFieldValue>
+            <controllingFieldValue>Grundfoss</controllingFieldValue>
+            <controllingFieldValue>Bessamaire</controllingFieldValue>
+            <controllingFieldValue>Fuji Electric</controllingFieldValue>
+            <controllingFieldValue>Kinetics Noise Control</controllingFieldValue>
+            <controllingFieldValue>Nexus</controllingFieldValue>
+            <controllingFieldValue>York</controllingFieldValue>
+            <valueName>Parts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Johnson Controls</controllingFieldValue>
+            <controllingFieldValue>Dunham Bush</controllingFieldValue>
+            <controllingFieldValue>Fraser-Johnston</controllingFieldValue>
+            <controllingFieldValue>ClimaCOOL</controllingFieldValue>
+            <controllingFieldValue>Lennox</controllingFieldValue>
+            <controllingFieldValue>Ice Western</controllingFieldValue>
+            <controllingFieldValue>York</controllingFieldValue>
+            <valueName>Rooftop Unit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>JJM Alkaline</controllingFieldValue>
+            <controllingFieldValue>Shippensburg Pump Co.</controllingFieldValue>
+            <controllingFieldValue>Shipco</controllingFieldValue>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Boilers &amp; Heaters - Camus Hydronics</controllingFieldValue>
+            <controllingFieldValue>Unknown</controllingFieldValue>
+            <controllingFieldValue>Cooling Towers - Marley/SPX</controllingFieldValue>
+            <controllingFieldValue>Dunham Bush</controllingFieldValue>
+            <controllingFieldValue>Conery</controllingFieldValue>
+            <controllingFieldValue>Alfa Laval</controllingFieldValue>
+            <controllingFieldValue>Wilkins Regulator/Zurn</controllingFieldValue>
+            <controllingFieldValue>Xylem</controllingFieldValue>
+            <controllingFieldValue>Taco</controllingFieldValue>
+            <controllingFieldValue>AU/Hydro Pump</controllingFieldValue>
+            <controllingFieldValue>Baltimore Aircoil</controllingFieldValue>
+            <controllingFieldValue>EEI Group</controllingFieldValue>
+            <controllingFieldValue>Halmar</controllingFieldValue>
+            <controllingFieldValue>Master Pumps &amp; Power</controllingFieldValue>
+            <controllingFieldValue>Neuco</controllingFieldValue>
+            <controllingFieldValue>Alliance Air Products</controllingFieldValue>
+            <controllingFieldValue>Enervex</controllingFieldValue>
+            <controllingFieldValue>Ferguson Enterprises Inc. #215</controllingFieldValue>
+            <controllingFieldValue>Cleaver-Brooks</controllingFieldValue>
+            <controllingFieldValue>Ameco</controllingFieldValue>
+            <controllingFieldValue>Aurora (Pentair)</controllingFieldValue>
+            <controllingFieldValue>Lochinvar</controllingFieldValue>
+            <controllingFieldValue>Jjm Alkaline Technologies (Formerly Jjm Boiler Boiler Works Inc.)</controllingFieldValue>
+            <controllingFieldValue>Watts Water Technologies</controllingFieldValue>
+            <controllingFieldValue>American Granby</controllingFieldValue>
+            <controllingFieldValue>Thrush</controllingFieldValue>
+            <valueName>Kits</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>JJM Alkaline</controllingFieldValue>
+            <controllingFieldValue>Samsung HVAC</controllingFieldValue>
+            <controllingFieldValue>Shippensburg Pump Co.</controllingFieldValue>
+            <controllingFieldValue>Otterbine Barebo</controllingFieldValue>
+            <controllingFieldValue>SJ Electro Systems</controllingFieldValue>
+            <controllingFieldValue>Caleffi North America</controllingFieldValue>
+            <controllingFieldValue>VMC</controllingFieldValue>
+            <controllingFieldValue>Pumps &amp; Accessories - Other</controllingFieldValue>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>VFD - Danfoss</controllingFieldValue>
+            <controllingFieldValue>VFD - Other</controllingFieldValue>
+            <controllingFieldValue>Non Represented Brand</controllingFieldValue>
+            <controllingFieldValue>Dehumidifier - Desert Aire</controllingFieldValue>
+            <controllingFieldValue>Midwest Machinery</controllingFieldValue>
+            <controllingFieldValue>Williams</controllingFieldValue>
+            <controllingFieldValue>Wessels</controllingFieldValue>
+            <controllingFieldValue>Permatron</controllingFieldValue>
+            <controllingFieldValue>Unknown</controllingFieldValue>
+            <controllingFieldValue>Boilers &amp; Heaters - Other</controllingFieldValue>
+            <controllingFieldValue>Stancor</controllingFieldValue>
+            <controllingFieldValue>Steele Plastics</controllingFieldValue>
+            <controllingFieldValue>Hydro-Lectric Equipment</controllingFieldValue>
+            <controllingFieldValue>Cooling Towers - Marley/SPX</controllingFieldValue>
+            <controllingFieldValue>Hydronic Components</controllingFieldValue>
+            <controllingFieldValue>Heat Pumps - ClimateMaster</controllingFieldValue>
+            <controllingFieldValue>Stuart C. Irby Co</controllingFieldValue>
+            <controllingFieldValue>Heat Pumps - Other</controllingFieldValue>
+            <controllingFieldValue>Hays Fluid Controls</controllingFieldValue>
+            <controllingFieldValue>Enviro-tec</controllingFieldValue>
+            <controllingFieldValue>Spark</controllingFieldValue>
+            <controllingFieldValue>PEP</controllingFieldValue>
+            <controllingFieldValue>Dunham Bush</controllingFieldValue>
+            <controllingFieldValue>Seresco</controllingFieldValue>
+            <controllingFieldValue>Armstrong Humidifiers</controllingFieldValue>
+            <controllingFieldValue>VTS</controllingFieldValue>
+            <controllingFieldValue>Moffitt</controllingFieldValue>
+            <controllingFieldValue>Flow Design</controllingFieldValue>
+            <controllingFieldValue>Tel-Tru Manufacturing</controllingFieldValue>
+            <controllingFieldValue>U.S. Filter</controllingFieldValue>
+            <controllingFieldValue>Total Pump &amp; Supply</controllingFieldValue>
+            <controllingFieldValue>Twin City Hose</controllingFieldValue>
+            <controllingFieldValue>United Brass Works</controllingFieldValue>
+            <controllingFieldValue>Conery</controllingFieldValue>
+            <controllingFieldValue>Alfa Laval</controllingFieldValue>
+            <controllingFieldValue>Vulcan</controllingFieldValue>
+            <controllingFieldValue>Griswold</controllingFieldValue>
+            <controllingFieldValue>Polaris</controllingFieldValue>
+            <controllingFieldValue>Quantch</controllingFieldValue>
+            <controllingFieldValue>Miller-Picking</controllingFieldValue>
+            <controllingFieldValue>Mueller</controllingFieldValue>
+            <controllingFieldValue>Wilo</controllingFieldValue>
+            <controllingFieldValue>Flow-Tech</controllingFieldValue>
+            <controllingFieldValue>Vicar Industries</controllingFieldValue>
+            <controllingFieldValue>Watson-McDaniel</controllingFieldValue>
+            <controllingFieldValue>Heatsource</controllingFieldValue>
+            <controllingFieldValue>J.L. Wingert</controllingFieldValue>
+            <controllingFieldValue>Weil McClain</controllingFieldValue>
+            <controllingFieldValue>Wilkins Regulator/Zurn</controllingFieldValue>
+            <controllingFieldValue>Winters Instruments</controllingFieldValue>
+            <controllingFieldValue>Xylem</controllingFieldValue>
+            <controllingFieldValue>Whelan</controllingFieldValue>
+            <controllingFieldValue>Plasma-Air</controllingFieldValue>
+            <controllingFieldValue>SPX Flow</controllingFieldValue>
+            <controllingFieldValue>VAW</controllingFieldValue>
+            <controllingFieldValue>Patterson</controllingFieldValue>
+            <controllingFieldValue>Smardt</controllingFieldValue>
+            <controllingFieldValue>American Wheatley</controllingFieldValue>
+            <controllingFieldValue>Fire Brick Engineers</controllingFieldValue>
+            <controllingFieldValue>Amitrol</controllingFieldValue>
+            <controllingFieldValue>ASC Pumping Equipment</controllingFieldValue>
+            <controllingFieldValue>Crane</controllingFieldValue>
+            <controllingFieldValue>Baltimore Aircoil</controllingFieldValue>
+            <controllingFieldValue>Fraser-Johnston</controllingFieldValue>
+            <controllingFieldValue>IEC</controllingFieldValue>
+            <controllingFieldValue>ClimateCraft</controllingFieldValue>
+            <controllingFieldValue>Nutech</controllingFieldValue>
+            <controllingFieldValue>ClimaCOOL</controllingFieldValue>
+            <controllingFieldValue>Hitachi</controllingFieldValue>
+            <controllingFieldValue>Seasons-4</controllingFieldValue>
+            <controllingFieldValue>Reftekk</controllingFieldValue>
+            <controllingFieldValue>Sterling</controllingFieldValue>
+            <controllingFieldValue>Bryant Refractory</controllingFieldValue>
+            <controllingFieldValue>Columbia Boiler Company</controllingFieldValue>
+            <controllingFieldValue>Conbraco Industries Inc.</controllingFieldValue>
+            <controllingFieldValue>Delta Lightning Arrestors</controllingFieldValue>
+            <controllingFieldValue>Duncan Equipment</controllingFieldValue>
+            <controllingFieldValue>Lennox</controllingFieldValue>
+            <controllingFieldValue>Precision Coils</controllingFieldValue>
+            <controllingFieldValue>Advanced Cooling Technologies (ACT)</controllingFieldValue>
+            <controllingFieldValue>Aquanomix</controllingFieldValue>
+            <controllingFieldValue>Pace</controllingFieldValue>
+            <controllingFieldValue>Bosch</controllingFieldValue>
+            <controllingFieldValue>Everlasting Valve Co.</controllingFieldValue>
+            <controllingFieldValue>Franklin Electric Co</controllingFieldValue>
+            <controllingFieldValue>GE</controllingFieldValue>
+            <controllingFieldValue>General Treatment Products</controllingFieldValue>
+            <controllingFieldValue>Halmar</controllingFieldValue>
+            <controllingFieldValue>Industrial Motor Service</controllingFieldValue>
+            <controllingFieldValue>Linesets Inc.</controllingFieldValue>
+            <controllingFieldValue>AtmosAir</controllingFieldValue>
+            <controllingFieldValue>Heatrex</controllingFieldValue>
+            <controllingFieldValue>Jetson</controllingFieldValue>
+            <controllingFieldValue>Engineered Products</controllingFieldValue>
+            <controllingFieldValue>Max-Air Technology</controllingFieldValue>
+            <controllingFieldValue>Miljoco</controllingFieldValue>
+            <controllingFieldValue>Neuco</controllingFieldValue>
+            <controllingFieldValue>Fedex Freight</controllingFieldValue>
+            <controllingFieldValue>Bryant Refractory Co</controllingFieldValue>
+            <controllingFieldValue>Enervex</controllingFieldValue>
+            <controllingFieldValue>Duravent</controllingFieldValue>
+            <controllingFieldValue>Amazon</controllingFieldValue>
+            <controllingFieldValue>Caleffi North America Inc.</controllingFieldValue>
+            <controllingFieldValue>Control Devices Llc</controllingFieldValue>
+            <controllingFieldValue>Dwyer Instruments</controllingFieldValue>
+            <controllingFieldValue>Ge Motors</controllingFieldValue>
+            <controllingFieldValue>Ace Heaters</controllingFieldValue>
+            <controllingFieldValue>Aurora (Pentair)</controllingFieldValue>
+            <controllingFieldValue>Lochinvar</controllingFieldValue>
+            <controllingFieldValue>GM</controllingFieldValue>
+            <controllingFieldValue>Goodway Technologies Corp</controllingFieldValue>
+            <controllingFieldValue>Oconnor Company</controllingFieldValue>
+            <controllingFieldValue>Pepco</controllingFieldValue>
+            <controllingFieldValue>Red-White Valve Corporation</controllingFieldValue>
+            <controllingFieldValue>See Aceheaters</controllingFieldValue>
+            <controllingFieldValue>UnlaubÂ</controllingFieldValue>
+            <controllingFieldValue>Watts Water Technologies</controllingFieldValue>
+            <controllingFieldValue>Weil Mclain</controllingFieldValue>
+            <controllingFieldValue>American Granby</controllingFieldValue>
+            <controllingFieldValue>Applied Industrial Technologies</controllingFieldValue>
+            <controllingFieldValue>Thrush</controllingFieldValue>
+            <controllingFieldValue>Parker Boiler</controllingFieldValue>
+            <controllingFieldValue>Pentair Flow Technologies</controllingFieldValue>
+            <controllingFieldValue>Power Flame</controllingFieldValue>
+            <controllingFieldValue>Quantumflo</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Samsung HVAC</controllingFieldValue>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Boilers &amp; Heaters - Camus Hydronics</controllingFieldValue>
+            <controllingFieldValue>Unknown</controllingFieldValue>
+            <controllingFieldValue>Cooling Towers - Marley/SPX</controllingFieldValue>
+            <controllingFieldValue>Total Pump &amp; Supply</controllingFieldValue>
+            <controllingFieldValue>Alfa Laval</controllingFieldValue>
+            <controllingFieldValue>Xylem</controllingFieldValue>
+            <controllingFieldValue>Neuco</controllingFieldValue>
+            <controllingFieldValue>Alliance Air Products</controllingFieldValue>
+            <controllingFieldValue>Enervex</controllingFieldValue>
+            <controllingFieldValue>Cleaver-Brooks</controllingFieldValue>
+            <controllingFieldValue>Ace Heaters</controllingFieldValue>
+            <controllingFieldValue>Aurora (Pentair)</controllingFieldValue>
+            <controllingFieldValue>Lochinvar</controllingFieldValue>
+            <controllingFieldValue>Thrush</controllingFieldValue>
+            <controllingFieldValue>Parker Boiler</controllingFieldValue>
+            <controllingFieldValue>Power Flame</controllingFieldValue>
+            <valueName>Assembly</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Samsung HVAC</controllingFieldValue>
+            <controllingFieldValue>Tjernlund Products</controllingFieldValue>
+            <valueName>Controller</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Samsung HVAC</controllingFieldValue>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Wessels</controllingFieldValue>
+            <controllingFieldValue>Permatron</controllingFieldValue>
+            <controllingFieldValue>PEP</controllingFieldValue>
+            <controllingFieldValue>General Treatment Products</controllingFieldValue>
+            <controllingFieldValue>Neuco</controllingFieldValue>
+            <controllingFieldValue>Bessamaire</controllingFieldValue>
+            <controllingFieldValue>Lochinvar</controllingFieldValue>
+            <valueName>Filter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Samsung HVAC</controllingFieldValue>
+            <controllingFieldValue>Hitachi</controllingFieldValue>
+            <valueName>Mini-Split</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Samsung HVAC</controllingFieldValue>
+            <controllingFieldValue>SJE Rhombus</controllingFieldValue>
+            <controllingFieldValue>Boilers &amp; Heaters - Camus Hydronics</controllingFieldValue>
+            <controllingFieldValue>Unknown</controllingFieldValue>
+            <controllingFieldValue>Cooling Towers - Marley/SPX</controllingFieldValue>
+            <controllingFieldValue>Dunham Bush</controllingFieldValue>
+            <controllingFieldValue>Weil McClain</controllingFieldValue>
+            <controllingFieldValue>Dungs Combustion Controls</controllingFieldValue>
+            <controllingFieldValue>Neuco</controllingFieldValue>
+            <controllingFieldValue>Enervex</controllingFieldValue>
+            <controllingFieldValue>Cleaver-Brooks</controllingFieldValue>
+            <controllingFieldValue>Ace Heaters</controllingFieldValue>
+            <controllingFieldValue>Lochinvar</controllingFieldValue>
+            <controllingFieldValue>SE Rhombus</controllingFieldValue>
+            <controllingFieldValue>Sj Electro Systems Inc.</controllingFieldValue>
+            <controllingFieldValue>American Granby</controllingFieldValue>
+            <controllingFieldValue>Power Flame</controllingFieldValue>
+            <valueName>Switches</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Samsung HVAC</controllingFieldValue>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Boilers &amp; Heaters - Camus Hydronics</controllingFieldValue>
+            <controllingFieldValue>Unknown</controllingFieldValue>
+            <controllingFieldValue>Cooling Towers - Marley/SPX</controllingFieldValue>
+            <controllingFieldValue>Dunham Bush</controllingFieldValue>
+            <controllingFieldValue>Flow Design</controllingFieldValue>
+            <controllingFieldValue>United Brass Works</controllingFieldValue>
+            <controllingFieldValue>Weil McClain</controllingFieldValue>
+            <controllingFieldValue>American Wheatley</controllingFieldValue>
+            <controllingFieldValue>Eggelhof</controllingFieldValue>
+            <controllingFieldValue>Crane</controllingFieldValue>
+            <controllingFieldValue>Cash Acme</controllingFieldValue>
+            <controllingFieldValue>Delta T</controllingFieldValue>
+            <controllingFieldValue>Everlasting Valve Co.</controllingFieldValue>
+            <controllingFieldValue>Flomatic</controllingFieldValue>
+            <controllingFieldValue>Halmar</controllingFieldValue>
+            <controllingFieldValue>Mid-West Plumbing Products</controllingFieldValue>
+            <controllingFieldValue>Neuco</controllingFieldValue>
+            <controllingFieldValue>North American Safety Valve</controllingFieldValue>
+            <controllingFieldValue>Caleffi North America Inc.</controllingFieldValue>
+            <controllingFieldValue>Canariis Corporation</controllingFieldValue>
+            <controllingFieldValue>Control Devices Llc</controllingFieldValue>
+            <controllingFieldValue>Cleaver-Brooks</controllingFieldValue>
+            <controllingFieldValue>Vent-Rite</controllingFieldValue>
+            <controllingFieldValue>Ace Heaters</controllingFieldValue>
+            <controllingFieldValue>Lochinvar</controllingFieldValue>
+            <controllingFieldValue>Red-White Valve Corporation</controllingFieldValue>
+            <controllingFieldValue>Watts Water Technologies</controllingFieldValue>
+            <controllingFieldValue>Nexus</controllingFieldValue>
+            <controllingFieldValue>American Granby</controllingFieldValue>
+            <controllingFieldValue>Thrush</controllingFieldValue>
+            <controllingFieldValue>Pentair Flow Technologies</controllingFieldValue>
+            <valueName>Valves</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shippensburg Pump Co.</controllingFieldValue>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Midwest Machinery</controllingFieldValue>
+            <controllingFieldValue>Boilers &amp; Heaters - Camus Hydronics</controllingFieldValue>
+            <controllingFieldValue>Unknown</controllingFieldValue>
+            <controllingFieldValue>Cooling Towers - Marley/SPX</controllingFieldValue>
+            <controllingFieldValue>Alfa Laval</controllingFieldValue>
+            <controllingFieldValue>Watson-McDaniel</controllingFieldValue>
+            <controllingFieldValue>Wilkins Regulator/Zurn</controllingFieldValue>
+            <controllingFieldValue>Fabtek</controllingFieldValue>
+            <controllingFieldValue>Baltimore Aircoil</controllingFieldValue>
+            <controllingFieldValue>Halmar</controllingFieldValue>
+            <controllingFieldValue>Neuco</controllingFieldValue>
+            <controllingFieldValue>Alliance Air Products</controllingFieldValue>
+            <controllingFieldValue>Enervex</controllingFieldValue>
+            <controllingFieldValue>Federal Corporation</controllingFieldValue>
+            <controllingFieldValue>Cleaver-Brooks</controllingFieldValue>
+            <controllingFieldValue>Ace Heaters</controllingFieldValue>
+            <controllingFieldValue>Aurora (Pentair)</controllingFieldValue>
+            <controllingFieldValue>Lochinvar</controllingFieldValue>
+            <controllingFieldValue>GM</controllingFieldValue>
+            <controllingFieldValue>National Wholesale</controllingFieldValue>
+            <controllingFieldValue>O. G. Supply, Llc</controllingFieldValue>
+            <controllingFieldValue>See Aceheaters</controllingFieldValue>
+            <controllingFieldValue>American Granby</controllingFieldValue>
+            <controllingFieldValue>Thrush</controllingFieldValue>
+            <controllingFieldValue>Parker Boiler</controllingFieldValue>
+            <controllingFieldValue>Pentair Flow Technologies</controllingFieldValue>
+            <controllingFieldValue>Riex Co.</controllingFieldValue>
+            <valueName>Gaskets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tulco Oils</controllingFieldValue>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Unknown</controllingFieldValue>
+            <valueName>Grease</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Power Equipment Company</controllingFieldValue>
+            <controllingFieldValue>Cooling Towers - Marley/SPX</controllingFieldValue>
+            <controllingFieldValue>Tel-Tru Manufacturing</controllingFieldValue>
+            <controllingFieldValue>Enervex</controllingFieldValue>
+            <controllingFieldValue>American Granby</controllingFieldValue>
+            <controllingFieldValue>Applied Industrial Technologies</controllingFieldValue>
+            <valueName>Inserts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Power Equipment Company</controllingFieldValue>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Total Pump &amp; Supply</controllingFieldValue>
+            <controllingFieldValue>Baltimore Aircoil</controllingFieldValue>
+            <controllingFieldValue>Dagwell Dixie Inc.</controllingFieldValue>
+            <controllingFieldValue>EEI Group</controllingFieldValue>
+            <controllingFieldValue>Neuco</controllingFieldValue>
+            <controllingFieldValue>Aurora (Pentair)</controllingFieldValue>
+            <controllingFieldValue>Applied Industrial Technologies</controllingFieldValue>
+            <controllingFieldValue>Thrush</controllingFieldValue>
+            <controllingFieldValue>PE&amp;E</controllingFieldValue>
+            <valueName>Sleeves</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SJ Electro Systems</controllingFieldValue>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Unknown</controllingFieldValue>
+            <controllingFieldValue>Total Pump &amp; Supply</controllingFieldValue>
+            <controllingFieldValue>Reco Commercial</controllingFieldValue>
+            <valueName>Tanks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps &amp; Accessories - Other</controllingFieldValue>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>American Wheatley</controllingFieldValue>
+            <controllingFieldValue>Nutech</controllingFieldValue>
+            <valueName>Balance Valve</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps &amp; Accessories - Other</controllingFieldValue>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Wessels</controllingFieldValue>
+            <controllingFieldValue>Patterson</controllingFieldValue>
+            <controllingFieldValue>American Wheatley</controllingFieldValue>
+            <valueName>Expansion Tank</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps &amp; Accessories - Other</controllingFieldValue>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Wessels</controllingFieldValue>
+            <controllingFieldValue>Alfa Laval</controllingFieldValue>
+            <controllingFieldValue>Polaris</controllingFieldValue>
+            <controllingFieldValue>Mueller</controllingFieldValue>
+            <controllingFieldValue>SPX Flow</controllingFieldValue>
+            <controllingFieldValue>Kelvion</controllingFieldValue>
+            <controllingFieldValue>Tranter</controllingFieldValue>
+            <controllingFieldValue>Reco Commercial</controllingFieldValue>
+            <valueName>Heat Exchanger / P&amp;F</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps &amp; Accessories - Other</controllingFieldValue>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Alfa Laval</controllingFieldValue>
+            <controllingFieldValue>SPX Flow</controllingFieldValue>
+            <controllingFieldValue>Kelvion</controllingFieldValue>
+            <controllingFieldValue>Tranter</controllingFieldValue>
+            <controllingFieldValue>Reco Commercial</controllingFieldValue>
+            <valueName>Heat Exchanger / S&amp;T</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps &amp; Accessories - Other</controllingFieldValue>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>VFD - Danfoss</controllingFieldValue>
+            <controllingFieldValue>VFD - Other</controllingFieldValue>
+            <controllingFieldValue>Dehumidifier - Desert Aire</controllingFieldValue>
+            <controllingFieldValue>Williams</controllingFieldValue>
+            <controllingFieldValue>Wessels</controllingFieldValue>
+            <controllingFieldValue>Permatron</controllingFieldValue>
+            <controllingFieldValue>Boilers &amp; Heaters - Camus Hydronics</controllingFieldValue>
+            <controllingFieldValue>Boilers &amp; Heaters - Other</controllingFieldValue>
+            <controllingFieldValue>Cooling Towers - Marley/SPX</controllingFieldValue>
+            <controllingFieldValue>Heat Pumps - ClimateMaster</controllingFieldValue>
+            <controllingFieldValue>Heat Pumps - Other</controllingFieldValue>
+            <controllingFieldValue>Hays Fluid Controls</controllingFieldValue>
+            <controllingFieldValue>PEP</controllingFieldValue>
+            <controllingFieldValue>Dunham Bush</controllingFieldValue>
+            <controllingFieldValue>Seresco</controllingFieldValue>
+            <controllingFieldValue>Armstrong Humidifiers</controllingFieldValue>
+            <controllingFieldValue>VTS</controllingFieldValue>
+            <controllingFieldValue>Alfa Laval</controllingFieldValue>
+            <controllingFieldValue>Vulcan</controllingFieldValue>
+            <controllingFieldValue>Griswold</controllingFieldValue>
+            <controllingFieldValue>Polaris</controllingFieldValue>
+            <controllingFieldValue>Quantch</controllingFieldValue>
+            <controllingFieldValue>Miller-Picking</controllingFieldValue>
+            <controllingFieldValue>Mueller</controllingFieldValue>
+            <controllingFieldValue>Smardt</controllingFieldValue>
+            <controllingFieldValue>Fraser-Johnston</controllingFieldValue>
+            <controllingFieldValue>Seasons-4</controllingFieldValue>
+            <controllingFieldValue>Advanced Cooling Technologies (ACT)</controllingFieldValue>
+            <controllingFieldValue>Aquanomix</controllingFieldValue>
+            <controllingFieldValue>Pace</controllingFieldValue>
+            <controllingFieldValue>Cleaver-Brooks</controllingFieldValue>
+            <valueName>Misc. Product Type</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps &amp; Accessories - Other</controllingFieldValue>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Patterson</controllingFieldValue>
+            <valueName>Packaged Booster</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps &amp; Accessories - Other</controllingFieldValue>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Cooling Towers - Marley/SPX</controllingFieldValue>
+            <controllingFieldValue>Patterson</controllingFieldValue>
+            <controllingFieldValue>York</controllingFieldValue>
+            <valueName>Packaged HVAC System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps &amp; Accessories - Other</controllingFieldValue>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Boilers &amp; Heaters - Camus Hydronics</controllingFieldValue>
+            <controllingFieldValue>Wilo</controllingFieldValue>
+            <controllingFieldValue>Patterson</controllingFieldValue>
+            <controllingFieldValue>Grundfoss</controllingFieldValue>
+            <controllingFieldValue>Aurora (Pentair)</controllingFieldValue>
+            <valueName>Pump - Base Mount. E.S.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps &amp; Accessories - Other</controllingFieldValue>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Heat Pumps - ClimateMaster</controllingFieldValue>
+            <controllingFieldValue>Wilo</controllingFieldValue>
+            <controllingFieldValue>Patterson</controllingFieldValue>
+            <controllingFieldValue>Grundfoss</controllingFieldValue>
+            <controllingFieldValue>Aurora (Pentair)</controllingFieldValue>
+            <valueName>Pump - Constans Circ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps &amp; Accessories - Other</controllingFieldValue>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Wilo</controllingFieldValue>
+            <controllingFieldValue>Patterson</controllingFieldValue>
+            <controllingFieldValue>Grundfoss</controllingFieldValue>
+            <controllingFieldValue>Aurora (Pentair)</controllingFieldValue>
+            <valueName>Pump - HSC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps &amp; Accessories - Other</controllingFieldValue>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Wilo</controllingFieldValue>
+            <controllingFieldValue>Patterson</controllingFieldValue>
+            <controllingFieldValue>Grundfoss</controllingFieldValue>
+            <controllingFieldValue>Aurora (Pentair)</controllingFieldValue>
+            <valueName>Pump - IVS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps &amp; Accessories - Other</controllingFieldValue>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Wilo</controllingFieldValue>
+            <controllingFieldValue>Patterson</controllingFieldValue>
+            <controllingFieldValue>Grundfoss</controllingFieldValue>
+            <controllingFieldValue>Aurora (Pentair)</controllingFieldValue>
+            <valueName>Pump - Variable Circ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps &amp; Accessories - Other</controllingFieldValue>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Wilo</controllingFieldValue>
+            <controllingFieldValue>Patterson</controllingFieldValue>
+            <controllingFieldValue>Grundfoss</controllingFieldValue>
+            <controllingFieldValue>Aurora (Pentair)</controllingFieldValue>
+            <valueName>Pump - VIL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps &amp; Accessories - Other</controllingFieldValue>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Wessels</controllingFieldValue>
+            <controllingFieldValue>Spirotherm</controllingFieldValue>
+            <controllingFieldValue>PEP</controllingFieldValue>
+            <controllingFieldValue>Griswold</controllingFieldValue>
+            <controllingFieldValue>Patterson</controllingFieldValue>
+            <controllingFieldValue>American Wheatley</controllingFieldValue>
+            <valueName>Air Separator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps &amp; Accessories - Other</controllingFieldValue>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Wessels</controllingFieldValue>
+            <controllingFieldValue>Boilers &amp; Heaters - Camus Hydronics</controllingFieldValue>
+            <controllingFieldValue>Boilers &amp; Heaters - Other</controllingFieldValue>
+            <controllingFieldValue>Heat Pumps - Other</controllingFieldValue>
+            <controllingFieldValue>Patterson</controllingFieldValue>
+            <controllingFieldValue>Cleaver-Brooks</controllingFieldValue>
+            <valueName>Storage Tank</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps &amp; Accessories - Other</controllingFieldValue>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Boilers &amp; Heaters - Camus Hydronics</controllingFieldValue>
+            <controllingFieldValue>Cooling Towers - Marley/SPX</controllingFieldValue>
+            <controllingFieldValue>Patterson</controllingFieldValue>
+            <valueName>TDV / Suction Guide</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Boilers &amp; Heaters - Camus Hydronics</controllingFieldValue>
+            <controllingFieldValue>Unknown</controllingFieldValue>
+            <controllingFieldValue>Neuco</controllingFieldValue>
+            <controllingFieldValue>Ace Heaters</controllingFieldValue>
+            <valueName>Actuators</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Unknown</controllingFieldValue>
+            <controllingFieldValue>Heat Pumps - ClimateMaster</controllingFieldValue>
+            <controllingFieldValue>Alfa Laval</controllingFieldValue>
+            <controllingFieldValue>Xylem</controllingFieldValue>
+            <controllingFieldValue>Alliance Air Products</controllingFieldValue>
+            <controllingFieldValue>Enervex</controllingFieldValue>
+            <controllingFieldValue>Cleaver-Brooks</controllingFieldValue>
+            <valueName>Adapters</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Enviro-tec</controllingFieldValue>
+            <controllingFieldValue>Spirotherm</controllingFieldValue>
+            <valueName>Air Vent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Unknown</controllingFieldValue>
+            <controllingFieldValue>Cooling Towers - Marley/SPX</controllingFieldValue>
+            <controllingFieldValue>Heat Pumps - ClimateMaster</controllingFieldValue>
+            <controllingFieldValue>Baltimore Aircoil</controllingFieldValue>
+            <controllingFieldValue>Alliance Air Products</controllingFieldValue>
+            <controllingFieldValue>Cleaver-Brooks</controllingFieldValue>
+            <controllingFieldValue>Aurora (Pentair)</controllingFieldValue>
+            <controllingFieldValue>Lochinvar</controllingFieldValue>
+            <controllingFieldValue>UnlaubÂ</controllingFieldValue>
+            <controllingFieldValue>Thrush</controllingFieldValue>
+            <valueName>Bearings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Boilers &amp; Heaters - Camus Hydronics</controllingFieldValue>
+            <controllingFieldValue>Heat Pumps - Other</controllingFieldValue>
+            <controllingFieldValue>Aldrich</controllingFieldValue>
+            <valueName>Boiler - Condensing - Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Alfa Laval</controllingFieldValue>
+            <controllingFieldValue>Mueller</controllingFieldValue>
+            <valueName>Brazed Plate Heat Exchanger</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Wessels</controllingFieldValue>
+            <controllingFieldValue>American Wheatley</controllingFieldValue>
+            <valueName>Buffer Tank</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Boilers &amp; Heaters - Camus Hydronics</controllingFieldValue>
+            <controllingFieldValue>Unknown</controllingFieldValue>
+            <controllingFieldValue>Cooling Towers - Marley/SPX</controllingFieldValue>
+            <controllingFieldValue>Heat Pumps - ClimateMaster</controllingFieldValue>
+            <controllingFieldValue>Baltimore Aircoil</controllingFieldValue>
+            <controllingFieldValue>Alliance Air Products</controllingFieldValue>
+            <controllingFieldValue>Aurora (Pentair)</controllingFieldValue>
+            <valueName>Bushings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Unknown</controllingFieldValue>
+            <controllingFieldValue>Enervex</controllingFieldValue>
+            <controllingFieldValue>Aurora (Pentair)</controllingFieldValue>
+            <valueName>Collars</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Boilers &amp; Heaters - Camus Hydronics</controllingFieldValue>
+            <controllingFieldValue>Unknown</controllingFieldValue>
+            <controllingFieldValue>Heat Pumps - ClimateMaster</controllingFieldValue>
+            <controllingFieldValue>Dunham Bush</controllingFieldValue>
+            <controllingFieldValue>Twin City Hose</controllingFieldValue>
+            <controllingFieldValue>Weil McClain</controllingFieldValue>
+            <controllingFieldValue>Baltimore Aircoil</controllingFieldValue>
+            <controllingFieldValue>Hitachi</controllingFieldValue>
+            <controllingFieldValue>Neuco</controllingFieldValue>
+            <controllingFieldValue>Alliance Air Products</controllingFieldValue>
+            <controllingFieldValue>Enervex</controllingFieldValue>
+            <controllingFieldValue>Cleaver-Brooks</controllingFieldValue>
+            <controllingFieldValue>Ace Heaters</controllingFieldValue>
+            <controllingFieldValue>Lochinvar</controllingFieldValue>
+            <controllingFieldValue>Weil Mclain</controllingFieldValue>
+            <controllingFieldValue>York</controllingFieldValue>
+            <controllingFieldValue>Power Flame</controllingFieldValue>
+            <valueName>Controls (t-stats, etc)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Unknown</controllingFieldValue>
+            <controllingFieldValue>Steele Plastics</controllingFieldValue>
+            <controllingFieldValue>Cooling Towers - Marley/SPX</controllingFieldValue>
+            <controllingFieldValue>Dunham Bush</controllingFieldValue>
+            <controllingFieldValue>Total Pump &amp; Supply</controllingFieldValue>
+            <controllingFieldValue>Bearings Inc.</controllingFieldValue>
+            <controllingFieldValue>Reftekk</controllingFieldValue>
+            <controllingFieldValue>Neuco</controllingFieldValue>
+            <controllingFieldValue>Alliance Air Products</controllingFieldValue>
+            <controllingFieldValue>Cleaver-Brooks</controllingFieldValue>
+            <controllingFieldValue>Aurora (Pentair)</controllingFieldValue>
+            <controllingFieldValue>Lochinvar</controllingFieldValue>
+            <controllingFieldValue>Applied Industrial Technologies</controllingFieldValue>
+            <controllingFieldValue>Thrush</controllingFieldValue>
+            <valueName>Couplers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <valueName>Extensions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Unknown</controllingFieldValue>
+            <controllingFieldValue>Baltimore Aircoil</controllingFieldValue>
+            <controllingFieldValue>Aurora (Pentair)</controllingFieldValue>
+            <controllingFieldValue>Lochinvar</controllingFieldValue>
+            <controllingFieldValue>National Wholesale</controllingFieldValue>
+            <controllingFieldValue>Thrush</controllingFieldValue>
+            <controllingFieldValue>Power Equip &amp; Engineering</controllingFieldValue>
+            <valueName>Flanges</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Wessels</controllingFieldValue>
+            <valueName>Glycol Make-Up Package</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Unknown</controllingFieldValue>
+            <controllingFieldValue>Aurora (Pentair)</controllingFieldValue>
+            <controllingFieldValue>Lochinvar</controllingFieldValue>
+            <valueName>Impellers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Boilers &amp; Heaters - Camus Hydronics</controllingFieldValue>
+            <controllingFieldValue>Griswold</controllingFieldValue>
+            <controllingFieldValue>Enervex</controllingFieldValue>
+            <valueName>Integraclean System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Cooling Towers - Marley/SPX</controllingFieldValue>
+            <controllingFieldValue>Enervex</controllingFieldValue>
+            <valueName>Ion Generator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Plasma-Air</controllingFieldValue>
+            <valueName>Ionizers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Hays Fluid Controls</controllingFieldValue>
+            <controllingFieldValue>American Wheatley</controllingFieldValue>
+            <controllingFieldValue>Enervex</controllingFieldValue>
+            <valueName>Manual Balancing Valve</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Cooling Towers - Marley/SPX</controllingFieldValue>
+            <controllingFieldValue>Dunham Bush</controllingFieldValue>
+            <controllingFieldValue>Total Pump &amp; Supply</controllingFieldValue>
+            <controllingFieldValue>Xylem</controllingFieldValue>
+            <controllingFieldValue>GE</controllingFieldValue>
+            <controllingFieldValue>Neuco</controllingFieldValue>
+            <controllingFieldValue>Alliance Air Products</controllingFieldValue>
+            <controllingFieldValue>Enervex</controllingFieldValue>
+            <controllingFieldValue>Aurora (Pentair)</controllingFieldValue>
+            <controllingFieldValue>Lochinvar</controllingFieldValue>
+            <controllingFieldValue>Thrush</controllingFieldValue>
+            <controllingFieldValue>Power Flame</controllingFieldValue>
+            <valueName>Motors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Alliance Air Products</controllingFieldValue>
+            <valueName>Mounts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Boilers &amp; Heaters - Camus Hydronics</controllingFieldValue>
+            <controllingFieldValue>Heat Pumps - Other</controllingFieldValue>
+            <controllingFieldValue>Cleaver-Brooks</controllingFieldValue>
+            <valueName>Boiler - NONcondensing - MicoFlame</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Boilers &amp; Heaters - Camus Hydronics</controllingFieldValue>
+            <controllingFieldValue>Heat Pumps - Other</controllingFieldValue>
+            <controllingFieldValue>Cleaver-Brooks</controllingFieldValue>
+            <valueName>Boiler - NONcondensing - Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Boilers &amp; Heaters - Camus Hydronics</controllingFieldValue>
+            <controllingFieldValue>Heat Pumps - Other</controllingFieldValue>
+            <controllingFieldValue>Cleaver-Brooks</controllingFieldValue>
+            <valueName>Boiler - NONcondensing - Dynaflame</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Cooling Towers - Marley/SPX</controllingFieldValue>
+            <valueName>Oil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Unknown</controllingFieldValue>
+            <controllingFieldValue>Cooling Towers - Marley/SPX</controllingFieldValue>
+            <controllingFieldValue>Enervex</controllingFieldValue>
+            <controllingFieldValue>Aurora (Pentair)</controllingFieldValue>
+            <controllingFieldValue>American Granby</controllingFieldValue>
+            <valueName>O-rings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Unknown</controllingFieldValue>
+            <valueName>Paint</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <valueName>Rings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Griswold</controllingFieldValue>
+            <valueName>Sand Filter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Unknown</controllingFieldValue>
+            <controllingFieldValue>Westermann</controllingFieldValue>
+            <controllingFieldValue>Cooling Towers - Marley/SPX</controllingFieldValue>
+            <controllingFieldValue>Baltimore Aircoil</controllingFieldValue>
+            <controllingFieldValue>Conbraco Industries</controllingFieldValue>
+            <controllingFieldValue>Aurora (Pentair)</controllingFieldValue>
+            <controllingFieldValue>York</controllingFieldValue>
+            <valueName>Screws, Nuts, and Bolts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Topp Industries</controllingFieldValue>
+            <controllingFieldValue>Unknown</controllingFieldValue>
+            <controllingFieldValue>Cooling Towers - Marley/SPX</controllingFieldValue>
+            <controllingFieldValue>Total Pump &amp; Supply</controllingFieldValue>
+            <controllingFieldValue>Alfa Laval</controllingFieldValue>
+            <controllingFieldValue>Xylem</controllingFieldValue>
+            <controllingFieldValue>John Crane</controllingFieldValue>
+            <controllingFieldValue>Neuco</controllingFieldValue>
+            <controllingFieldValue>Enervex</controllingFieldValue>
+            <controllingFieldValue>Cleaver-Brooks</controllingFieldValue>
+            <controllingFieldValue>Aurora (Pentair)</controllingFieldValue>
+            <controllingFieldValue>Lochinvar</controllingFieldValue>
+            <controllingFieldValue>Lochinvar Corp (School)</controllingFieldValue>
+            <controllingFieldValue>American Granby</controllingFieldValue>
+            <controllingFieldValue>York</controllingFieldValue>
+            <valueName>Seals</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Cooling Towers - Marley/SPX</controllingFieldValue>
+            <valueName>Shafts ​</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Cooling Towers - Marley/SPX</controllingFieldValue>
+            <valueName>Sheaves</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Cooling Towers - Marley/SPX</controllingFieldValue>
+            <valueName>Shims</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Griswold</controllingFieldValue>
+            <valueName>Side Stream Filter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Unknown</controllingFieldValue>
+            <controllingFieldValue>Aurora (Pentair)</controllingFieldValue>
+            <valueName>Slingers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>York</controllingFieldValue>
+            <valueName>Spacers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Titan Flow Control</controllingFieldValue>
+            <controllingFieldValue>Unknown</controllingFieldValue>
+            <controllingFieldValue>Flow Design</controllingFieldValue>
+            <controllingFieldValue>Sure Flow equipment</controllingFieldValue>
+            <controllingFieldValue>Watson-McDaniel</controllingFieldValue>
+            <controllingFieldValue>Fabtek</controllingFieldValue>
+            <controllingFieldValue>American Wheatley</controllingFieldValue>
+            <controllingFieldValue>Neuco</controllingFieldValue>
+            <controllingFieldValue>Aurora (Pentair)</controllingFieldValue>
+            <controllingFieldValue>Watts Water Technologies</controllingFieldValue>
+            <valueName>Strainers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pumps - Armstrong</controllingFieldValue>
+            <controllingFieldValue>Heat Pumps - ClimateMaster</controllingFieldValue>
+            <controllingFieldValue>GE</controllingFieldValue>
+            <controllingFieldValue>Ace Heaters</controllingFieldValue>
+            <controllingFieldValue>Lochinvar</controllingFieldValue>
+            <controllingFieldValue>Parker Boiler</controllingFieldValue>
+            <valueName>Transformers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>VFD - Danfoss</controllingFieldValue>
+            <controllingFieldValue>Heat Pumps - ClimateMaster</controllingFieldValue>
+            <controllingFieldValue>Hays Fluid Controls</controllingFieldValue>
+            <controllingFieldValue>PEP</controllingFieldValue>
+            <controllingFieldValue>Dunham Bush</controllingFieldValue>
+            <controllingFieldValue>VTS</controllingFieldValue>
+            <controllingFieldValue>Griswold</controllingFieldValue>
+            <controllingFieldValue>VAW</controllingFieldValue>
+            <controllingFieldValue>Hitachi</controllingFieldValue>
+            <controllingFieldValue>Seasons-4</controllingFieldValue>
+            <controllingFieldValue>Sterling</controllingFieldValue>
+            <controllingFieldValue>Precision Coils</controllingFieldValue>
+            <controllingFieldValue>Advanced Cooling Technologies (ACT)</controllingFieldValue>
+            <controllingFieldValue>Bosch</controllingFieldValue>
+            <controllingFieldValue>Jetson</controllingFieldValue>
+            <controllingFieldValue>Alliance Air Products</controllingFieldValue>
+            <controllingFieldValue>Ice Western</controllingFieldValue>
+            <controllingFieldValue>Duravent</controllingFieldValue>
+            <controllingFieldValue>Cleaver-Brooks</controllingFieldValue>
+            <controllingFieldValue>Grundfoss</controllingFieldValue>
+            <controllingFieldValue>Aldrich</controllingFieldValue>
+            <controllingFieldValue>Bessamaire</controllingFieldValue>
+            <controllingFieldValue>Fuji Electric</controllingFieldValue>
+            <controllingFieldValue>Kinetics Noise Control</controllingFieldValue>
+            <controllingFieldValue>Nexus</controllingFieldValue>
+            <controllingFieldValue>Pietro Fiorentini</controllingFieldValue>
+            <controllingFieldValue>York</controllingFieldValue>
+            <valueName>Accessories (hose kits, etc)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>VFD - Danfoss</controllingFieldValue>
+            <controllingFieldValue>Cooling Towers - Marley/SPX</controllingFieldValue>
+            <controllingFieldValue>Heat Pumps - ClimateMaster</controllingFieldValue>
+            <controllingFieldValue>Mueller</controllingFieldValue>
+            <valueName>Commission</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>VFD - Danfoss</controllingFieldValue>
+            <valueName>EP-VFD Stock</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>VFD - Danfoss</controllingFieldValue>
+            <controllingFieldValue>VFD - Other</controllingFieldValue>
+            <controllingFieldValue>Fuji Electric</controllingFieldValue>
+            <valueName>VFD - Midwest Stock</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>VFD - Danfoss</controllingFieldValue>
+            <controllingFieldValue>VFD - Other</controllingFieldValue>
+            <controllingFieldValue>Fuji Electric</controllingFieldValue>
+            <valueName>VFD - NonStock</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dehumidifier - Desert Aire</controllingFieldValue>
+            <controllingFieldValue>Seresco</controllingFieldValue>
+            <controllingFieldValue>Quest</controllingFieldValue>
+            <valueName>Dehumidifier - Dedicated Outdoor Air System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dehumidifier - Desert Aire</controllingFieldValue>
+            <controllingFieldValue>Seresco</controllingFieldValue>
+            <controllingFieldValue>Quest</controllingFieldValue>
+            <valueName>Dehumidifier - Dehumidification System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dehumidifier - Desert Aire</controllingFieldValue>
+            <valueName>Dehumidifier - GrowAire</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dehumidifier - Desert Aire</controllingFieldValue>
+            <controllingFieldValue>Seresco</controllingFieldValue>
+            <controllingFieldValue>Quest</controllingFieldValue>
+            <valueName>Dehumidifier - Indoor Pool System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dehumidifier - Desert Aire</controllingFieldValue>
+            <controllingFieldValue>Quest</controllingFieldValue>
+            <valueName>Dehumidifier - Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dehumidifier - Desert Aire</controllingFieldValue>
+            <controllingFieldValue>Quest</controllingFieldValue>
+            <valueName>Dehumidifier - Parts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dehumidifier - Desert Aire</controllingFieldValue>
+            <controllingFieldValue>Quest</controllingFieldValue>
+            <valueName>Dehumidifier - Portable System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Midwest Machinery</controllingFieldValue>
+            <valueName>Budgeting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Midwest Machinery</controllingFieldValue>
+            <controllingFieldValue>Cleaver-Brooks</controllingFieldValue>
+            <valueName>Technical Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Midwest Machinery</controllingFieldValue>
+            <controllingFieldValue>Flow-Tech</controllingFieldValue>
+            <valueName>Water Treatment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Williams</controllingFieldValue>
+            <controllingFieldValue>Enviro-tec</controllingFieldValue>
+            <controllingFieldValue>Whelan</controllingFieldValue>
+            <valueName>Fan Coils</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boilers &amp; Heaters - Camus Hydronics</controllingFieldValue>
+            <controllingFieldValue>Boilers &amp; Heaters - Other</controllingFieldValue>
+            <controllingFieldValue>Advanced Thermal Hydronics (ATH)</controllingFieldValue>
+            <controllingFieldValue>Cleaver-Brooks</controllingFieldValue>
+            <controllingFieldValue>Aldrich</controllingFieldValue>
+            <valueName>Boiler - Condensing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boilers &amp; Heaters - Camus Hydronics</controllingFieldValue>
+            <controllingFieldValue>Boilers &amp; Heaters - Other</controllingFieldValue>
+            <controllingFieldValue>Cleaver-Brooks</controllingFieldValue>
+            <controllingFieldValue>Aldrich</controllingFieldValue>
+            <valueName>Boiler - NON Condensing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boilers &amp; Heaters - Camus Hydronics</controllingFieldValue>
+            <controllingFieldValue>Heat Pumps - Other</controllingFieldValue>
+            <controllingFieldValue>Cleaver-Brooks</controllingFieldValue>
+            <valueName>Boiler - Condensing - Advantus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boilers &amp; Heaters - Camus Hydronics</controllingFieldValue>
+            <controllingFieldValue>Heat Pumps - Other</controllingFieldValue>
+            <controllingFieldValue>Cleaver-Brooks</controllingFieldValue>
+            <valueName>Boiler - Condensing - Dynaflame</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boilers &amp; Heaters - Camus Hydronics</controllingFieldValue>
+            <controllingFieldValue>Neuco</controllingFieldValue>
+            <controllingFieldValue>Cleaver-Brooks</controllingFieldValue>
+            <controllingFieldValue>Ace Heaters</controllingFieldValue>
+            <controllingFieldValue>Lochinvar</controllingFieldValue>
+            <valueName>Flame Rods</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boilers &amp; Heaters - Camus Hydronics</controllingFieldValue>
+            <controllingFieldValue>Unknown</controllingFieldValue>
+            <controllingFieldValue>Neuco</controllingFieldValue>
+            <controllingFieldValue>Cleaver-Brooks</controllingFieldValue>
+            <controllingFieldValue>Ace Heaters</controllingFieldValue>
+            <controllingFieldValue>Lochinvar</controllingFieldValue>
+            <controllingFieldValue>See Aceheaters</controllingFieldValue>
+            <controllingFieldValue>Parker Boiler</controllingFieldValue>
+            <controllingFieldValue>Power Flame</controllingFieldValue>
+            <valueName>Igniters</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boilers &amp; Heaters - Camus Hydronics</controllingFieldValue>
+            <controllingFieldValue>Neuco</controllingFieldValue>
+            <controllingFieldValue>Cleaver-Brooks</controllingFieldValue>
+            <controllingFieldValue>Lochinvar</controllingFieldValue>
+            <controllingFieldValue>York</controllingFieldValue>
+            <valueName>Sensors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boilers &amp; Heaters - Camus Hydronics</controllingFieldValue>
+            <controllingFieldValue>Boilers &amp; Heaters - Other</controllingFieldValue>
+            <controllingFieldValue>Cleaver-Brooks</controllingFieldValue>
+            <controllingFieldValue>Aldrich</controllingFieldValue>
+            <controllingFieldValue>Reco Commercial</controllingFieldValue>
+            <valueName>Water Heater - Condensing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boilers &amp; Heaters - Camus Hydronics</controllingFieldValue>
+            <controllingFieldValue>Heat Pumps - Other</controllingFieldValue>
+            <controllingFieldValue>Cleaver-Brooks</controllingFieldValue>
+            <controllingFieldValue>Aldrich</controllingFieldValue>
+            <controllingFieldValue>Reco Commercial</controllingFieldValue>
+            <valueName>Water Heater - Condensing - Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boilers &amp; Heaters - Camus Hydronics</controllingFieldValue>
+            <controllingFieldValue>Boilers &amp; Heaters - Other</controllingFieldValue>
+            <controllingFieldValue>Heat Pumps - Other</controllingFieldValue>
+            <controllingFieldValue>Cleaver-Brooks</controllingFieldValue>
+            <controllingFieldValue>Aldrich</controllingFieldValue>
+            <controllingFieldValue>Reco Commercial</controllingFieldValue>
+            <valueName>Water Heater - NONCondensing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unknown</controllingFieldValue>
+            <controllingFieldValue>Enervex</controllingFieldValue>
+            <controllingFieldValue>American Granby</controllingFieldValue>
+            <valueName>Caps</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unknown</controllingFieldValue>
+            <controllingFieldValue>Twin City Hose</controllingFieldValue>
+            <controllingFieldValue>American Wheatley</controllingFieldValue>
+            <controllingFieldValue>Reftekk</controllingFieldValue>
+            <controllingFieldValue>Milton Industries</controllingFieldValue>
+            <controllingFieldValue>Alliance Air Products</controllingFieldValue>
+            <controllingFieldValue>Enervex</controllingFieldValue>
+            <controllingFieldValue>Thrush</controllingFieldValue>
+            <valueName>Connectors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unknown</controllingFieldValue>
+            <controllingFieldValue>Ace Heaters</controllingFieldValue>
+            <controllingFieldValue>Lochinvar</controllingFieldValue>
+            <valueName>Controls</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unknown</controllingFieldValue>
+            <controllingFieldValue>Halmar</controllingFieldValue>
+            <controllingFieldValue>Power Flame Inc.</controllingFieldValue>
+            <valueName>Electrode</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unknown</controllingFieldValue>
+            <controllingFieldValue>Baltimore Aircoil</controllingFieldValue>
+            <controllingFieldValue>Neuco</controllingFieldValue>
+            <controllingFieldValue>Control Devices Llc</controllingFieldValue>
+            <controllingFieldValue>Aurora (Pentair)</controllingFieldValue>
+            <controllingFieldValue>Watts Water Technologies</controllingFieldValue>
+            <valueName>Floats</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unknown</controllingFieldValue>
+            <controllingFieldValue>Winters Instruments</controllingFieldValue>
+            <controllingFieldValue>Miljoco</controllingFieldValue>
+            <controllingFieldValue>Neuco</controllingFieldValue>
+            <controllingFieldValue>Ace Heaters</controllingFieldValue>
+            <controllingFieldValue>Lochinvar</controllingFieldValue>
+            <controllingFieldValue>GM</controllingFieldValue>
+            <controllingFieldValue>Tel-Tru Manufacturing Co</controllingFieldValue>
+            <controllingFieldValue>American Granby</controllingFieldValue>
+            <valueName>Gauges</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unknown</controllingFieldValue>
+            <controllingFieldValue>Neuco</controllingFieldValue>
+            <controllingFieldValue>Lochinvar</controllingFieldValue>
+            <controllingFieldValue>Pietro Fiorentini</controllingFieldValue>
+            <controllingFieldValue>Power Flame</controllingFieldValue>
+            <valueName>Regulator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unknown</controllingFieldValue>
+            <controllingFieldValue>Heat Pumps - ClimateMaster</controllingFieldValue>
+            <controllingFieldValue>Dunham Bush</controllingFieldValue>
+            <controllingFieldValue>Canariis</controllingFieldValue>
+            <controllingFieldValue>Neuco</controllingFieldValue>
+            <controllingFieldValue>Lochinvar</controllingFieldValue>
+            <controllingFieldValue>Power Flame</controllingFieldValue>
+            <valueName>Relays</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cooling Towers - Marley/SPX</controllingFieldValue>
+            <controllingFieldValue>Baltimore Aircoil</controllingFieldValue>
+            <controllingFieldValue>IEC</controllingFieldValue>
+            <valueName>Belt Drive Units</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cooling Towers - Marley/SPX</controllingFieldValue>
+            <controllingFieldValue>Vulcan</controllingFieldValue>
+            <valueName>Cabinet Heater Unit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cooling Towers - Marley/SPX</controllingFieldValue>
+            <controllingFieldValue>Dunham Bush</controllingFieldValue>
+            <controllingFieldValue>Moffitt</controllingFieldValue>
+            <controllingFieldValue>Neuco</controllingFieldValue>
+            <controllingFieldValue>Alliance Air Products</controllingFieldValue>
+            <controllingFieldValue>Ge Consumer &amp; Industrial</controllingFieldValue>
+            <controllingFieldValue>Cleaver-Brooks</controllingFieldValue>
+            <controllingFieldValue>Lochinvar</controllingFieldValue>
+            <valueName>Fans</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cooling Towers - Marley/SPX</controllingFieldValue>
+            <controllingFieldValue>Enervex</controllingFieldValue>
+            <controllingFieldValue>Cleaver-Brooks</controllingFieldValue>
+            <valueName>Fittings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cooling Towers - Marley/SPX</controllingFieldValue>
+            <valueName>Fluidcooler - Marley</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cooling Towers - Marley/SPX</controllingFieldValue>
+            <valueName>Fluidcooler - Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cooling Towers - Marley/SPX</controllingFieldValue>
+            <controllingFieldValue>Recold</controllingFieldValue>
+            <valueName>Fluidcooler - Recold</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cooling Towers - Marley/SPX</controllingFieldValue>
+            <valueName>Gears</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cooling Towers - Marley/SPX</controllingFieldValue>
+            <controllingFieldValue>Heatrex</controllingFieldValue>
+            <controllingFieldValue>Alliance Air Products</controllingFieldValue>
+            <valueName>Heating Element</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cooling Towers - Marley/SPX</controllingFieldValue>
+            <controllingFieldValue>Enervex</controllingFieldValue>
+            <valueName>Nozzles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cooling Towers - Marley/SPX</controllingFieldValue>
+            <valueName>Parts for Non-Marley</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cooling Towers - Marley/SPX</controllingFieldValue>
+            <controllingFieldValue>Hays Fluid Controls</controllingFieldValue>
+            <valueName>Piping Package - TU</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cooling Towers - Marley/SPX</controllingFieldValue>
+            <valueName>Probes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cooling Towers - Marley/SPX</controllingFieldValue>
+            <valueName>Sealer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cooling Towers - Marley/SPX</controllingFieldValue>
+            <valueName>Tower - Aquatower</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cooling Towers - Marley/SPX</controllingFieldValue>
+            <valueName>Tower - AV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cooling Towers - Marley/SPX</controllingFieldValue>
+            <valueName>Tower - Industrial Class</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cooling Towers - Marley/SPX</controllingFieldValue>
+            <valueName>Tower - MD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cooling Towers - Marley/SPX</controllingFieldValue>
+            <valueName>Tower - NC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cooling Towers - Marley/SPX</controllingFieldValue>
+            <valueName>Tower - Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cooling Towers - Marley/SPX</controllingFieldValue>
+            <valueName>Tower - Recold</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Heat Pumps - ClimateMaster</controllingFieldValue>
+            <controllingFieldValue>Dunham Bush</controllingFieldValue>
+            <valueName>Compressors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Heat Pumps - ClimateMaster</controllingFieldValue>
+            <controllingFieldValue>Dunham Bush</controllingFieldValue>
+            <controllingFieldValue>Quest</controllingFieldValue>
+            <controllingFieldValue>York</controllingFieldValue>
+            <valueName>DOAS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Heat Pumps - ClimateMaster</controllingFieldValue>
+            <valueName>Heat Pump - H2O/H20</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Heat Pumps - ClimateMaster</controllingFieldValue>
+            <controllingFieldValue>Dunham Bush</controllingFieldValue>
+            <valueName>Heat Pump - Roof Tope</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Heat Pumps - ClimateMaster</controllingFieldValue>
+            <controllingFieldValue>Bosch</controllingFieldValue>
+            <valueName>Heat Pump - Standard</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Heat Pumps - ClimateMaster</controllingFieldValue>
+            <controllingFieldValue>Bosch</controllingFieldValue>
+            <valueName>Heat Pump - Vertical Stack</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hays Fluid Controls</controllingFieldValue>
+            <controllingFieldValue>Bosch</controllingFieldValue>
+            <controllingFieldValue>Red-White Valve Corporation</controllingFieldValue>
+            <valueName>Hose Kit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hays Fluid Controls</controllingFieldValue>
+            <valueName>Piping Package - EQ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hays Fluid Controls</controllingFieldValue>
+            <valueName>Y-Strainer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Spark</controllingFieldValue>
+            <valueName>Creative Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PEP</controllingFieldValue>
+            <controllingFieldValue>EEI Group</controllingFieldValue>
+            <controllingFieldValue>Puroflux</controllingFieldValue>
+            <valueName>Bag Filter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PEP</controllingFieldValue>
+            <valueName>Centrifugal Separator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PEP</controllingFieldValue>
+            <valueName>Screen Filters</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PEP</controllingFieldValue>
+            <valueName>Sweeper Jets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dunham Bush</controllingFieldValue>
+            <controllingFieldValue>VTS</controllingFieldValue>
+            <valueName>Blower Coil Unit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dunham Bush</controllingFieldValue>
+            <valueName>CRAC Unit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dunham Bush</controllingFieldValue>
+            <valueName>Ice Storage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dunham Bush</controllingFieldValue>
+            <controllingFieldValue>Enervex</controllingFieldValue>
+            <controllingFieldValue>Duravent</controllingFieldValue>
+            <controllingFieldValue>Cleaver-Brooks</controllingFieldValue>
+            <controllingFieldValue>Vent-Rite</controllingFieldValue>
+            <valueName>Venting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Armstrong Humidifiers</controllingFieldValue>
+            <valueName>Humidifier</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Moffitt</controllingFieldValue>
+            <valueName>Daylighting Ventilation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Moffitt</controllingFieldValue>
+            <controllingFieldValue>Bessamaire</controllingFieldValue>
+            <valueName>Evaporative Cooler</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Moffitt</controllingFieldValue>
+            <controllingFieldValue>Alliance Air Products</controllingFieldValue>
+            <valueName>Louvers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Moffitt</controllingFieldValue>
+            <valueName>Smoke Ventilator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Moffitt</controllingFieldValue>
+            <controllingFieldValue>Enervex</controllingFieldValue>
+            <controllingFieldValue>Duravent</controllingFieldValue>
+            <valueName>Ventilators</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Moffitt</controllingFieldValue>
+            <valueName>Wind Turbine Ventilators</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Griswold</controllingFieldValue>
+            <valueName>Pot Feeder</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Winters Instruments</controllingFieldValue>
+            <controllingFieldValue>Miljoco</controllingFieldValue>
+            <controllingFieldValue>Lochinvar</controllingFieldValue>
+            <controllingFieldValue>Tel-Tru Manufacturing Co</controllingFieldValue>
+            <controllingFieldValue>York</controllingFieldValue>
+            <valueName>Thermometers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Whelan</controllingFieldValue>
+            <valueName>Chassis Water Source Heat Pump</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Whelan</controllingFieldValue>
+            <valueName>Thermal Recovery Unit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Whelan</controllingFieldValue>
+            <valueName>Water Source Heat Pump</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Baltimore Aircoil</controllingFieldValue>
+            <controllingFieldValue>Aurora (Pentair)</controllingFieldValue>
+            <valueName>Shafts?</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fraser-Johnston</controllingFieldValue>
+            <controllingFieldValue>Lennox</controllingFieldValue>
+            <controllingFieldValue>York</controllingFieldValue>
+            <valueName>Split System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IEC</controllingFieldValue>
+            <controllingFieldValue>Bosch</controllingFieldValue>
+            <valueName>Horizontal Units</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IEC</controllingFieldValue>
+            <valueName>Vertical Stack Units</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hitachi</controllingFieldValue>
+            <valueName>Multi-Zone</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hitachi</controllingFieldValue>
+            <valueName>VRF</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reftekk</controllingFieldValue>
+            <valueName>Copper Accessories</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reftekk</controllingFieldValue>
+            <controllingFieldValue>Enervex</controllingFieldValue>
+            <valueName>Copper_pipe</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reftekk</controllingFieldValue>
+            <controllingFieldValue>York</controllingFieldValue>
+            <valueName>Tools</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sterling</controllingFieldValue>
+            <valueName>Baseboard</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sterling</controllingFieldValue>
+            <valueName>Cabinet Unit Heaters</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sterling</controllingFieldValue>
+            <valueName>Radiant Panels</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sterling</controllingFieldValue>
+            <valueName>Unit Heaters</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lennox</controllingFieldValue>
+            <valueName>Gas Fired Unit Heater</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Aquanomix</controllingFieldValue>
+            <valueName>Filter Skid</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Aquanomix</controllingFieldValue>
+            <valueName>Water Chemistry Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Aquanomix</controllingFieldValue>
+            <valueName>Water Reclaim System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Avalara</controllingFieldValue>
+            <valueName>Tax</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AtmosAir</controllingFieldValue>
+            <valueName>BiPolar Ionizer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quest</controllingFieldValue>
+            <controllingFieldValue>Ice Western</controllingFieldValue>
+            <valueName>Dehumidification System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Neuco</controllingFieldValue>
+            <controllingFieldValue>Bryant Refractory Co</controllingFieldValue>
+            <controllingFieldValue>Cleaver-Brooks</controllingFieldValue>
+            <controllingFieldValue>Ace Heaters</controllingFieldValue>
+            <controllingFieldValue>Lochinvar</controllingFieldValue>
+            <controllingFieldValue>Parker Boiler</controllingFieldValue>
+            <valueName>Burners</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Alliance Air Products</controllingFieldValue>
+            <valueName>Blades</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Alliance Air Products</controllingFieldValue>
+            <controllingFieldValue>Enervex</controllingFieldValue>
+            <valueName>Dampers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Enervex</controllingFieldValue>
+            <valueName>Bands</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Enervex</controllingFieldValue>
+            <valueName>Metal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Enervex</controllingFieldValue>
+            <valueName>Sections</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Enervex</controllingFieldValue>
+            <valueName>Tees</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Enervex</controllingFieldValue>
+            <valueName>Transitions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cleaver-Brooks</controllingFieldValue>
+            <valueName>Fan Kits</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>
