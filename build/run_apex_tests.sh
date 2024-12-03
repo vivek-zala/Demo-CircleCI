@@ -6,6 +6,7 @@
 echo "Creating the Scratch Org..."
 sfdx org create scratch -f config/project-scratch-def.json -a ${CIRCLE_BRANCH}
 
+sfdx force:package:install -p 04t360000011zP6AAI --target-org ${CIRCLE_BRANCH} -w 5
 sfdx force:source:push -u ${CIRCLE_BRANCH}
 
 #echo "Coverting source to metadata format"
