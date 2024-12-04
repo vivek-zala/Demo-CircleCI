@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>General_Contractor_Contact__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>General Contractor (Contact)</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Opportunities (General Contractor (Contact))</relationshipLabel>
+    <relationshipName>Opportunitiespb1a</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Lookup</type>
+</CustomField>

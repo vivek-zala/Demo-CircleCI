@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mechanical_Contractor_2__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <inlineHelpText>Enter the name of the company we are bidding to.</inlineHelpText>
+    <label>Mechanical Contractor 2 (Account)</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Opportunities (Company 2)</relationshipLabel>
+    <relationshipName>Opportunities2</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TotalSalesBooked__c</fullName>
+    <description>From project financials tab SALES(TOTAL BOOKINGS)
+TOTAL BOOKINGS
+And Even it is used for calculating (Total Sales (Booked) ) for Sales Result-DB</description>
+    <formula>IF(ISBLANK(Active_Financial_Quote__r.Total_Direct_Sell_Price__c), 0, Active_Financial_Quote__r.Total_Direct_Sell_Price__c) +  
+IF(ISBLANK( Active_Financial_Quote__r.Total_Buy_Resell_Price__c ), 0, Active_Financial_Quote__r.Total_Buy_Resell_Price__c)</formula>
+    <inlineHelpText>Active_Financial_Quote__r.Total_Direct_Sell_Price__c  + Active_Financial_Quote__r.Total_Buy_Resell_Price__c</inlineHelpText>
+    <label>SALES-TOTAL BOOKINGS</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <type>Currency</type>
+</CustomField>

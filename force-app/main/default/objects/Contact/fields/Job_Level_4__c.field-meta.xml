@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Job_Level_4__c</fullName>
+    <label>Job Level 4</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Job_Level_3__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Service MC</fullName>
+                <default>false</default>
+                <label>Service MC</label>
+            </value>
+            <value>
+                <fullName>Plan &amp; Spec MC</fullName>
+                <default>false</default>
+                <label>Plan &amp; Spec MC</label>
+            </value>
+            <value>
+                <fullName>Design/Build MC</fullName>
+                <default>false</default>
+                <label>Design/Build MC</label>
+            </value>
+            <value>
+                <fullName>Light Industrial</fullName>
+                <default>false</default>
+                <label>Light Industrial</label>
+            </value>
+            <value>
+                <fullName>K-12 Education</fullName>
+                <default>false</default>
+                <label>K-12 Education</label>
+            </value>
+            <value>
+                <fullName>Higher Education</fullName>
+                <default>false</default>
+                <label>Higher Education</label>
+            </value>
+            <value>
+                <fullName>Medical / Hospital</fullName>
+                <default>false</default>
+                <label>Medical / Hospital</label>
+            </value>
+            <value>
+                <fullName>Nursing Home</fullName>
+                <default>false</default>
+                <label>Nursing Home</label>
+            </value>
+            <value>
+                <fullName>Apartment/Condo</fullName>
+                <default>false</default>
+                <label>Apartment/Condo</label>
+            </value>
+            <value>
+                <fullName>Hotel/Hospitality</fullName>
+                <default>false</default>
+                <label>Hotel/Hospitality</label>
+            </value>
+            <value>
+                <fullName>Data Center</fullName>
+                <default>false</default>
+                <label>Data Center</label>
+            </value>
+            <value>
+                <fullName>General Office</fullName>
+                <default>false</default>
+                <label>General Office</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Mechanical Contractor</controllingFieldValue>
+            <valueName>Service MC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mechanical Contractor</controllingFieldValue>
+            <valueName>Plan &amp; Spec MC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mechanical Contractor</controllingFieldValue>
+            <valueName>Design/Build MC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial / Light Industrial User</controllingFieldValue>
+            <valueName>Light Industrial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial / Light Industrial User</controllingFieldValue>
+            <valueName>K-12 Education</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial / Light Industrial User</controllingFieldValue>
+            <valueName>Higher Education</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial / Light Industrial User</controllingFieldValue>
+            <valueName>Medical / Hospital</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial / Light Industrial User</controllingFieldValue>
+            <valueName>Nursing Home</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial / Light Industrial User</controllingFieldValue>
+            <valueName>Apartment/Condo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial / Light Industrial User</controllingFieldValue>
+            <valueName>Hotel/Hospitality</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial / Light Industrial User</controllingFieldValue>
+            <valueName>Data Center</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial / Light Industrial User</controllingFieldValue>
+            <valueName>General Office</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

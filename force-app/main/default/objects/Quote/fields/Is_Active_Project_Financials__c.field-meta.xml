@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Active_Project_Financials__c</fullName>
+    <formula>IF(Id = Opportunity.Active_Financial_Quote__c , true, false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is Active Project Financials</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Current_Lead_Time__c</fullName>
+    <inlineHelpText>Select the lead time on the project. This will display on generated documents.</inlineHelpText>
+    <label>Current Lead Time</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>In-Stock</fullName>
+                <default>false</default>
+                <label>In-Stock</label>
+            </value>
+            <value>
+                <fullName>Less than 1 week</fullName>
+                <default>false</default>
+                <label>Less than 1 week</label>
+            </value>
+            <value>
+                <fullName>1 - 2 weeks</fullName>
+                <default>false</default>
+                <label>1 - 2 weeks</label>
+            </value>
+            <value>
+                <fullName>2 - 4 weeks</fullName>
+                <default>false</default>
+                <label>2 - 4 weeks</label>
+            </value>
+            <value>
+                <fullName>4 - 6 weeks</fullName>
+                <default>false</default>
+                <label>4 - 6 weeks</label>
+            </value>
+            <value>
+                <fullName>6 - 8 weeks</fullName>
+                <default>false</default>
+                <label>6 - 8 weeks</label>
+            </value>
+            <value>
+                <fullName>8 - 10 weeks</fullName>
+                <default>false</default>
+                <label>8 - 10 weeks</label>
+            </value>
+            <value>
+                <fullName>10 - 12 weeks</fullName>
+                <default>false</default>
+                <label>10 - 12 weeks</label>
+            </value>
+            <value>
+                <fullName>12 - 14 weeks</fullName>
+                <default>false</default>
+                <label>12 - 14 weeks</label>
+            </value>
+            <value>
+                <fullName>14 - 16 weeks</fullName>
+                <default>false</default>
+                <label>14 - 16 weeks</label>
+            </value>
+            <value>
+                <fullName>16 - 18 weeks</fullName>
+                <default>false</default>
+                <label>16 - 18 weeks</label>
+            </value>
+            <value>
+                <fullName>18 - 20 weeks</fullName>
+                <default>false</default>
+                <label>18 - 20 weeks</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

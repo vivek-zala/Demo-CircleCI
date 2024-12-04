@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Industry__c</fullName>
+    <description>List of industry types.</description>
+    <inlineHelpText>Select what type of industry this opportunity is for.</inlineHelpText>
+    <label>Industry</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Aerospace</fullName>
+                <default>false</default>
+                <label>Aerospace</label>
+            </value>
+            <value>
+                <fullName>Amusement Park</fullName>
+                <default>false</default>
+                <label>Amusement Park</label>
+            </value>
+            <value>
+                <fullName>Apartment/Condo</fullName>
+                <default>false</default>
+                <label>Apartment/Condo</label>
+            </value>
+            <value>
+                <fullName>Church or Religious Center</fullName>
+                <default>false</default>
+                <label>Church or Religious Center</label>
+            </value>
+            <value>
+                <fullName>Commercial</fullName>
+                <default>false</default>
+                <label>Commercial</label>
+            </value>
+            <value>
+                <fullName>Data Center</fullName>
+                <default>false</default>
+                <label>Data Center</label>
+            </value>
+            <value>
+                <fullName>General Office</fullName>
+                <default>false</default>
+                <label>General Office</label>
+            </value>
+            <value>
+                <fullName>Government - Federal</fullName>
+                <default>false</default>
+                <label>Government - Federal</label>
+            </value>
+            <value>
+                <fullName>Government - Local</fullName>
+                <default>false</default>
+                <label>Government - Local</label>
+            </value>
+            <value>
+                <fullName>Government - State</fullName>
+                <default>false</default>
+                <label>Government - State</label>
+            </value>
+            <value>
+                <fullName>Heavy Industrial</fullName>
+                <default>false</default>
+                <label>Heavy Industrial</label>
+            </value>
+            <value>
+                <fullName>Higher Education</fullName>
+                <default>false</default>
+                <label>Higher Education</label>
+            </value>
+            <value>
+                <fullName>Hotel/Hospitality</fullName>
+                <default>false</default>
+                <label>Hotel/Hospitality</label>
+            </value>
+            <value>
+                <fullName>K-12 Education</fullName>
+                <default>false</default>
+                <label>K-12 Education</label>
+            </value>
+            <value>
+                <fullName>Library</fullName>
+                <default>false</default>
+                <label>Library</label>
+            </value>
+            <value>
+                <fullName>Light Industrial</fullName>
+                <default>false</default>
+                <label>Light Industrial</label>
+            </value>
+            <value>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+                <label>Manufacturing</label>
+            </value>
+            <value>
+                <fullName>Medical / Hospital</fullName>
+                <default>false</default>
+                <label>Medical / Hospital</label>
+            </value>
+            <value>
+                <fullName>Mixed Use - Commercial/Residential</fullName>
+                <default>false</default>
+                <label>Mixed Use - Commercial/Residential</label>
+            </value>
+            <value>
+                <fullName>Nursing Home</fullName>
+                <default>false</default>
+                <label>Nursing Home</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Park/Public Facility</fullName>
+                <default>false</default>
+                <label>Park/Public Facility</label>
+            </value>
+            <value>
+                <fullName>Pharmaceutical</fullName>
+                <default>false</default>
+                <label>Pharmaceutical</label>
+            </value>
+            <value>
+                <fullName>Rec Center</fullName>
+                <default>false</default>
+                <label>Rec Center</label>
+            </value>
+            <value>
+                <fullName>Residential</fullName>
+                <default>false</default>
+                <label>Residential</label>
+            </value>
+            <value>
+                <fullName>Stadium/Convention Center</fullName>
+                <default>false</default>
+                <label>Stadium/Convention Center</label>
+            </value>
+            <value>
+                <fullName>Theater/Amphitheater</fullName>
+                <default>false</default>
+                <label>Theater/Amphitheater</label>
+            </value>
+            <value>
+                <fullName>Utilities</fullName>
+                <default>false</default>
+                <label>Utilities</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Consulting_Engineer__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>This is a look up to account record to store the consulting engineer.</description>
+    <inlineHelpText>Please select a consulting engineering firm for this opportunity.</inlineHelpText>
+    <label>Consulting Engineer (Account)</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Opportunities (Consulting Engineer)</relationshipLabel>
+    <relationshipName>ConsultingEngineerOpportunities</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Lookup</type>
+</CustomField>

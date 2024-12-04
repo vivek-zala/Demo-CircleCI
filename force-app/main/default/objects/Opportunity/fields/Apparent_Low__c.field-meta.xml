@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Apparent_Low__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Apparent Low (Account)</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Opportunities (Apparent Low)</relationshipLabel>
+    <relationshipName>Opportunitieswy95</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Lookup</type>
+</CustomField>

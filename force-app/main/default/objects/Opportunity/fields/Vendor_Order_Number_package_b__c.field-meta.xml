@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Vendor_Order_Number_package_b__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>What is the vendor order number?</inlineHelpText>
+    <label>Vendor Order Number</label>
+    <length>40</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

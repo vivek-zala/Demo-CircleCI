@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Sync_Quote__c</fullName>
+    <formula>IF(Opportunity.Sync_Quote__c ==  Id, true, false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is Sync Quote</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Job_Level_2__c</fullName>
+    <label>Job Level 2</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A/E Firm</fullName>
+                <default>false</default>
+                <label>A/E Firm</label>
+            </value>
+            <value>
+                <fullName>Competitor</fullName>
+                <default>false</default>
+                <label>Competitor</label>
+            </value>
+            <value>
+                <fullName>Contractor</fullName>
+                <default>false</default>
+                <label>Contractor</label>
+            </value>
+            <value>
+                <fullName>End User</fullName>
+                <default>false</default>
+                <label>End User</label>
+            </value>
+            <value>
+                <fullName>Principal / Manufacturer</fullName>
+                <default>false</default>
+                <label>Principal / Manufacturer</label>
+            </value>
+            <value>
+                <fullName>Property Manager</fullName>
+                <default>false</default>
+                <label>Property Manager</label>
+            </value>
+            <value>
+                <fullName>Vendor / Supplier</fullName>
+                <default>false</default>
+                <label>Vendor / Supplier</label>
+            </value>
+            <value>
+                <fullName>Wholesaler</fullName>
+                <default>false</default>
+                <label>Wholesaler</label>
+            </value>
+            <value>
+                <fullName>Manufacturers Representative</fullName>
+                <default>false</default>
+                <label>Manufacturers Representative</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

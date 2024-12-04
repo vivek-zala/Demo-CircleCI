@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>End_User__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>This is a look up to account record to store end user.</description>
+    <inlineHelpText>Please select an end user for this opportunity.</inlineHelpText>
+    <label>End User Business Name (Account)</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Opportunities</relationshipLabel>
+    <relationshipName>EndUserOpportunities</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Lookup</type>
+</CustomField>

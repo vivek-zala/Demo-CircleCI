@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bidding_To__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <inlineHelpText>Name the person you are bidding this quote to. This persons name will show up on the generated quote in the &quot;Attention&quot; field at the top of the PDF.</inlineHelpText>
+    <label>Bidding To Contact</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Quotes</relationshipLabel>
+    <relationshipName>Quotes</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

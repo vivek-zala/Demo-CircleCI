@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Targeted__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Use this checkbox to flag the opportunity so it stays on your &quot;radar&quot; at all times regardless of stage.</inlineHelpText>
+    <label>Targeted</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

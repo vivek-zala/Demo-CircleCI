@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_Source__c</fullName>
+    <description>Selection of opportunity sources.</description>
+    <inlineHelpText>Select where you heard about the opportunity.</inlineHelpText>
+    <label>Opportunity Source</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+                <label>Marketing</label>
+            </value>
+            <value>
+                <fullName>Business Journal</fullName>
+                <default>false</default>
+                <label>Business Journal</label>
+            </value>
+            <value>
+                <fullName>Contractor Bid Notification</fullName>
+                <default>false</default>
+                <label>Contractor Bid Notification</label>
+            </value>
+            <value>
+                <fullName>Email Submission</fullName>
+                <default>false</default>
+                <label>Email Submission</label>
+            </value>
+            <value>
+                <fullName>Inspection</fullName>
+                <default>false</default>
+                <label>Inspection</label>
+            </value>
+            <value>
+                <fullName>iSqFt</fullName>
+                <default>false</default>
+                <label>ConstructConnect</label>
+            </value>
+            <value>
+                <fullName>Sales Call</fullName>
+                <default>false</default>
+                <label>Sales Call</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Call In RFQ</fullName>
+                <default>false</default>
+                <label>Call In RFQ</label>
+            </value>
+            <value>
+                <fullName>Email RFQ</fullName>
+                <default>false</default>
+                <label>Email RFQ</label>
+            </value>
+            <value>
+                <fullName>Newspaper</fullName>
+                <default>false</default>
+                <label>Newspaper</label>
+            </value>
+            <value>
+                <fullName>Mechanical Engineer</fullName>
+                <default>false</default>
+                <label>Mechanical Engineer</label>
+            </value>
+            <value>
+                <fullName>Vendor</fullName>
+                <default>false</default>
+                <label>Vendor</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

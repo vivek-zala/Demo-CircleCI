@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>General_Contractor__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>This is a look up to account record to store the general contractor.</description>
+    <inlineHelpText>Please select a general contractor for this opportunity.</inlineHelpText>
+    <label>General Contractor (Account)</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Account.Type</field>
+            <operation>equals</operation>
+            <value>Service Mechanical Contractor, Plan &amp; Spec Mechanical Contractor, Design/Build Mechanical Contractor, Electrical Contractor, Plumbing Contractor, Controls / Energy Contractor, General Contractor</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Opportunities (General Contractor)</relationshipLabel>
+    <relationshipName>Opportunities</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Lookup</type>
+</CustomField>

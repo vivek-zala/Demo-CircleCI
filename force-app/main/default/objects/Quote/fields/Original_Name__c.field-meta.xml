@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Original_Name__c</fullName>
+    <description>To hold original Quote Name</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the quote name that was used initially when the quote was created. This is the revision folder name in SharePoint.This is for reference purposes only.</inlineHelpText>
+    <label>SharePoint Folder</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

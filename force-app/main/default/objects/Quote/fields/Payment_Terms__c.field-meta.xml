@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payment_Terms__c</fullName>
+    <defaultValue>&apos;NET 30 days from date of shipment (subject to credit approval). Prices are firm for acceptance within 30 days. Except where banned by law, credit card orders will be subject to a 3% processing fee.&apos;</defaultValue>
+    <externalId>false</externalId>
+    <label>Payment Terms</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Revenue_Commission_Rebate__c</fullName>
+    <description>From Project financials tab BACKLOG(BOOKED NOT INVOICED)
+1.REVENUE-COMMISSION/REBATE
+2.MARGIN-COMMISSION/REBATE
+Above both project financials fields have same formula.</description>
+    <formula>Active_Financial_Quote__r.Commissions_and_Rebates__c - IF(ISBLANK(C_R_BillingLine_Total__c), 0, C_R_BillingLine_Total__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Active_Financial_Quote__r.Commissions_and_Rebates__c - C_R_BillingLine_Total__c</inlineHelpText>
+    <label>REVENUE-MARGIN-COMMISSION/REBATE</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <type>Currency</type>
+</CustomField>

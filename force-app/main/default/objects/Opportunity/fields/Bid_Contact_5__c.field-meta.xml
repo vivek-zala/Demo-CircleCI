@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bid_Contact_5__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <inlineHelpText>Who is the contact for this bid?</inlineHelpText>
+    <label>Bid Contact (Contact)</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Opportunities (Bid Contact)</relationshipLabel>
+    <relationshipName>Opportunities6</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Lookup</type>
+</CustomField>

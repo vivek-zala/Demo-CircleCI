@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BuyResellMarginBooked__c</fullName>
+    <description>From project financials tab MARGIN-(BUY/RESELL)
+BUY/RESELL
+And Even it is used for calculating (BuyResellMargin (Booked)) for Sales Result-DB</description>
+    <formula>IF(ISBLANK(Active_Financial_Quote__r.Total_Buy_Resell_Margin__c) ,0 , Active_Financial_Quote__r.Total_Buy_Resell_Margin__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Active_Financial_Quote__r.Total_Buy_Resell_Margin__c</inlineHelpText>
+    <label>MARGIN-BUY/RESELL</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <type>Currency</type>
+</CustomField>

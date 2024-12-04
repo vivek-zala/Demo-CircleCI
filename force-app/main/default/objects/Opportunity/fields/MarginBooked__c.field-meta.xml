@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MarginBooked__c</fullName>
+    <description>From project financials tab MARGIN-(TOTAL)
+TOTAL
+And Even it is used for calculating (Total Margin (booked )) for Sales Result-DB</description>
+    <formula>IF(ISBLANK(Active_Financial_Quote__r.Commissions_and_Rebates__c  ) ,0 , Active_Financial_Quote__r.Commissions_and_Rebates__c  ) + 
+IF(ISBLANK( Active_Financial_Quote__r.Total_Buy_Resell_Margin__c ) ,0 , Active_Financial_Quote__r.Total_Buy_Resell_Margin__c )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Active_Financial_Quote__r.Commissions_and_Rebates__c  +   Active_Financial_Quote__r.Total_Buy_Resell_Margin__c</inlineHelpText>
+    <label>MARGIN-TOTAL</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <type>Currency</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_Info_Source__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <inlineHelpText>Who did you hear about this opportunity from originally?</inlineHelpText>
+    <label>Opportunity Source Contact (Contact)</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Opportunities (Opportunity Info Source)</relationshipLabel>
+    <relationshipName>OpportunitiesJwla</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Lookup</type>
+</CustomField>

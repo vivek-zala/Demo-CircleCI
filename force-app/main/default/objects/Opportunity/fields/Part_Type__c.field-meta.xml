@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Part_Type__c</fullName>
+    <label>Manufacturer</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Advanced Cooling Technologies (ACT)</fullName>
+                <default>false</default>
+                <label>Advanced Cooling Technologies (ACT)</label>
+            </value>
+            <value>
+                <fullName>Advanced Thermal Hydronics</fullName>
+                <default>false</default>
+                <label>Advanced Thermal Hydronics</label>
+            </value>
+            <value>
+                <fullName>Advanced Thermal Hydronics (ATH)</fullName>
+                <default>false</default>
+                <label>Advanced Thermal Hydronics (ATH)</label>
+            </value>
+            <value>
+                <fullName>Alfa Laval</fullName>
+                <default>false</default>
+                <label>Alfa Laval</label>
+            </value>
+            <value>
+                <fullName>Alliance</fullName>
+                <default>false</default>
+                <label>Alliance</label>
+            </value>
+            <value>
+                <fullName>Alliance Air Products</fullName>
+                <default>false</default>
+                <label>Alliance Air Products</label>
+            </value>
+            <value>
+                <fullName>American Wheatley</fullName>
+                <default>false</default>
+                <label>American Wheatley</label>
+            </value>
+            <value>
+                <fullName>Aquanomix</fullName>
+                <default>false</default>
+                <label>Aquanomix</label>
+            </value>
+            <value>
+                <fullName>Armstrong</fullName>
+                <default>false</default>
+                <label>Armstrong</label>
+            </value>
+            <value>
+                <fullName>Armstrong Humidifiers</fullName>
+                <default>false</default>
+                <label>Armstrong Humidifiers</label>
+            </value>
+            <value>
+                <fullName>AtmosAir</fullName>
+                <default>false</default>
+                <label>AtmosAir</label>
+            </value>
+            <value>
+                <fullName>Atmos Air</fullName>
+                <default>false</default>
+                <label>Atmos Air</label>
+            </value>
+            <value>
+                <fullName>Avalara</fullName>
+                <default>false</default>
+                <label>Avalara</label>
+            </value>
+            <value>
+                <fullName>Boilers &amp; Heaters - Other</fullName>
+                <default>false</default>
+                <label>Boilers &amp; Heaters - Other</label>
+            </value>
+            <value>
+                <fullName>Bosch</fullName>
+                <default>false</default>
+                <label>Bosch</label>
+            </value>
+            <value>
+                <fullName>Camus Hydronics</fullName>
+                <default>false</default>
+                <label>Camus Hydronics</label>
+            </value>
+            <value>
+                <fullName>Cincinnati Fan</fullName>
+                <default>false</default>
+                <label>Cincinnati Fan</label>
+            </value>
+            <value>
+                <fullName>Cleaver-Brooks</fullName>
+                <default>false</default>
+                <label>Cleaver-Brooks</label>
+            </value>
+            <value>
+                <fullName>ClimaCOOL</fullName>
+                <default>false</default>
+                <label>ClimaCOOL</label>
+            </value>
+            <value>
+                <fullName>ClimateCraft</fullName>
+                <default>false</default>
+                <label>ClimateCraft</label>
+            </value>
+            <value>
+                <fullName>ClimateMaster</fullName>
+                <default>false</default>
+                <label>ClimateMaster</label>
+            </value>
+            <value>
+                <fullName>Cooling Towers &amp; Parts - Other</fullName>
+                <default>false</default>
+                <label>Cooling Towers &amp; Parts - Other</label>
+            </value>
+            <value>
+                <fullName>Cooney Coil</fullName>
+                <default>false</default>
+                <label>Cooney Coil</label>
+            </value>
+            <value>
+                <fullName>Danfoss</fullName>
+                <default>false</default>
+                <label>Danfoss</label>
+            </value>
+            <value>
+                <fullName>Desert Aire</fullName>
+                <default>false</default>
+                <label>Desert Aire</label>
+            </value>
+            <value>
+                <fullName>Dunham Bush</fullName>
+                <default>false</default>
+                <label>Dunham Bush</label>
+            </value>
+            <value>
+                <fullName>Duravent</fullName>
+                <default>false</default>
+                <label>Duravent</label>
+            </value>
+            <value>
+                <fullName>Enervex</fullName>
+                <default>false</default>
+                <label>Enervex</label>
+            </value>
+            <value>
+                <fullName>Engineered Products</fullName>
+                <default>false</default>
+                <label>Engineered Products</label>
+            </value>
+            <value>
+                <fullName>Enviro-tec</fullName>
+                <default>false</default>
+                <label>Enviro-tec</label>
+            </value>
+            <value>
+                <fullName>Flow-Tech</fullName>
+                <default>false</default>
+                <label>Flow-Tech</label>
+            </value>
+            <value>
+                <fullName>Fraser-Johnston</fullName>
+                <default>false</default>
+                <label>Fraser-Johnston</label>
+            </value>
+            <value>
+                <fullName>General Water Systems</fullName>
+                <default>false</default>
+                <label>General Water Systems</label>
+            </value>
+            <value>
+                <fullName>Grundfoss</fullName>
+                <default>false</default>
+                <label>Grundfoss</label>
+            </value>
+            <value>
+                <fullName>Hays Fluid Controls</fullName>
+                <default>false</default>
+                <label>Hays Fluid Controls</label>
+            </value>
+            <value>
+                <fullName>Heat Pumps - Other</fullName>
+                <default>false</default>
+                <label>Heat Pumps - Other</label>
+            </value>
+            <value>
+                <fullName>Heatrex</fullName>
+                <default>false</default>
+                <label>Heatrex</label>
+            </value>
+            <value>
+                <fullName>Hitachi</fullName>
+                <default>false</default>
+                <label>Hitachi</label>
+            </value>
+            <value>
+                <fullName>Ice Western</fullName>
+                <default>false</default>
+                <label>Ice Western</label>
+            </value>
+            <value>
+                <fullName>IEC</fullName>
+                <default>false</default>
+                <label>IEC</label>
+            </value>
+            <value>
+                <fullName>Jetson</fullName>
+                <default>false</default>
+                <label>Jetson</label>
+            </value>
+            <value>
+                <fullName>Kelvion</fullName>
+                <default>false</default>
+                <label>Kelvion</label>
+            </value>
+            <value>
+                <fullName>Laars</fullName>
+                <default>false</default>
+                <label>Laars</label>
+            </value>
+            <value>
+                <fullName>Lennox</fullName>
+                <default>false</default>
+                <label>Lennox</label>
+            </value>
+            <value>
+                <fullName>Marley/SPX</fullName>
+                <default>false</default>
+                <label>Marley/SPX</label>
+            </value>
+            <value>
+                <fullName>Metal-Fab</fullName>
+                <default>false</default>
+                <label>Metal-Fab</label>
+            </value>
+            <value>
+                <fullName>Midwest Machinery</fullName>
+                <default>false</default>
+                <label>Midwest Machinery</label>
+            </value>
+            <value>
+                <fullName>Miller-Picking</fullName>
+                <default>false</default>
+                <label>Miller-Picking</label>
+            </value>
+            <value>
+                <fullName>Moffitt</fullName>
+                <default>false</default>
+                <label>Moffitt</label>
+            </value>
+            <value>
+                <fullName>Mueller</fullName>
+                <default>false</default>
+                <label>Mueller</label>
+            </value>
+            <value>
+                <fullName>Non Represented Brand</fullName>
+                <default>false</default>
+                <label>Non Represented Brand</label>
+            </value>
+            <value>
+                <fullName>Nutech</fullName>
+                <default>false</default>
+                <label>Nutech</label>
+            </value>
+            <value>
+                <fullName>Pace</fullName>
+                <default>false</default>
+                <label>Pace</label>
+            </value>
+            <value>
+                <fullName>Patterson</fullName>
+                <default>false</default>
+                <label>Patterson</label>
+            </value>
+            <value>
+                <fullName>PEP</fullName>
+                <default>false</default>
+                <label>PEP</label>
+            </value>
+            <value>
+                <fullName>Permatron</fullName>
+                <default>false</default>
+                <label>Permatron</label>
+            </value>
+            <value>
+                <fullName>Plasma-Air</fullName>
+                <default>false</default>
+                <label>Plasma-Air</label>
+            </value>
+            <value>
+                <fullName>Polaris</fullName>
+                <default>false</default>
+                <label>Polaris</label>
+            </value>
+            <value>
+                <fullName>Precision Coils</fullName>
+                <default>false</default>
+                <label>Precision Coils</label>
+            </value>
+            <value>
+                <fullName>Pumps &amp; Accessories - Other</fullName>
+                <default>false</default>
+                <label>Pumps &amp; Accessories - Other</label>
+            </value>
+            <value>
+                <fullName>Quantech</fullName>
+                <default>false</default>
+                <label>Quantech</label>
+            </value>
+            <value>
+                <fullName>Quest</fullName>
+                <default>false</default>
+                <label>Quest</label>
+            </value>
+            <value>
+                <fullName>Recold</fullName>
+                <default>false</default>
+                <label>Recold</label>
+            </value>
+            <value>
+                <fullName>Reftekk</fullName>
+                <default>false</default>
+                <label>Reftekk</label>
+            </value>
+            <value>
+                <fullName>Seasons-4</fullName>
+                <default>false</default>
+                <label>Seasons-4</label>
+            </value>
+            <value>
+                <fullName>Seresco</fullName>
+                <default>false</default>
+                <label>Seresco</label>
+            </value>
+            <value>
+                <fullName>Smardt</fullName>
+                <default>false</default>
+                <label>Smardt</label>
+            </value>
+            <value>
+                <fullName>Smith Boilers</fullName>
+                <default>false</default>
+                <label>Smith Boilers</label>
+            </value>
+            <value>
+                <fullName>Spark</fullName>
+                <default>false</default>
+                <label>Spark</label>
+            </value>
+            <value>
+                <fullName>Spirotherm</fullName>
+                <default>false</default>
+                <label>Spirotherm</label>
+            </value>
+            <value>
+                <fullName>SPX Flow</fullName>
+                <default>false</default>
+                <label>SPX Flow</label>
+            </value>
+            <value>
+                <fullName>Sterling</fullName>
+                <default>false</default>
+                <label>Sterling</label>
+            </value>
+            <value>
+                <fullName>Tranter</fullName>
+                <default>false</default>
+                <label>Tranter</label>
+            </value>
+            <value>
+                <fullName>Twin City Fan</fullName>
+                <default>false</default>
+                <label>Twin City Fan</label>
+            </value>
+            <value>
+                <fullName>VAW</fullName>
+                <default>false</default>
+                <label>VAW</label>
+            </value>
+            <value>
+                <fullName>Vent-Rite</fullName>
+                <default>false</default>
+                <label>Vent-Rite</label>
+            </value>
+            <value>
+                <fullName>VFD - Other</fullName>
+                <default>false</default>
+                <label>VFD - Other</label>
+            </value>
+            <value>
+                <fullName>VTS</fullName>
+                <default>false</default>
+                <label>VTS</label>
+            </value>
+            <value>
+                <fullName>Vulcan</fullName>
+                <default>false</default>
+                <label>Vulcan</label>
+            </value>
+            <value>
+                <fullName>Wessels</fullName>
+                <default>false</default>
+                <label>Wessels</label>
+            </value>
+            <value>
+                <fullName>Whalen</fullName>
+                <default>false</default>
+                <label>Whalen</label>
+            </value>
+            <value>
+                <fullName>Whelan</fullName>
+                <default>false</default>
+                <label>Whelan</label>
+            </value>
+            <value>
+                <fullName>Williams</fullName>
+                <default>false</default>
+                <label>Williams</label>
+            </value>
+            <value>
+                <fullName>Wilo</fullName>
+                <default>false</default>
+                <label>Wilo</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

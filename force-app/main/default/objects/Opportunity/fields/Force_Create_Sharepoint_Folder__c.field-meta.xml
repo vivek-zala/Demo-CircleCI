@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Force_Create_Sharepoint_Folder__c</fullName>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(&quot;/apex/SharePoint_Intermidiate?id=&quot;+Id+&quot;&amp;type=createFolder&quot;, IMAGE(&quot;/resource/Button_ForceCreate_Sharepoint_Folder&quot;, &quot;Force Create Sharepoint Folder&quot;),&quot;_self&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Force Create Sharepoint Folder</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

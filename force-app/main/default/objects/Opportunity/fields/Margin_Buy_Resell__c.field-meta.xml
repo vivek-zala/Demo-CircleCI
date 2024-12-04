@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Margin_Buy_Resell__c</fullName>
+    <description>From Project financials tab BACKLOG(BOOKED NOT INVOICED)
+MARGIN-BUY/RESELL</description>
+    <formula>IF(Active_Financial_Quote__r.Total_Buy_Resell_Price__c = 0,0, Active_Financial_Quote__r.Total_Buy_Resell_Margin__c / Active_Financial_Quote__r.Total_Buy_Resell_Price__c)
+* 
+(Active_Financial_Quote__r.Total_Buy_Resell_Price__c - IF(ISBLANK(B_R_BillingLine_Total__c), 0, B_R_BillingLine_Total__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>(Active_Financial_Quote__r.Total_Buy_Resell_Margin__c/ Active_Financial_Quote__r.Total_Buy_Resell_Price__c)  
+* 
+(Active_Financial_Quote__r.Total_Buy_Resell_Price__c  - B_R_BillingLine_Total__c)</inlineHelpText>
+    <label>BACKLOG-MARGIN-BUY/RESELL</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <type>Currency</type>
+</CustomField>

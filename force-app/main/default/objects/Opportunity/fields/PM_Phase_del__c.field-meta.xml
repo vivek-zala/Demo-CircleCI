@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PM_Phase_del__c</fullName>
+    <label>PM Phase</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Open</fullName>
+                <default>false</default>
+                <label>Open</label>
+            </value>
+            <value>
+                <fullName>Pre-submittals</fullName>
+                <default>false</default>
+                <label>Pre-submittals</label>
+            </value>
+            <value>
+                <fullName>All submittals sent – awaiting approval(s)</fullName>
+                <default>false</default>
+                <label>All submittals sent – awaiting approval(s)</label>
+            </value>
+            <value>
+                <fullName>Submittals approved</fullName>
+                <default>false</default>
+                <label>Submittals approved</label>
+            </value>
+            <value>
+                <fullName>Equipment Partially Released</fullName>
+                <default>false</default>
+                <label>Equipment Partially Released</label>
+            </value>
+            <value>
+                <fullName>Released all equipment</fullName>
+                <default>false</default>
+                <label>Released all equipment</label>
+            </value>
+            <value>
+                <fullName>Partially shipped</fullName>
+                <default>false</default>
+                <label>Partially shipped</label>
+            </value>
+            <value>
+                <fullName>Fully shipped</fullName>
+                <default>false</default>
+                <label>Fully shipped</label>
+            </value>
+            <value>
+                <fullName>Startup and owner training</fullName>
+                <default>false</default>
+                <label>Startup and owner training</label>
+            </value>
+            <value>
+                <fullName>Partially invoiced</fullName>
+                <default>false</default>
+                <label>Partially invoiced</label>
+            </value>
+            <value>
+                <fullName>Fully invoiced</fullName>
+                <default>false</default>
+                <label>Fully invoiced</label>
+            </value>
+            <value>
+                <fullName>Partially paid</fullName>
+                <default>false</default>
+                <label>Partially paid</label>
+            </value>
+            <value>
+                <fullName>All paid</fullName>
+                <default>false</default>
+                <label>All paid</label>
+            </value>
+            <value>
+                <fullName>Archived</fullName>
+                <default>false</default>
+                <label>Archived</label>
+            </value>
+            <value>
+                <fullName>Paid</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Paid</label>
+            </value>
+            <value>
+                <fullName>Received Customer PO</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Received Customer PO</label>
+            </value>
+            <value>
+                <fullName>Released Equipment</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Released Equipment</label>
+            </value>
+            <value>
+                <fullName>Shipped &amp; Invoiced</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Shipped &amp; Invoiced</label>
+            </value>
+            <value>
+                <fullName>Startup/Owner Training</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Startup/Owner Training</label>
+            </value>
+            <value>
+                <fullName>Submitted – waiting for approval</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Submitted – waiting for approval</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

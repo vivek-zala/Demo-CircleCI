@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Shipping_Charges__c</fullName>
+    <label>Shipping Charges</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Freight to be added to invoice.</fullName>
+                <default>false</default>
+                <label>FOB Factory; Freight to be added to invoice.</label>
+            </value>
+            <value>
+                <fullName>Standard Freight Allowed.</fullName>
+                <default>false</default>
+                <label>FOB Factory; Standard Freight Allowed.</label>
+            </value>
+            <value>
+                <fullName>FOB Destination; Standard Freight Allowed.</fullName>
+                <default>false</default>
+                <label>FOB Destination; Standard Freight Allowed.</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

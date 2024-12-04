@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DirectCommisionMarginBooked__c</fullName>
+    <description>From project financials tab MARGIN-(COMMISSION/REBATE)
+COMMISSION/REBATE
+And Even it is used for calculating (Direct/Commission Margin (Booked) ) for Sales Result-DB</description>
+    <formula>IF(ISBLANK( Active_Financial_Quote__r.Commissions_and_Rebates__c ) ,0 , Active_Financial_Quote__r.Commissions_and_Rebates__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Active_Financial_Quote__r.Commissions_and_Rebates__c</inlineHelpText>
+    <label>MARGIN-COMMISSION/REBATE</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <type>Currency</type>
+</CustomField>

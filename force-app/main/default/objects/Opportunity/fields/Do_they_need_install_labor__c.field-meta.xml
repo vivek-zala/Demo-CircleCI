@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Do_they_need_install_labor__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Check this box if they need labor to install the part(s)</inlineHelpText>
+    <label>Do they need install labor?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

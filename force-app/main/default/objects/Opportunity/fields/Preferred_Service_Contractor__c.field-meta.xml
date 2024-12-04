@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Preferred_Service_Contractor__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <inlineHelpText>Do they have a preferred service contractor?</inlineHelpText>
+    <label>Preferred Service Contractor (Account)</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Opportunities (Preferred Service Contractor)</relationshipLabel>
+    <relationshipName>OpportunitiesO13M</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Job_Level_3__c</fullName>
+    <label>Job Level 3</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Job_Level_2__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Mechanical Contractor</fullName>
+                <default>false</default>
+                <label>Mechanical Contractor</label>
+            </value>
+            <value>
+                <fullName>Electrical Contractor</fullName>
+                <default>false</default>
+                <label>Electrical Contractor</label>
+            </value>
+            <value>
+                <fullName>Plumbing Contractor</fullName>
+                <default>false</default>
+                <label>Plumbing Contractor</label>
+            </value>
+            <value>
+                <fullName>Controls / Energy Contractor</fullName>
+                <default>false</default>
+                <label>Controls / Energy Contractor</label>
+            </value>
+            <value>
+                <fullName>General Contractor</fullName>
+                <default>false</default>
+                <label>General Contractor</label>
+            </value>
+            <value>
+                <fullName>Engineering Firm</fullName>
+                <default>false</default>
+                <label>Engineering Firm</label>
+            </value>
+            <value>
+                <fullName>Architectural Firm</fullName>
+                <default>false</default>
+                <label>Architectural Firm</label>
+            </value>
+            <value>
+                <fullName>Commercial / Light Industrial User</fullName>
+                <default>false</default>
+                <label>Commercial / Light Industrial User</label>
+            </value>
+            <value>
+                <fullName>Heavy Industrial User</fullName>
+                <default>false</default>
+                <label>Heavy Industrial User</label>
+            </value>
+            <value>
+                <fullName>Power User</fullName>
+                <default>false</default>
+                <label>Power User</label>
+            </value>
+            <value>
+                <fullName>Competitve Vendor</fullName>
+                <default>false</default>
+                <label>Competitve Vendor</label>
+            </value>
+            <value>
+                <fullName>Non-Competive Vendor</fullName>
+                <default>false</default>
+                <label>Non-Competive Vendor</label>
+            </value>
+            <value>
+                <fullName>Indoor Cultivator</fullName>
+                <default>false</default>
+                <label>Indoor Cultivator</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Contractor</controllingFieldValue>
+            <valueName>Mechanical Contractor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contractor</controllingFieldValue>
+            <valueName>Electrical Contractor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contractor</controllingFieldValue>
+            <valueName>Plumbing Contractor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contractor</controllingFieldValue>
+            <valueName>Controls / Energy Contractor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contractor</controllingFieldValue>
+            <valueName>General Contractor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>A/E Firm</controllingFieldValue>
+            <valueName>Engineering Firm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>A/E Firm</controllingFieldValue>
+            <valueName>Architectural Firm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>End User</controllingFieldValue>
+            <valueName>Commercial / Light Industrial User</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>End User</controllingFieldValue>
+            <valueName>Heavy Industrial User</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>End User</controllingFieldValue>
+            <valueName>Power User</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>End User</controllingFieldValue>
+            <valueName>Indoor Cultivator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vendor / Supplier</controllingFieldValue>
+            <valueName>Competitve Vendor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vendor / Supplier</controllingFieldValue>
+            <valueName>Non-Competive Vendor</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>
