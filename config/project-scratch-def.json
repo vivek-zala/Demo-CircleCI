@@ -9,6 +9,9 @@
     "quoteSettings": {
       "enableQuote" : true
     },
+    "chatterSettings": {
+        "enableChatter": true
+    },
     "mobileSettings": {
       "enableS1EncryptedStoragePref2": false
     },

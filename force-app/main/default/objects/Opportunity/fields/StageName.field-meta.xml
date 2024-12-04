@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StageName</fullName>
+    <inlineHelpText>What phase of the sales cycle is the opportunity in?
+(Set the stage to &quot;Negotiation&quot; as soon as bids are sent out.)</inlineHelpText>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackTrending>true</trackTrending>
+    <type>Picklist</type>
+</CustomField>
