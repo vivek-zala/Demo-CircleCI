@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Listed</fullName>
+        <default>false</default>
+        <label>Listed</label>
+    </customValue>
+    <customValue>
+        <fullName>Not Listed</fullName>
+        <default>false</default>
+        <label>Not Listed</label>
+    </customValue>
+    <customValue>
+        <fullName>Approved</fullName>
+        <default>false</default>
+        <label>Approved</label>
+    </customValue>
+    <customValue>
+        <fullName>BOD</fullName>
+        <default>false</default>
+        <label>BOD</label>
+    </customValue>
+    <masterLabel>Approval</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>
