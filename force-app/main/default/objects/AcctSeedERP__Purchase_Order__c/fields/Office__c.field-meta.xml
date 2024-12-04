@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Office__c</fullName>
+    <label>Office</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Midwest Machinery STL</fullName>
+                <default>false</default>
+                <label>Midwest Machinery STL</label>
+            </value>
+            <value>
+                <fullName>Midwest Machinery KC</fullName>
+                <default>false</default>
+                <label>Midwest Machinery KC</label>
+            </value>
+            <value>
+                <fullName>Midwest Machinery OK</fullName>
+                <default>false</default>
+                <label>Midwest Machinery OK</label>
+            </value>
+            <value>
+                <fullName>Engineered Products</fullName>
+                <default>false</default>
+                <label>Engineered Products</label>
+            </value>
+            <value>
+                <fullName>MaRRS</fullName>
+                <default>false</default>
+                <label>MaRRS</label>
+            </value>
+            <value>
+                <fullName>Midwest Industrial Builders</fullName>
+                <default>false</default>
+                <label>Midwest Industrial Builders</label>
+            </value>
+            <value>
+                <fullName>Spark</fullName>
+                <default>false</default>
+                <label>Spark</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

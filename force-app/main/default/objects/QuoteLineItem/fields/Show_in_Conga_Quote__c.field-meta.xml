@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Show_in_Conga_Quote__c</fullName>
+    <defaultValue>true</defaultValue>
+    <inlineHelpText>Unchecked will hide the product line item from being displayed in a Conga quote. Please note the price will still be added to the total.</inlineHelpText>
+    <label>Show in Conga Quote</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

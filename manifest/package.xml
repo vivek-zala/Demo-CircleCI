@@ -92,10 +92,101 @@
     </types>
 
     <types>
+        <members>Product2.Avalara_Non_Taxable_Code__c</members>
+        <members>Product2.Avalara_Taxable_Code__c</members>
+        <members>Product2.Manufacturer__c</members>
+        <members>Product2.Midwest_Group_Office__c</members>
+        <members>Product2.Product_Description__c</members>
+        <members>Product2.Product_Id__c</members>
+        <members>Product2.Product_Type__c</members>
+        <members>Product2.Weight__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
         <members>User.has_house_Account_Access__c</members>
         <members>User.Is_Director__c</members>
         <members>User.Is_Manager__c</members>
         <members>User.Office_Location__c</members> 
+        <name>CustomField</name>
+    </types>
+
+
+      <types>
+        <members>AcctSeedERP__Purchase_Order__c.Office__c</members>
+        <members>AcctSeedERP__Purchase_Order__c.Opportunity__c</members>
+        <members>AcctSeedERP__Purchase_Order__c.PO_Number__c</members>
+        <members>AcctSeedERP__Purchase_Order__c.PO_Custom_Number__c</members>
+        <members>AcctSeedERP__Purchase_Order__c.Purchase_Order_Number__c</members>
+        <members>AcctSeedERP__Purchase_Order__c.Required_Date__c</members>
+        <members>AcctSeedERP__Purchase_Order__c.Sales_Order_Number__c</members>
+        <members>AcctSeedERP__Purchase_Order__c.Sales_Order__c</members>
+        <members>AcctSeedERP__Purchase_Order__c.Ship_Via__c</members>
+        <members>AcctSeedERP__Purchase_Order__c.Shipping_Company__c</members>
+        <members>AcctSeedERP__Purchase_Order__c.Shipping_Name__c</members>
+        <name>CustomField</name>
+    </types>
+
+
+    <types>
+        <members>AcctSeedERP__Sales_Order_Line__c.Description__c</members>
+        <members>AcctSeedERP__Sales_Order_Line__c.Inventory_Cost__c</members>
+        <members>AcctSeedERP__Sales_Order_Line__c.InvestoryCost__c</members>
+        <members>AcctSeedERP__Sales_Order_Line__c.Non_Taxable_Line__c</members>
+        <members>AcctSeedERP__Sales_Order_Line__c.Product_Code__c</members>
+        <members>AcctSeedERP__Sales_Order_Line__c.Quote_Line_Item__c</members>
+        <members>AcctSeedERP__Sales_Order_Line__c.Sale_Type__c</members>
+        <members>AcctSeedERP__Sales_Order_Line__c.Sales_Order_Number__c</members>
+        <members>AcctSeedERP__Sales_Order_Line__c.SPX_Order_Number__c</members>
+        <members>AcctSeedERP__Sales_Order_Line__c.Tag__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>AcctSeed__Billing__c.Billing_Number__c</members>
+        <members>AcctSeed__Billing__c.Collect_Account_number__c</members>
+        <members>AcctSeed__Billing__c.Freight_Terms__c</members>
+        <members>AcctSeed__Billing__c.Invoice_Number__c</members>
+        <members>AcctSeed__Billing__c.Is_Posted__c</members>
+        <members>AcctSeed__Billing__c.Opportunity__c</members>
+        <members>AcctSeed__Billing__c.Posting_Status__c</members>
+        <members>AcctSeed__Billing__c.Ship_Date__c</members>
+        <members>AcctSeed__Billing__c.Ship_Via__c</members>
+        <members>AcctSeed__Billing__c.Shipping_Name__c</members>
+        <name>CustomField</name>
+    </types>
+
+    <types>
+        <members>AcctSeedERP__Sales_Order__c.Add_Order_Lines__c</members>
+        <members>AcctSeedERP__Sales_Order__c.Collect_Account_number__c</members>
+        <members>AcctSeedERP__Sales_Order__c.Customer_PO_Number__c</members>
+        <members>AcctSeedERP__Sales_Order__c.freight_cost__c</members>
+        <members>AcctSeedERP__Sales_Order__c.Freight_Terms__c</members>
+        <members>AcctSeedERP__Sales_Order__c.InventoryCost__c</members>
+        <members>AcctSeedERP__Sales_Order__c.Is_Customer_Taxable__c</members>
+        <members>AcctSeedERP__Sales_Order__c.is_processed__c</members>
+        <members>AcctSeedERP__Sales_Order__c.Purchase_Order__c</members>
+        <members>AcctSeedERP__Sales_Order__c.Quote__c</members>
+        <members>AcctSeedERP__Sales_Order__c.SO_Number__c</members>
+        <members>AcctSeedERP__Sales_Order__c.Sales_Order_Number__c</members>
+        <members>AcctSeedERP__Sales_Order__c.Ship_Via__c</members>
+        <members>AcctSeedERP__Sales_Order__c.Shipping_Name__c</members>
+        <members>AcctSeedERP__Sales_Order__c.tax_schedule__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>QuoteLineItem.Calculated_Selling_Price_to_Customer__c</members>
+        <members>QuoteLineItem.Equipment_Model__c</members>
+        <members>QuoteLineItem.Extended_Cost__c</members>
+        <members>QuoteLineItem.Freight__c</members>
+        <members>QuoteLineItem.Margin_Percentage__c</members>
+        <members>QuoteLineItem.Multiplier__c</members>
+        <members>QuoteLineItem.Product_Family__c</members>
+        <members>QuoteLineItem.Scope_Description__c</members>
+        <members>QuoteLineItem.Serial_Number_of_Main_Equipment_1__c   </members>
+        <members>QuoteLineItem.Show_description__c</members>
+        <members>QuoteLineItem.Show_in_Conga_Quote__c</members>
+        <members>QuoteLineItem.Show_price__c</members>
+        <members>QuoteLineItem.Total_Price__c</members>
+        <members>QuoteLineItem.Item_Cost__c</members>
         <name>CustomField</name>
     </types>
 

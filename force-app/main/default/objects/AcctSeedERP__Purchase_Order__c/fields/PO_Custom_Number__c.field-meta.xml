@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PO_Custom_Number__c</fullName>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(&apos;/&apos;+Id, 
+IF(Purchase_Order_Number__c == &apos;&apos;,Name, Purchase_Order_Number__c),
+ &apos;_blank&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Purchase Order Number</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

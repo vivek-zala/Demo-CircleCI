@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sale_Type__c</fullName>
+    <label>Sale Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Equipment/Projects</fullName>
+                <default>false</default>
+                <label>Equipment/Projects</label>
+            </value>
+            <value>
+                <fullName>Parts/Aftermarket</fullName>
+                <default>false</default>
+                <label>Parts/Aftermarket</label>
+            </value>
+            <value>
+                <fullName>General Contracting</fullName>
+                <default>false</default>
+                <label>General Contracting</label>
+            </value>
+            <value>
+                <fullName>Service</fullName>
+                <default>false</default>
+                <label>Service</label>
+            </value>
+            <value>
+                <fullName>Web Store</fullName>
+                <default>false</default>
+                <label>Web Store</label>
+            </value>
+            <value>
+                <fullName>Marketing/ Rep Services</fullName>
+                <default>false</default>
+                <label>Marketing/ Rep Services</label>
+            </value>
+            <value>
+                <fullName>General Contracting (MIB Only)</fullName>
+                <default>false</default>
+                <label>General Contracting (MIB Only)</label>
+            </value>
+            <value>
+                <fullName>Distribution/Fullfillment Services</fullName>
+                <default>false</default>
+                <label>Distribution/Fullfillment Services</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

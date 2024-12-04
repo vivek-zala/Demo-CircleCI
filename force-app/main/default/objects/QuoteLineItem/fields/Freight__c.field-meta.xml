@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Freight__c</fullName>
+    <inlineHelpText>How much money will you add in freight for this line item? (This WILL NOT multiply the freight cost based on quantity, this is your total freight for the entire line item.)</inlineHelpText>
+    <label>Freight</label>
+    <precision>5</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

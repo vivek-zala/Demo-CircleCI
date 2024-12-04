@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Calculated_Selling_Price_to_Customer__c</fullName>
+    <formula>(     Item_Cost__c    +   ( Freight__c /  Quantity  )     )    /   ( 1 -  Margin_Percentage__c   )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Calculated Selling Price to Customer</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>
