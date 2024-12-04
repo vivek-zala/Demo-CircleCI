@@ -1,0 +1,8 @@
+<messaging:emailTemplate subject="{!relatedTo.CreatedBy.Name} has assigned you a task" recipientType="User" relatedToType="Task">
+    <messaging:htmlEmailBody >
+        {!relatedTo.CreatedBy.Name} has assigned you the task: <apex:outputlink value="{!LEFT($Api.Partner_Server_URL_140,FIND('.com',$Api.Partner_Server_URL_140)+4)+relatedTo.Id}">{!relatedTo.Subject}</apex:outputlink>
+        <br/>Related to Opportunity: {!relatedTo.What.Name}
+        <br/>Opportunity Number: <c:TaskEmail whatId="{!relatedTo.WhatId}"></c:TaskEmail>
+        <br/><br/> Comments: {!relatedTo.Description}
+    </messaging:htmlEmailBody>
+</messaging:emailTemplate>

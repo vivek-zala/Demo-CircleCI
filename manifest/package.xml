@@ -52,13 +52,14 @@
         <name>CustomTab</name>
     </types>
     <types>
-        <members>*</members>
+        <members>Notifications/New_Product_Added_Notification_1730739552349</members>
         <name>EmailTemplate</name>
     </types>
     <types>
         <members>*</members>
         <name>LightningMessageChannel</name>
     </types>
+
     <types>
         <members>*</members>
         <name>GlobalValueSet</name>
@@ -98,6 +99,8 @@
         <members>Account.Owner_Company__c</members>
         <members>Account.Payment_and_Accounting_Notes__c</members>
         <members>Account.Tax_Schedule__c</members>
+        <members>Account.Credit_Hold__c</members>
+        <members>Account.Credit_Limit__c</members>
         <members>Product2.Avalara_Non_Taxable_Code__c</members>
         <members>Product2.Avalara_Taxable_Code__c</members>
         <members>Product2.Manufacturer__c</members>
@@ -197,6 +200,7 @@
         <members>Quote.Quote_FileName__c</members>
         <members>Quote.Scope_File_Name__c</members>
         <members>Quote.Customer_P_O__c</members>
+        <members>Quote.GEN__c</members>
         <members>Quote.General_Contractor__c</members>
         <members>Quote.Generate_Quote_As_PDF__c</members>
         <members>Quote.Generate_Scope_Document__c</members>
@@ -523,6 +527,48 @@
         <members>Activity.Approval_SR__c</members>
         <members>Activity.SR_Name__c</members>
         <members>Activity.Task_Order__c</members>
+        <members>AcctSeed__Billing__c.Billing_Number__c</members>
+        <members>AcctSeed__Billing__c.Collect_Account_number__c</members>
+        <members>AcctSeed__Billing__c.Freight_Terms__c</members>
+        <members>AcctSeed__Billing__c.Invoice_Number__c</members>
+        <members>AcctSeed__Billing__c.Is_Posted__c</members>
+        <members>AcctSeed__Billing__c.Opportunity__c</members>
+        <members>AcctSeed__Billing__c.Posting_Status__c</members>
+        <members>AcctSeed__Billing__c.Sales_Order_Number__c</members>
+        <members>AcctSeed__Billing__c.Ship_Date__c</members>
+        <members>AcctSeed__Billing__c.Ship_Via__c</members>
+        <members>AcctSeed__Billing__c.Shipping_Name__c</members>
+        <members>AcctSeedERP__Purchase_Order_Line__c.Description__c</members>
+        <members>AcctSeedERP__Purchase_Order_Line__c.PO_Type__c</members> 
+        <members>AcctSeedERP__Purchase_Order_Line__c.Product_Code__c</members>
+        <members>AcctSeedERP__Purchase_Order_Line__c.Purchase_Order_Number__c</members>
+        <members>AcctSeedERP__Purchase_Order_Line__c.SalesOrderLine__c</members>
+        <members>AcctSeedERP__Purchase_Order_Line__c.Tag__c</members>
+        <members>AcctSeed__Inventory_Cost__c.SellPrice__c</members>
+        <members>AcctSeed__Journal_Entry_Line__c.Projects_MMCO_Custom_Tool__c</members>
+        <members>AcctSeed__Journal_Entry_Line__c.Project_Posting_Type__c</members>
+        <members>AcctSeed__Billing_Cash_Receipt__c.Amount__c</members>
+        <members>AcctSeed__Billing_Cash_Receipt__c.Balance__c</members>
+        <members>AcctSeed__Billing_Cash_Receipt__c.Customer__c</members>
+        <members>AcctSeed__Billing_Cash_Receipt__c.Ledger__c</members>
+        <members>AcctSeed__Billing_Cash_Receipt__c.Opportunity__c</members>
+        <members>AcctSeed__Billing_Cash_Receipt__c.Opportunity_Id__c</members>
+        <members>AcctSeed__Billing_Cash_Receipt__c.Opportunity_Number__c</members>
+        <members>AcctSeed__Billing_Cash_Receipt__c.Receipt_Date__c</members>
+        <members>AcctSeed__Account_Payable__c.Electronic_Payment__c</members>
+        <members>AcctSeed__Account_Payable__c.Opportunity_Record_Type__c</members>
+        <members>AcctSeed__Billing_Line__c.Billing_Number__c</members>
+        <members>AcctSeed__Billing_Line__c.Description__c</members>
+        <members>AcctSeed__Billing_Line__c.Is_Des_Update__c</members>
+        <members>AcctSeed__Billing_Line__c.MWG_Project__c</members>
+        <members>AcctSeed__Billing_Line__c.Non_Taxable_Line__c</members>
+        <members>AcctSeed__Billing_Line__c.Ordered__c</members>
+        <members>AcctSeed__Billing_Line__c.Product_Code__c</members>
+        <members>AcctSeed__Billing_Line__c.QuoteId__c</members>
+        <members>AcctSeed__Billing_Line__c.Shipped__c</members>
+        <members>AcctSeed__Billing_Line__c.SPX_Order_Number__c</members>
+        <members>AcctSeed__Billing_Line__c.Tag__c</members>
+        <members>AcctSeedERP__Shipment__c.Freight_Cost__c</members>
         <name>CustomField</name>
     </types>
     <version>62.0</version>

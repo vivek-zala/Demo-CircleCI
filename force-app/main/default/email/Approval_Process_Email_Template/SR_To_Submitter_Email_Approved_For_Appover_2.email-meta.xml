@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>To Submitter email when the expense report is approved by approver 2</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>SR-To Submitter Email Approved For Appover-2</name>
+    <style>none</style>
+    <subject>Your {!Submit_Request__c.Submited_Date__c}  expense report has been approved for final processing</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

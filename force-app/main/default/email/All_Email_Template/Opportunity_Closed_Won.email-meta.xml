@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This Email template has been used when opportunity is get closed won, email sent out to project manager.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Opportunity Closed Won</name>
+    <style>none</style>
+    <subject>{!Opportunity.Name} is Closed won!!</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

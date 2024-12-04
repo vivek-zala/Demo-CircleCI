@@ -1,0 +1,7 @@
+<messaging:emailTemplate subject="Your assigned task has been completed." recipientType="User" relatedToType="Task">
+    <messaging:plainTextEmailBody >
+        {!relatedTo.Owner.Name} has completed {!relatedTo.Subject}.
+        Related to Opportunity: {!relatedTo.What.Name}
+        Opportunity Number: <c:TaskEmail whatId="{!relatedTo.WhatId}"></c:TaskEmail>
+    </messaging:plainTextEmailBody>
+</messaging:emailTemplate>

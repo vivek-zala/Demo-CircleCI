@@ -1,0 +1,6 @@
+We regret to inform you that {!Submit_Request__c.Approver__c} has rejected your expense report. We recommend reaching out to {!Submit_Request__c.Approver__c} directly for further clarification. Please work together to remedy this issue as soon as possible.
+
+Rejection Note: {!ApprovalRequest.Comments}
+
+Sincerely,
+Midwest Machinery

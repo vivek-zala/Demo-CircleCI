@@ -1,0 +1,8 @@
+Wonderful news! Your {!Submit_Request__c.Submited_Date__c}  expense report has been completely processed. If you qualify for reimbursement, a check will be delivered from accounting.
+
+If you owe money, please contact {!Submit_Request__c.FinalApprovalName__c} for payment.
+
+Thank you for submitting your expenses and have a pleasant day.
+
+Sincerely,
+Midwest Machinery

@@ -1,0 +1,5 @@
+Congratulations! Your expense report has been approved by {!Submit_Request__c.FirstApproverName__c}. 
+ {!Submit_Request__c.FinalApprovalName__c} has received notification to start final processing.
+
+Sincerely,
+Midwest Machinery

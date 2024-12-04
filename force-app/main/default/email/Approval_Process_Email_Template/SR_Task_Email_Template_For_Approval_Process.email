@@ -1,0 +1,7 @@
+{!Task.LastModifiedBy} has assigned you the following approval task:
+
+Subject: Approver task
+Submit Request: {!Task.SR_Name__c}
+Due Date: {!Task.ActivityDate}
+Priority: Medium
+{!Task.Link}

@@ -1,0 +1,10 @@
+The {!Submit_Request__c.Submited_Date__c}  expense report you recently submitted has been sent to {!Submit_Request__c.FirstApproverName__c}. If approved, a final verification and any financial reimbursements will be sent to {!Submit_Request__c.FinalApprovalName__c} for processing. 
+
+You will receive an email status once {!Submit_Request__c.FirstApproverName__c}. has approved or rejected your expense report.
+
+You will receive another email status once {!Submit_Request__c.FinalApprovalName__c} has completed final processing.
+
+If you have any questions, please ask your direct manager.
+
+Sincerely,
+Midwest Machinery

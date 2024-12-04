@@ -1,0 +1,1 @@
+{!Opportunity.OwnerFullName} has marked {!Opportunity.Name} with {!Opportunity.Opportunity_Number__c} as closed won and assigned you as the project manager. This is just an automated notification.

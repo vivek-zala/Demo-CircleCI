@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This triggers an email to accounting when a new product has been added</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>New Product Added Notification</name>
+    <pageDevName>New_Product_Added_Notification</pageDevName>
+    <relatedEntityType>Product2</relatedEntityType>
+    <style>none</style>
+    <subject>MMCO Accounting - A New Product Needs Your Attention</subject>
+    <textOnly>MMCO Accounting Team,
+
+{{{Product2.Name}}} was created in Salesforce. Please fill out the following fields:
+
+ - Avalara Tax Code
+ - Avalara Non-Taxable Code
+ - Revenue GL Account
+ - Expense GL Account
+ - Inventory GL Account
+ - Default Vendor
+ - Inventory Product Checkbox
+ - Inventory Type
+ - Inventory Asset Checkbox
+
+View Product &lt;  {{{Product2.DisplayUrl}}}  &gt; 
+
+Sincerely,
+
+Salesforce Bot</textOnly>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>
