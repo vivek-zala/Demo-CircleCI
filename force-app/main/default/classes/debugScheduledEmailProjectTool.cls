@@ -20,13 +20,15 @@ global class debugScheduledEmailProjectTool implements Schedulable {
     
     global void execute(SchedulableContext ctx) {
         
-        con = [SELECT id,pi__created_date__c from Contact where lastName = 'debug PM scheduleTp'];
+        con = [SELECT id from Contact where lastName = 'debug PM scheduleTp'];
         Datetime dt;
+        /*
         if(con.pi__created_date__c == null) {
             dt = System.now();
         } else {
             dt = con.pi__created_date__c;
         }
+        */
         
         String todayDay = dt.format('EEEE');
         

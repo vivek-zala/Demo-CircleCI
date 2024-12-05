@@ -242,13 +242,14 @@ public with sharing class CreatePurchaseOrderCtrlTest {
 
         AcctSeed__Accounting_Settings__c setting = new AcctSeed__Accounting_Settings__c(
             Name='Account Setting',
-            AcctSeed__AP_Control_GL_Account__c = GLAcc2.Id,
-            AcctSeed__AR_Control_GL_Account__c =  GLAcc3.Id,
-            AcctSeed__Current_Year_Earnings_GL_Account__c = GLAcc4.Id,
-            AcctSeed__Default_Ledger__c = ledg.Id,
-            AcctSeed__Retained_Earnings_GL_Account__c = GLAcc5.Id,
-            AcctSeed__Revenue_GL_Account__c = GLAcc6.Id,
-            AcctSeed__Unapplied_Cash_GL_Account__c = GLAcc7.Id);
+            // AcctSeed__AP_Control_GL_Account__c = GLAcc2.Id,
+            // AcctSeed__AR_Control_GL_Account__c =  GLAcc3.Id,
+            // AcctSeed__Current_Year_Earnings_GL_Account__c = GLAcc4.Id,
+            AcctSeed__Default_Ledger__c = ledg.Id
+            // AcctSeed__Retained_Earnings_GL_Account__c = GLAcc5.Id,
+            // AcctSeed__Revenue_GL_Account__c = GLAcc6.Id,
+            // AcctSeed__Unapplied_Cash_GL_Account__c = GLAcc7.Id
+            );
         insert setting;
 
         AcctSeed__Account_Payable__c acPayable = new AcctSeed__Account_Payable__c(

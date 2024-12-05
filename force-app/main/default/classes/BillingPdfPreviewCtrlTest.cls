@@ -640,13 +640,13 @@ public class BillingPdfPreviewCtrlTest {
         system.debug('used query limit 14='+limits.getQueries());
         AcctSeed__Accounting_Settings__c setting = new AcctSeed__Accounting_Settings__c(
                                                 Name = 'Account Setting',
-                                                AcctSeed__AP_Control_GL_Account__c = glAccounts[3].Id,
-                                                AcctSeed__AR_Control_GL_Account__c = glAccounts[2].Id,
-                                                AcctSeed__Current_Year_Earnings_GL_Account__c = glAccounts[7].Id,
-                                                AcctSeed__Default_Ledger__c = ledg.Id,
-                                                AcctSeed__Retained_Earnings_GL_Account__c = glAccounts[6].Id,
-                                                AcctSeed__Revenue_GL_Account__c = glAccounts[8].Id,
-                                                AcctSeed__Unapplied_Cash_GL_Account__c = glAccounts[0].Id
+                                                // AcctSeed__AP_Control_GL_Account__c = glAccounts[3].Id,
+                                                // AcctSeed__AR_Control_GL_Account__c = glAccounts[2].Id,
+                                                // AcctSeed__Current_Year_Earnings_GL_Account__c = glAccounts[7].Id,
+                                                AcctSeed__Default_Ledger__c = ledg.Id
+                                                // AcctSeed__Retained_Earnings_GL_Account__c = glAccounts[6].Id,
+                                                // AcctSeed__Revenue_GL_Account__c = glAccounts[8].Id,
+                                                // AcctSeed__Unapplied_Cash_GL_Account__c = glAccounts[0].Id
                                                 );
         insert setting;
         
