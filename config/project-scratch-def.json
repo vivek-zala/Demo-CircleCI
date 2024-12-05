@@ -2,25 +2,15 @@
   "orgName": "Demo company",
   "edition": "Developer",
   "features": ["EnableSetPasswordInApi", "PersonAccounts"],
-  "orgPreferences": {
-      "enabled": ["EnhancedEmailEnabled"]
-  },
   "settings": {
-    "lightningExperienceSettings": {
-      "enableS1DesktopEnabled": true
-    },
-   
     "quoteSettings": {
       "enableQuote" : true
     },
-    "chatterSettings": {
-        "enableChatter": true
-    },
-    "mobileSettings": {
-      "enableS1EncryptedStoragePref2": false
-    },
     "accountSettings": {
       "enableAccountHistoryTracking": true
+    },
+    "securitySettings": {
+      "enableAuditFieldsInactiveOwner": true
     }
   }
 }
