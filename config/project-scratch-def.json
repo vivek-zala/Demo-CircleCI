@@ -9,9 +9,7 @@
     "lightningExperienceSettings": {
       "enableS1DesktopEnabled": true
     },
-    "securitySettings": {
-      "enableAuditFieldsInactiveOwner": true
-    },
+   
     "quoteSettings": {
       "enableQuote" : true
     },
