@@ -33,13 +33,17 @@
         <name>BusinessProcess</name>
     </types>
      <types>
-        <members>New_Task_Opp</members>      
+        <members>New_Task_Opp</members>
+        <name>QuickAction</name>
+    </types>
+
+    <types>
         <members>Product2.New_Product_Added</members>     
         <members>Opportunity.New_Quote</members>
         <members>AcctSeedERP__Sales_Order__c.Create_Purchase_Order_Custom</members> 
         <members>AcctSeed__Billing__c.Create_PDF_w_Line_Items_Custom</members> 
         <members>AcctSeed__Cash_Receipt__c.AcctSeed__Apply</members>
-        <name>QuickAction</name>
+        <name>WebLink</name>
     </types>
 
     <types>
