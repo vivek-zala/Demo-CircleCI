@@ -1,4 +1,4 @@
-#This installs the sfdx cli
+# This installs the Salesforce CLI (sf)
 
 echo "Installing Salesforce CLI"
-sudo npm install -global sfdx-cli
+sudo npm install -g @salesforce/cli

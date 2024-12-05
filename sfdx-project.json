@@ -1,8 +1,10 @@
 {
   "packageDirectories": [
     {
-      "path": "force-app",
-      "default": true
+      "path": "Data/users.json"
+    },
+    {
+      "path": "force-app"
     }
   ],
   "name": "Demo CircelCI",

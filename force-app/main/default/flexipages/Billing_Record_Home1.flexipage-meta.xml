@@ -37,9 +37,6 @@
                             <value>Global.AcctSeed__NewTask</value>
                         </valueListItems>
                         <valueListItems>
-                            <value>CustomButton.AcctSeed__Billing__c.AcctSeed__Recognize_Revenue</value>
-                        </valueListItems>
-                        <valueListItems>
                             <value>CustomButton.AcctSeed__Billing__c.AcctSeed__Calc_Tax</value>
                         </valueListItems>
                         <valueListItems>

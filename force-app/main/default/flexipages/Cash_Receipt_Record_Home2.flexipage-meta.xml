@@ -19,9 +19,6 @@
                             <value>CustomButton.AcctSeed__Cash_Receipt__c.AcctSeed__Unpost</value>
                         </valueListItems>
                         <valueListItems>
-                            <value>CustomButton.AcctSeed__Cash_Receipt__c.AcctSeed__Apply_Unapply</value>
-                        </valueListItems>
-                        <valueListItems>
                             <value>Global.AcctSeed__LogACall</value>
                         </valueListItems>
                         <valueListItems>
