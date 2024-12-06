@@ -17,3 +17,4 @@ sf org login jwt --username $USER_NAME --jwt-key-file keys/server.key --client-i
 # sf auth jwt:grant --clientid "3MVG9KI2HHAq33RxgA0Kt69Kpii7Jakg3403c0jr.DW1wAzUn3lx8BLoxHoOkyYIvlvVIlJvag50wrrA1dRJ1" --jwt-key-file C:\Users\Vivek\Documents\CertificateGeneration\server.key --username "nilesh.badrakiya@gmail.com" --setdefaultdevhubusername -a MyScratchOrg1
 #
 #https://login.salesforce.com/services/oauth2/authorize?response_type=code&client_id=3MVG9KI2HHAq33RxgA0Kt69Kpii7Jakg3403c0jr.DW1wAzUn3lx8BLoxHoOkyYIvlvVIlJvag50wrrA1dRJ1&redirect_uri=http://localhost:1717/OauthRedirect
+echo "Done"
