@@ -1,7 +1,7 @@
 {
   "orgName": "Demo company",
   "edition": "Developer",
-  "features": ["EnableSetPasswordInApi", "PersonAccounts", "EmailContent", "EnhancedSharing"],
+  "features": ["EnableSetPasswordInApi", "PersonAccounts"],
   "settings": {
     "quoteSettings": {
       "enableQuote" : true
