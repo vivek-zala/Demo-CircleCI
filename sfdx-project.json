@@ -1,9 +1,6 @@
 {
   "packageDirectories": [
     {
-      "path": "Data"
-    },
-    {
       "path": "force-app"
     }
   ],
