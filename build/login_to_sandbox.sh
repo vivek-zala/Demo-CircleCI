@@ -10,4 +10,4 @@ echo "Authenticating org"
 echo "Using app key, keys, and username"
 
 # sf auth jwt:grant --clientid "$SANDBOX_APP_KEY" --jwtkeyfile keys/server.key --username "$SANDBOX_USERNAME" --setdefaultdevhubusername -a MyScratchOrg1 --debug
-sf org login jwt --username $USER_NAME --jwt-key-file key/server.key --client-id $CLIENT_ID
+sf org login jwt --username $USER_NAME --jwtkeyfile key/server.key --client-id $CLIENT_ID
