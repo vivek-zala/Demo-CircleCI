@@ -1,7 +1,7 @@
 # Authenticate to salesforce
 #echo "Authenticating..."
 #sf auth jwt:grant --clientid $APP_KEY --jwtkeyfile keys/server.key --username $SF_USERNAME --setdefaultdevhubusername -a DevHub
-
+echo "WElcome"
 # Create a scratch org
 echo "Creating the Scratch Org..."
 sf org create scratch -f config/project-scratch-def.json -a ${CIRCLE_BRANCH}
