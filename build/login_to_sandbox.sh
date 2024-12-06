@@ -12,4 +12,4 @@ openssl rsa -in keys/server.key -out keys/server.key
 echo "Authenticating org"
 
 # sf auth jwt:grant --clientid "$SANDBOX_APP_KEY" --jwtkeyfile keys/server.key --username "$SANDBOX_USERNAME" --setdefaultdevhubusername -a MyScratchOrg1 --debug
-sf org login jwt --username $USER_NAME --jwtkeyfile keys/server.key --client-id $CLIENT_ID
+sf org login jwt --username $USER_NAME --jwt-key-file keys/server.key --client-id $CLIENT_ID
