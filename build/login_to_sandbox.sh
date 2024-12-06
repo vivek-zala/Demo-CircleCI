@@ -8,7 +8,5 @@ echo $SANDBOX_CERT_KEY | base64 -di > keys/server.key
 
 echo "Authenticating org"
 echo "Using app key, keys, and username"
-echo "SANDBOX_APP_KEY: $SANDBOX_APP_KEY"
-echo "SANDBOX_USERNAME: $SANDBOX_USERNAME"
 
-sfdx auth jwt:grant --clientid "$SANDBOX_APP_KEY" --jwtkeyfile keys/server.key --username "$SANDBOX_USERNAME" --setdefaultdevhubusername -a MyScratchOrg1
+sf auth jwt:grant --clientid "$SANDBOX_APP_KEY" --jwtkeyfile keys/server.key --username "$SANDBOX_USERNAME" --setdefaultdevhubusername -a MyScratchOrg1 --debug
