@@ -1,5 +1,6 @@
 echo "Logging into Sandbox Salesforce Org"
 mkdir keys
+echo $SANDBOX_CERT_KEY | base64 -di > keys/server.key
 
 # echo "Removing previous .salesforce"
 # rm -rf ~/.salesforce
@@ -7,4 +8,6 @@ mkdir keys
 
 echo "Authenticating org"
 echo "Using app key, keys, and username"
-sf auth jwt:grant --client-id "$SANDBOX_APP_KEY" --jwt-key-file keys/server.key --username "$SANDBOX_USERNAME" --setdefaultdevhubusername -a MyScratchOrg1
+
+# sf auth jwt:grant --clientid "$SANDBOX_APP_KEY" --jwtkeyfile keys/server.key --username "$SANDBOX_USERNAME" --setdefaultdevhubusername -a MyScratchOrg1 --debug
+sf org login jwt --username $USER_NAME --jwt-key-file key/server.key --client-id $CLIENT_ID
