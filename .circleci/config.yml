@@ -5,17 +5,17 @@ jobs:
       - image: node:18
     steps:
       - checkout
-      - restore_cache:
-          keys:
-            - dependency-cache-{{ checksum "package.json" }}
-            - dependency-cache-
+      # - restore_cache:
+      #     keys:
+      #       - dependency-cache-{{ checksum "package.json" }}
+      #       - dependency-cache-
       - run:
           name: Install Dependencies
           command: . build/install_dependencies.sh
-      - save_cache:
-          key: dependency-cache-{{ checksum "package.json" }}
-          paths:
-            - node_modules
+      # - save_cache:
+      #     key: dependency-cache-{{ checksum "package.json" }}
+      #     paths:
+      #       - node_modules
       - run:
           name: Login to Org
           command: . build/login_to_sandbox.sh
