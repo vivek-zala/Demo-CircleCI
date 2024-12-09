@@ -3,10 +3,10 @@
 #sf auth jwt:grant --clientid $APP_KEY --jwtkeyfile keys/server.key --username $SF_USERNAME --setdefaultdevhubusername -a DevHub
 echo "WElcome"
 
-echo "Uninstalling the packages..."
-sf package:uninstall --package 04tHo000000gxNl
-sf package:uninstall --package 04t3o000001QbwP
-echo "Unisnstalled"
+# echo "Uninstalling the packages..."
+# sf package:uninstall --package 04tHo000000gxNl
+# sf package:uninstall --package 04t3o000001QbwP
+# echo "Unisnstalled"
 
 # Create a scratch org
 echo "Creating the Scratch Org..."
