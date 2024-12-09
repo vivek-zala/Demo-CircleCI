@@ -16,8 +16,8 @@ sf org create scratch -f config/project-scratch-def.json -a ${CIRCLE_BRANCH}
  sf force:org:display --target-org ${CIRCLE_BRANCH}
 #  sf force:user:display -target-org ${CIRCLE_BRANCH}
 
-echo y | sf force:package:install -p 04tHo000000gxNl --target-org ${CIRCLE_BRANCH} -w 20 --security-type AllUsers
-sf force:package:install -p 04t3o000001QbwP --target-org ${CIRCLE_BRANCH} -w 20 --security-type AllUsers
+echo y | sf force:package:install -p 04tHo000000gxNl --target-org ${CIRCLE_BRANCH} -w 15 --security-type AllUsers
+sf force:package:install -p 04t3o000001QbwP --target-org ${CIRCLE_BRANCH} -w 15 --security-type AllUsers
 
 # sf force:source:push -u ${CIRCLE_BRANCH}
 sf project deploy start -u ${CIRCLE_BRANCH}
