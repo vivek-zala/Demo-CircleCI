@@ -2,6 +2,10 @@
 #echo "Authenticating..."
 #sf auth jwt:grant --clientid $APP_KEY --jwtkeyfile keys/server.key --username $SF_USERNAME --setdefaultdevhubusername -a DevHub
 echo "WElcome"
+
+sf package:uninstall --package 04tHo000000gxNl
+sf package:uninstall --package 04t3o000001QbwP
+
 # Create a scratch org
 echo "Creating the Scratch Org..."
 sf org create scratch -f config/project-scratch-def.json -a ${CIRCLE_BRANCH}
@@ -9,9 +13,6 @@ sf org create scratch -f config/project-scratch-def.json -a ${CIRCLE_BRANCH}
  sf force:user:password:generate --target-org ${CIRCLE_BRANCH}
  sf force:org:display --target-org ${CIRCLE_BRANCH}
 #  sf force:user:display -target-org ${CIRCLE_BRANCH}
-
-sf package:uninstall --package 04tHo000000gxNl
-sf package:uninstall --package 04t3o000001QbwP
 
 echo y | sf force:package:install -p 04tHo000000gxNl --target-org ${CIRCLE_BRANCH} -w 20 --security-type AllUsers
 sf force:package:install -p 04t3o000001QbwP --target-org ${CIRCLE_BRANCH} -w 20 --security-type AllUsers
