@@ -11,6 +11,9 @@
     },
     "securitySettings": {
       "enableAuditFieldsInactiveOwner": true
+    },
+    "emailAdministrationSettings": {
+        "enableEnhancedEmailEnabled": true
     }
   }
 }
