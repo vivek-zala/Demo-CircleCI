@@ -34,4 +34,5 @@ sf project deploy start --target-org ${CIRCLE_BRANCH}
 
 echo "Testing code in org"
 # sf apex run test -u ${CIRCLE_BRANCH}
-sf force:apex:test:run --testlevel RunLocalTests --outputdir test-results --resultformat tap --targetusername DevHub
+# sf force:apex:test:run --testlevel RunLocalTests --outputdir test-results --resultformat tap --targetusername DevHub
+sf apex run test --target-org ${CIRCLE_BRANCH}
