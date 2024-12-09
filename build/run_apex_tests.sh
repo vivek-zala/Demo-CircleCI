@@ -10,6 +10,9 @@ sf org create scratch -f config/project-scratch-def.json -a ${CIRCLE_BRANCH}
  sf force:org:display --target-org ${CIRCLE_BRANCH}
 #  sf force:user:display -target-org ${CIRCLE_BRANCH}
 
+sf package:uninstall --package 04tHo000000gxNl
+sf package:uninstall --package 04t3o000001QbwP
+
 echo y | sf force:package:install -p 04tHo000000gxNl --target-org ${CIRCLE_BRANCH} -w 20 --security-type AllUsers
 sf force:package:install -p 04t3o000001QbwP --target-org ${CIRCLE_BRANCH} -w 20 --security-type AllUsers
 
@@ -27,4 +30,5 @@ sf project deploy start -u ${CIRCLE_BRANCH}
 # sf force:source:deploy --sourcepath force-app --targetusername DevHub
 
 echo "Testing code in org"
+# sf apex run test -u ${CIRCLE_BRANCH}
 sf force:apex:test:run --testlevel RunLocalTests --outputdir test-results --resultformat tap --targetusername DevHub
