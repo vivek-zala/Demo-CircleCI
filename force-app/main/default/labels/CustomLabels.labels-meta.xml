@@ -112,6 +112,7 @@
         <value>The payment for projects valued at or below $149,999.99 are as follows unless otherwise indicated in the Proposal to which these conditions are attached: NET 30 days from date of shipment (subject to credit approval). Prices are firm for acceptance within 30 days. Except where banned by law, credit card orders will be subject to a 3% processing.&lt;br/&gt;&lt;br/&gt;
 The performance milestones for payment for projects valued at or above $150,000 are as follows unless otherwise indicated in the Proposal to which these conditions are attached:&lt;br/&gt;(i) &amp;nbsp Upon Issuance of Submittals: 20% of the Contract Price (Net 30 Days).&lt;br/&gt;(ii)&amp;nbsp Upon Release for Production: 30% of the Contract Price (Net 30 Days).&lt;br/&gt;(iii) Upon Readiness for Shipment: 50% of the Contract Price (Net 30 Days).</value>
     </labels>
+
     <labels>
         <fullName>ResultBlockTitle</fullName>
         <categories>Opty Reassign Page</categories>
@@ -183,5 +184,77 @@ The performance milestones for payment for projects valued at or above $150,000 
         <protected>true</protected>
         <shortDescription>ViewSearchSection</shortDescription>
         <value>Search with a view</value>
+    </labels>
+    <labels>
+        <fullName>SellPrice</fullName>
+        <categories>Label</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sell Price</shortDescription>
+        <value>Sell Price</value>
+    </labels>
+    <labels>
+        <fullName>ProjectMargin</fullName>
+        <categories>Label</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Project Margin</shortDescription>
+        <value>Project Margin</value>
+    </labels>
+    <labels>
+        <fullName>ProjectMarginPercent</fullName>
+        <categories>Label</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Project Margin Percent</shortDescription>
+        <value>Project Margin %</value>
+    </labels>
+    <labels>
+        <fullName>CommissionAndRebates</fullName>
+        <categories>Label</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Commission And Rebates</shortDescription>
+        <value>Commission And Rebates</value>
+    </labels>
+    <labels>
+        <fullName>BuyResellAndPtMargin</fullName>
+        <categories>Label</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Buy/resell and p/t margin</shortDescription>
+        <value>Buy/Resell And P/T Margin</value>
+    </labels>
+    <labels>
+        <fullName>ExtendedCostLabel</fullName>
+        <categories>Label</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Extended Cost Label</shortDescription>
+        <value>Extended cost</value>
+    </labels>
+    <labels>
+        <fullName>DirectSellPrice</fullName>
+        <categories>Label</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Direct Sell Price</shortDescription>
+        <value>Direct Sell Price</value>
+    </labels>
+    <labels>
+        <fullName>BuyResellAndPtPrice</fullName>
+        <categories>Label</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Buy/resell and p/t price</shortDescription>
+        <value>Buy/Resell And P/T Price</value>
+    </labels>
+    <labels>
+        <fullName>BuyResellAndPtMarginPercent</fullName>
+        <categories>Label</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Buy/resell and p/t margin percent</shortDescription>
+        <value>Buy/Resell And P/T Margin %</value>
     </labels>
 </CustomLabels>

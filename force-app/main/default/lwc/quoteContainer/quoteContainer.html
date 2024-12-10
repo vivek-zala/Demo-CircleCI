@@ -1,3 +1,16 @@
 <template>
-    Welcome Quote!!
+    <div class="container">
+        <div class="slds-p-bottom_xx-large">
+            <template if:true={cartWrapper}>
+                <template if:true={showDesignQuoteDetail}>
+                    <c-quote-header quote-id={recordId}>
+                    </c-quote-header>
+                    <div class="slds-m-vertical_x-small"></div> 
+                    <div class="slds-docked-form-footer borderRadius">
+                        <c-quote-footer ></c-quote-footer>
+                    </div>
+                </template>       
+            </template>
+        </div>
+    </div>
 </template>
