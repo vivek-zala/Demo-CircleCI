@@ -1,0 +1,81 @@
+<!--
+  @description       : 
+  @author            : Nilesh Badrakiya
+  @group             : 
+  @last modified on  : 04-30-2024
+  @last modified by  : Nilesh Badrakiya
+-->
+<template>
+    <div>
+        <template if:true={quoteDetails}>
+            <table class="slds-m-left_small slds-text-heading_small">
+                <tr>
+                    <td>{label.extendedCostLabel}</td>
+                    <td>{label.directSellPriceLabel}</td>
+                    <td>{label.buyResellAndPTPrice}</td>
+                    <td>{label.buyResellAndPTMargin}</td>
+                    <td>{label.buyResellAndPTMarginPercent}</td>
+                    <td>{label.commissionAndRebates}</td>
+                    <td>{label.projectMargin}</td>
+                    <td>{label.projectMarginPercent}</td>
+                    <td>{label.sellPrice}</td>
+                </tr>
+                <tr>
+                    <td>
+                        <lightning-formatted-number value={} 
+                                                    format-style="currency" 
+                                                    currency-code="USD">
+                        </lightning-formatted-number>
+                    </td>
+                    <td>
+                        <lightning-formatted-number value={} 
+                                                    format-style="currency" 
+                                                    currency-code="USD">
+                        </lightning-formatted-number>
+                    </td>
+                    <td>
+                        <lightning-formatted-number value={} 
+                                                    format-style="currency" 
+                                                    currency-code="USD">
+                        </lightning-formatted-number>
+                    </td>
+                    <td>
+                        <lightning-formatted-number value={} 
+                                                    format-style="currency" 
+                                                    currency-code="USD">
+                        </lightning-formatted-number>
+                    </td>
+                    <td>
+                        <lightning-formatted-number value={} 
+                                                    format-style="percent-fixed" 
+                                                    maximum-fraction-digits="2">
+                        </lightning-formatted-number>
+                    </td>
+                    <td>
+                        <lightning-formatted-number value={} 
+                                                    format-style="currency" 
+                                                    currency-code="USD">
+                        </lightning-formatted-number>
+                    </td>
+                    <td><lightning-formatted-number value={} 
+                                                    format-style="currency" 
+                                                    currency-code="USD">
+                        </lightning-formatted-number>
+                    </td>
+                    <td>
+                        <lightning-formatted-number value={} 
+                                                    format-style="percent-fixed" 
+                                                    maximum-fraction-digits="2">
+                        </lightning-formatted-number>
+                    </td>
+                    <td>
+                        <lightning-formatted-number value={} 
+                                                    format-style="currency" 
+                                                    currency-code="USD">
+                        </lightning-formatted-number>
+                    </td>
+                </tr>
+            </table>
+        </template>
+    </div>
+</template>

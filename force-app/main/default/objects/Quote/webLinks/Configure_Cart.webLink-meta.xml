@@ -9,5 +9,5 @@
     <masterLabel>Configure Cart</masterLabel>
     <openType>sidebar</openType>
     <protected>false</protected>
-    <url>/lightning/cmp/c__quoteContainer</url>
+    <url>/lightning/cmp/c__quoteContainer?c__recordID={!Quote.Id}</url>
 </WebLink>
