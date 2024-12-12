@@ -57,32 +57,34 @@ workflows:
   version: 2
   validate:
     jobs:
-      - run-tests
+      - run-tests:
+          filters:
+            branches:
+              only: CreateQuote
 
   pull_request:
     jobs:
       - run-tests:
           filters:
             branches:
-              ignore: main # Ignoring 'main' branch for PRs
+              ignore: main
 
   deploy_to_qa:
     jobs:
       - deploy_to_qa:
           filters:
             branches:
-              ignore: main
               only:
-                - Quote-Tool
+                - CreateQuote
                 - Project-Tool
+              ignore: main
 
   deploy_to_production:
     jobs:
       - deploy_to_production:
           filters:
             branches:
-              only: main # Triggering 'main' branch only when changes are pushed
-
+              only: main 
 
 # version: 2.1
 # jobs:
