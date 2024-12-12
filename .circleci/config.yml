@@ -8,12 +8,12 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - dependency-cache-{{ checksum "package.json"}}
+            - dependency-cache-{{ checksum "package.json" }}
       - run:
           name: Install Dependencies
           command: . build/install_dependencies.sh
       - save-cache:
-          key: dependency-cache-{{ checksum "package.json"}}
+          key: dependency-cache-{{ checksum "package.json" }}
           paths:
             - node_modules
       - run:
@@ -23,7 +23,7 @@ jobs:
           name: Run Apex Tests
           command: . build/run_apex_tests.sh
       - store-test-results:
-        path: test-results
+          path: test-results
 
   deploy_to_qa:
     docker:
@@ -40,7 +40,7 @@ jobs:
           name: Deploy to QA/UAT
           command: . build/deploy_to_qa.sh
       - store-artifacts:
-        path: qa-deployment-artifacts
+          path: qa-deployment-artifacts
 
   deploy_to_production:
     docker:
@@ -62,28 +62,122 @@ jobs:
 workflows:
   version: 2
   validate:
-    - run-tests
-  # Pull Request - testing.
+    jobs:
+      - run-tests
+
   pull_request:
     jobs:
-      - test:
+      - run-tests:
           filters:
             branches:
-              ignore: main # Ignoring 'main' branch for PRs.
-  # Merged pull requests - Deployment to QA/UAT
+              ignore: main # Ignoring 'main' branch for PRs
+
   deploy_to_qa:
     jobs:
-      - test:
+      - deploy_to_qa:
           filters:
             branches:
               ignore: main
               only:
                 - Quote-Tool
                 - Project-Tool
-  # Merged pull request - deploy to production.
+
   deploy_to_production:
     jobs:
-      - deploy:
+      - deploy_to_production:
           filters:
             branches:
-              only: main # Triggering 'main' branch only when changes are pushed.
+              only: main # Triggering 'main' branch only when changes are pushed
+
+
+
+
+# version: 2.1
+# jobs:
+
+#   run-tests:
+#     docker:
+#       - image: node:18
+#     steps:
+#       - checkout
+#       - restore_cache:
+#           keys:
+#             - dependency-cache-{{ checksum "package.json"}}
+#       - run:
+#           name: Install Dependencies
+#           command: . build/install_dependencies.sh
+#       - save-cache:
+#           key: dependency-cache-{{ checksum "package.json"}}
+#           paths:
+#             - node_modules
+#       - run:
+#           name: Login to Org
+#           command: . build/authentication.sh
+#       - run:
+#           name: Run Apex Tests
+#           command: . build/run_apex_tests.sh
+#       - store-test-results:
+#         path: test-results
+
+#   deploy_to_qa:
+#     docker:
+#       - image: node:18
+#     steps:
+#       - checkout
+#       - run:
+#           name: Install Dependencies(QA)
+#           command: . build/install_dependencies.sh
+#       - run:
+#           name: Login to QA Org
+#           command: . build/authentication.sh
+#       - run:
+#           name: Deploy to QA/UAT
+#           command: . build/deploy_to_qa.sh
+#       - store-artifacts:
+#         path: qa-deployment-artifacts
+
+#   deploy_to_production:
+#     docker:
+#       - image: node:18
+#     steps:
+#       - checkout
+#       - run:
+#           name: Install Dependencies(Production)
+#           command: . build/install_dependencies.sh
+#       - run:
+#           name: Login to Production Org
+#           command: . build/authentication.sh
+#       - run:
+#           name: Deploy to Production
+#           command: . build/deploy_to_production.sh
+#       - store-artifacts:
+#           path: production-deployment-artifacts
+
+# workflows:
+#   version: 2
+#   validate:
+#     - run-tests
+#   # Pull Request - testing.
+#   pull_request:
+#     jobs:
+#       - test:
+#           filters:
+#             branches:
+#               ignore: main # Ignoring 'main' branch for PRs.
+#   # Merged pull requests - Deployment to QA/UAT
+#   deploy_to_qa:
+#     jobs:
+#       - test:
+#           filters:
+#             branches:
+#               ignore: main
+#               only:
+#                 - Quote-Tool
+#                 - Project-Tool
+#   # Merged pull request - deploy to production.
+#   deploy_to_production:
+#     jobs:
+#       - deploy:
+#           filters:
+#             branches:
+#               only: main # Triggering 'main' branch only when changes are pushed.
