@@ -8,7 +8,7 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - depencency-cache-{{ checksum "package.json"}}
+            - dependency-cache-{{ checksum "package.json"}}
       - run:
           name: Install Dependencies
           command: . build/install_dependencies.sh
@@ -69,7 +69,7 @@ workflows:
       - test:
           filters:
             branches:
-              igonre: main # Ignoring 'main' branch for PRs.
+              ignore: main # Ignoring 'main' branch for PRs.
   # Merged pull requests - Deployment to QA/UAT
   deploy_to_qa:
     jobs:
