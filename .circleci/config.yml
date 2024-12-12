@@ -22,8 +22,6 @@ jobs:
       - run:
           name: Run Apex Tests
           command: . build/run_apex_tests.sh
-      - store-test-results:
-          path: test-results
 
   deploy_to_qa:
     docker:
@@ -39,8 +37,6 @@ jobs:
       - run:
           name: Deploy to QA/UAT
           command: . build/deploy_to_qa.sh
-      - store-artifacts:
-          path: qa-deployment-artifacts
 
   deploy_to_production:
     docker:
@@ -56,8 +52,6 @@ jobs:
       - run:
           name: Deploy to Production
           command: . build/deploy_to_production.sh
-      - store-artifacts:
-          path: production-deployment-artifacts
 
 workflows:
   version: 2
