@@ -18,7 +18,7 @@ sf org login jwt --username $USER_NAME --jwt-key-file keys/server.key --client-i
 echo "Authenticated"
 
 # Removing key file.
-rm -rf keys
+# rm -rf keys
 
 
 # Creating Scratch org.
