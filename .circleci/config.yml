@@ -42,22 +42,22 @@ jobs:
       -store-artifacts:
         path: qa-deployment-artifacts
 
-    deploy_to_production:
-      docker:
-        - image: node:18
-      steps:
-        - checkout
-        - run:
-            name: Install Dependencies(Production)
-            command: . build/install_dependencies.sh
-        - run:
-            name: Login to Production Org
-            command: . build/authentication.sh
-        - run:
-            name: Deploy to Production
-            command: . build/deploy_to_production.sh
-        - store-artifacts:
-            path: production-deployment-artifacts
+  deploy_to_production:
+    docker:
+      - image: node:18
+    steps:
+      - checkout
+      - run:
+          name: Install Dependencies(Production)
+          command: . build/install_dependencies.sh
+      - run:
+          name: Login to Production Org
+          command: . build/authentication.sh
+      - run:
+          name: Deploy to Production
+          command: . build/deploy_to_production.sh
+      - store-artifacts:
+          path: production-deployment-artifacts
 
 workflows:
   version: 2
