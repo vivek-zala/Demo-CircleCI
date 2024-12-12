@@ -28,7 +28,7 @@ echo "Created scratch org"
 
 # Generating password to get scratch org password.
 echo "Generating password"
-sf fource:user:password:generate --target-org ${CIRCLE_BRANCH}
+sf force:user:password:generate --target-org ${CIRCLE_BRANCH}
 echo "Generated"
 
 # Displaying the password and other credentials.
