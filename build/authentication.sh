@@ -1,6 +1,5 @@
-echo "login_to_sandbox.sh file in execution"
-
-echo "Logging into Sandbox Salesforce Org"
+echo "Authentication.sh file in execution"
+echo "Logging in"
 
 # Creating directory keys to store server.key(Private key) file.
 mkdir keys
@@ -21,6 +20,17 @@ echo "Authenticated"
 # Removing key file.
 rm -rf keys
 
-echo "login_to_sandbox.sh file completed execution"
+
+# Creating Scratch org.
+echo "Creating Scratch Org..."
+sf org create scratch -f config/project-scratch-def.json -a ${CIRCLE_BRANCH}
+
+# Generating password to get scratch org password.
+sf fource:user:password:generate --target-org ${CIRCLE_BRANCH}
+
+# Displaying the password and other credentials.
+sf force:org:display --target-org ${CIRCLE_BRANCH}
+
+echo "authentication.sh file completed execution"
 echo
 echo

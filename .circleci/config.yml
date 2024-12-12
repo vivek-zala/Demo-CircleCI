@@ -1,56 +1,89 @@
 version: 2.1
 jobs:
+
   run-tests:
     docker:
       - image: node:18
     steps:
       - checkout
-      # - restore_cache:
-      #     keys:
-      #       - dependency-cache-{{ checksum "package.json" }}
-      #       - dependency-cache-
+      - restore_cache:
+          keys:
+            - depencency-cache-{{ checksum "package.json"}}
       - run:
           name: Install Dependencies
           command: . build/install_dependencies.sh
-      # - save_cache:
-      #     key: dependency-cache-{{ checksum "package.json" }}
-      #     paths:
-      #       - node_modules
+      - save-cache:
+          key: dependency-cache-{{ checksum "package.json"}}
+          paths:
+            - node_modules
       - run:
           name: Login to Org
-          command: . build/login_to_sandbox.sh
+          command: . build/authentication.sh
       - run:
           name: Run Apex Tests
           command: . build/run_apex_tests.sh
-      - store_test_results:
-          path: test-results
-  # code-review:
-  #   docker:
-  #     - image: circleci/node:latest
-  #   steps:
-  #     - checkout
-  #     - restore_cache:
-  #         keys:
-  #           - dependency-cache-{{ checksum "package.json" }}
-  #           - dependency-cache-
-  #     - run:
-  #         name: Install Dependencies
-  #         command: . build/install_dependencies.sh
-  #     - save_cache:
-  #         key: dependency-cache-{{ checksum "package.json" }}
-  #         paths:
-  #           - node_modules
-  #     - run:
-  #         name: SFDX Scanner Analysis
-  #         command: . build/run_sfdx_scanner.sh
-  #     - store_artifacts:
-  #         path: sfdxScannerAnalysis.csv
+      - store-test-results:
+        path: test-results
+
+  deploy_to_qa:
+    docker:
+      - image: node:18
+    steps:
+      - checkout
+      - run:
+          name: Install Dependencies(QA)
+          command: . build/install_dependencies.sh
+      - run:
+          name: Login to QA Org
+          command: . build/authentication.sh
+      - run:
+          name: Deploy to QA/UAT
+          command: . build/deploy_to_qa.sh
+      -store-artifacts:
+        path: qa-deployment-artifacts
+
+    deploy_to_production:
+      docker:
+        - image: node:18
+      steps:
+        - checkout
+        - run:
+            name: Install Dependencies(Production)
+            command: . build/install_dependencies.sh
+        - run:
+            name: Login to Production Org
+            command: . build/authentication.sh
+        - run:
+            name: Deploy to Production
+            command: . build/deploy_to_production.sh
+        - store-artifacts:
+            path: production-deployment-artifacts
 
 workflows:
   version: 2
   validate:
+    - run-tests
+  # Pull Request - testing.
+  pull_request:
     jobs:
-      - run-tests
-      # - code-review:
-      #     requires:
-      #       - run-tests
+      - test:
+          filters:
+            branches:
+              igonre: main # Ignoring 'main' branch for PRs.
+  # Merged pull requests - Deployment to QA/UAT
+  deploy_to_qa:
+    jobs:
+      - test:
+          filters:
+            branches:
+              ignore: main
+              only:
+                - Quote-Tool
+                - Project-Tool
+  # Merged pull request - deploy to production.
+  deploy_to_production:
+    jobs:
+      - deploy:
+          filters:
+            branches:
+              only: main # Triggering 'main' branch only when changes are pushed.
