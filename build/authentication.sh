@@ -24,11 +24,15 @@ rm -rf keys
 # Creating Scratch org.
 echo "Creating Scratch Org..."
 sf org create scratch -f config/project-scratch-def.json -a ${CIRCLE_BRANCH}
+echo "Created scratch org"
 
 # Generating password to get scratch org password.
+echo "Generating password"
 sf fource:user:password:generate --target-org ${CIRCLE_BRANCH}
+echo "Generated"
 
 # Displaying the password and other credentials.
+echo "Credentials"
 sf force:org:display --target-org ${CIRCLE_BRANCH}
 
 echo "authentication.sh file completed execution"
