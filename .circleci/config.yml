@@ -39,7 +39,7 @@ jobs:
       - run:
           name: Deploy to QA/UAT
           command: . build/deploy_to_qa.sh
-      -store-artifacts:
+      - store-artifacts:
         path: qa-deployment-artifacts
 
   deploy_to_production:
